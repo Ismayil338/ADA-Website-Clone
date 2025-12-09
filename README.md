@@ -167,7 +167,7 @@ using **React** for the frontend and **json-server** for a mock backend.
 - [ ] Folder structure added  
 - [ ] React Router installed  
 - [ ] json-server initialized with `db.json`  
-- [ ] Data scraped/collected for:  
+- [+] Data scraped/collected for:  
   - [+] Programs  
   - [+] Faculties  
   - [+] News  
