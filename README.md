@@ -169,9 +169,9 @@ using **React** for the frontend and **json-server** for a mock backend.
 - [ ] json-server initialized with `db.json`  
 - [ ] Data scraped/collected for:  
   - [ ] Programs  
-  - [ ] Faculties  
-  - [ ] News  
-  - [ ] Events  (<em>you can increase the items in the list</em>)
+  - [+] Faculties  
+  - [+] News  
+  - [+] Events  (<em>you can increase the items in the list</em>)
 - [ ] Basic UI (header/footer/pages)  
 
 ---
