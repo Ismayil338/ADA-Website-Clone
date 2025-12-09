@@ -162,11 +162,11 @@ using **React** for the frontend and **json-server** for a mock backend.
 # **Final Project Checklist**
 
 ## **Week 1 — Setup & Basics**
-- [ ] GitHub repo created + first commit  
-- [ ] React project initialized  
-- [ ] Folder structure added  
-- [ ] React Router installed  
-- [ ] json-server initialized with `db.json`  
+- [+] GitHub repo created + first commit  
+- [+] React project initialized  
+- [+] Folder structure added  
+- [+] React Router installed  
+- [+] json-server initialized with `db.json`  
 - [+] Data scraped/collected for:  
   - [+] Programs  
   - [+] Faculties  
