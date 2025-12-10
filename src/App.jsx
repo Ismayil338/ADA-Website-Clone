@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Events from './pages/Events';
 import SchoolSite from './pages/SchoolSite';
 import SchoolSB from './pages/SchoolSB';
-import Publications from './pages/Publications';
+import Research from './pages/Research';
 import AboutADA from './pages/AboutADA';
 import Programs from './pages/Programs';
 
@@ -21,7 +21,7 @@ const App = () => (
       <Route path="/en/admission/find-your-program" element={<Programs />} />
       <Route path="/en/schools/site" element={<SchoolSite />} />
       <Route path="/en/schools/sb" element={<SchoolSB />} />
-      <Route path="/en/publications" element={<Publications />} />
+      <Route path="/en/academics/research" element={<Research />} />
       <Route path="/en/about/ada-university" element={<AboutADA />} />
       <Route path="*" element={<Navigate to="/en" replace />} />
     </Routes>
