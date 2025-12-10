@@ -107,6 +107,8 @@ using **React** for the frontend and **json-server** for a mock backend.
 - Footer
 - Card (for news/events/programs)
 
+Navbar & cards.jsx done without CSS for now.
+
 ### Requirements:
 - Implement routing using **React Router v6**
 - Fetch and display data from **json-server** for **at least 2 pages**
