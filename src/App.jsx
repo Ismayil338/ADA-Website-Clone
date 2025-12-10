@@ -8,6 +8,7 @@ import SchoolSite from './pages/SchoolSite';
 import SchoolSB from './pages/SchoolSB';
 import Publications from './pages/Publications';
 import AboutADA from './pages/AboutADA';
+import Programs from './pages/Programs';
 
 const App = () => (
   <BrowserRouter>
@@ -17,6 +18,7 @@ const App = () => (
       <Route path="/en" element={<Home />} />
       <Route path="/en/news" element={<News />} />
       <Route path="/en/events" element={<Events />} />
+      <Route path="/en/admission/find-your-program" element={<Programs />} />
       <Route path="/en/schools/site" element={<SchoolSite />} />
       <Route path="/en/schools/sb" element={<SchoolSB />} />
       <Route path="/en/publications" element={<Publications />} />
