@@ -168,20 +168,20 @@ Navbar & cards.jsx done without CSS for now.
 - [+] React project initialized  
 - [+] Folder structure added  
 - [+] React Router installed  
-- [+] json-server initialized with `db.json`  
+- [ ] json-server initialized with `db.json`  
 - [+] Data scraped/collected for:  
   - [+] Programs  
   - [+] Faculties  
   - [+] News  
   - [+] Events  (<em>you can increase the items in the list</em>)
-- [ ] Basic UI (header/footer/pages)  
+- [+] Basic UI (header/footer/pages)  
 
 ---
 
 ## **Week 2 — UI + Routing**
-- [ ] Home / About / Faculties / Programs pages  
+- [+] Home / About / Faculties / Programs pages  
 - [ ] Reusable components (Navbar, Footer, Cards, Hero)  
-- [ ] Routing configured with React Router  
+- [+] Routing configured with React Router  
 - [ ] Data fetched from json-server  
 - [ ] Loading & error states implemented  
 - [ ] Basic responsive layout  
