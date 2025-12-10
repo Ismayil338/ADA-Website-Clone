@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import News from './pages/News';
 import Home from './pages/Home';
 import Events from './pages/Events';
@@ -25,6 +26,7 @@ const App = () => (
       <Route path="/en/about/ada-university" element={<AboutADA />} />
       <Route path="*" element={<Navigate to="/en" replace />} />
     </Routes>
+    <Footer />
   </BrowserRouter>
 );
 
