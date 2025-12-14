@@ -1,10 +1,10 @@
 Please make sure you have Node.js installed on your machine
 
-#Install dependencies:
+## Install dependencies:
 ```bash
 npm i
 ```
-#To run:
+## To run:
 ```bash
 npm run dev
 ```
