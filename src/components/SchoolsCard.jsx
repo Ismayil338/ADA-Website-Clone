@@ -1,26 +1,22 @@
-const SchoolsCard = ({
-  href = '#',
-  imageSrc,
-  imageAlt = '',
-  name = '',
-  role = '',
-  department = '',
-  className = '',
-}) => (
-  <div className={`col-lg-6 col-xl-3 grid-item-style-2 ${className}`.trim()}>
-    <a className="grid-url" href={href}>
-      <div className="image">
-        {imageSrc ? <img src={imageSrc} alt={imageAlt} /> : null}
-      </div>
-      <div className="grid-title">{name}</div>
-      <div className="grid-description">
-        {role ? <b>{role}</b> : null}
-        {role && department ? <br /> : null}
-        {department}
-      </div>
-    </a>
-  </div>
-);
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const SchoolsCard = ({ name, role, imageSrc, department, href }) => {
+  return (
+    <div className="grid-item-style-2">
+      <Link className="grid-url text-decoration-none" to={href || "#"}>
+        <div className="image">
+          <img alt={name} src={imageSrc} />
+        </div>
+        <div className="grid-title">{name}</div>
+        <div className="grid-description">
+          <b>{role}</b>
+          <br />
+          {department}
+        </div>
+      </Link>
+    </div>
+  );
+};
 
 export default SchoolsCard;
-

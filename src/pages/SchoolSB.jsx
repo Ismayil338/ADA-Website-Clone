@@ -1,24 +1,47 @@
+import React, { useState, useEffect } from 'react';
 import SchoolsCard from '../components/SchoolsCard';
-import sbFaculty from '../../data/sb_faculty.json';
 
-const SchoolSB = () => (
-  <main className="page page-school-sb container py-4">
-    <h1 className="page-title">School of Business</h1>
-    <div className="row">
-      {sbFaculty.map((member, index) => (
-        <SchoolsCard
-          key={`${member.profile_url}-${index}`}
-          href={member.profile_url}
-          imageSrc={member.image_url}
-          imageAlt={member.name}
-          name={member.name}
-          role={member.role}
-          department={member.department}
-        />
-      ))}
-    </div>
-  </main>
-);
+const SchoolSB = () => {
+  const [faculty, setFaculty] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch('http://localhost:5000/sb_faculty')
+      .then((res) => {
+        if (!res.ok) throw new Error('Failed to fetch SB faculty');
+        return res.json();
+      })
+      .then((data) => {
+        setFaculty(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        setError(err.message);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <div className="container py-5 text-center"><h2>Loading...</h2></div>;
+  if (error) return <div className="container py-5 text-center text-danger"><h2>Error: {error}</h2></div>;
+
+  return (
+    <main className="container py-5">
+      <h1 className="fw-bold mb-5" style={{ color: '#003366' }}>School of Business Faculty</h1>
+      <div className="row g-4">
+        {faculty.map((member, index) => (
+          <div key={index} className="col-lg-6 col-xl-3">
+            <SchoolsCard 
+              name={member.name}
+              role={member.role}
+              imageSrc={member.image_url}
+              department="School of Business"
+            />
+          </div>
+        ))}
+      </div>
+    </main>
+  );
+};
 
 export default SchoolSB;
-

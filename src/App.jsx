@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import News from './pages/News';
 import Home from './pages/Home';
 import Events from './pages/Events';
+import NewsAndEvents from './pages/NewsAndEvents';
 import SchoolSite from './pages/SchoolSite';
 import SchoolSB from './pages/SchoolSB';
 import Research from './pages/Research';
@@ -19,6 +20,7 @@ const App = () => (
       <Route path="/en" element={<Home />} />
       <Route path="/en/news" element={<News />} />
       <Route path="/en/events" element={<Events />} />
+      <Route path="/en/news-and-events" element={<NewsAndEvents />} />
       <Route path="/en/admission/find-your-program" element={<Programs />} />
       <Route path="/en/schools/site" element={<SchoolSite />} />
       <Route path="/en/schools/sb" element={<SchoolSB />} />
