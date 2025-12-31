@@ -26,7 +26,8 @@ const NewsCard = ({
   };
 
   const defaultColClass = className === undefined || className.includes('w-100') ? '' : 'col-lg-6';
-  const finalClassName = `${defaultColClass} grid-item-style-1 mb-30 ${className || ''}`.trim();
+  const marginClass = className && className.includes('w-100') ? '' : 'mb-30';
+  const finalClassName = `${defaultColClass} grid-item-style-1 ${marginClass} ${className || ''}`.trim();
 
   return (
     <div className={finalClassName}>

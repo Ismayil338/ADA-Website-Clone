@@ -9,6 +9,7 @@ const EventsCard = ({
   title = '',
   className = '',
   id = null,
+  colorClass = '',
 }) => {
   const CardContent = ({ children }) => {
     if (id) {
@@ -25,8 +26,9 @@ const EventsCard = ({
     );
   };
 
-  const defaultColClass = className === undefined ? 'col-xl-6' : '';
-  const finalClassName = `${defaultColClass} grid-item-style-1 mb-30 ${className || ''}`.trim();
+  const defaultColClass = className === undefined || className.includes('w-100') ? '' : 'col-lg-6';
+  const marginClass = className && className.includes('w-100') ? '' : 'mb-30';
+  const finalClassName = `${defaultColClass} grid-item-style-1 ${marginClass} ${className || ''}`.trim();
 
   return (
     <div className={finalClassName}>
@@ -35,7 +37,7 @@ const EventsCard = ({
           {imageSrc ? <img src={imageSrc} alt={imageAlt} /> : null}
         </div>
 
-        <div className="grid-item-foot">
+        <div className={`grid-item-foot${colorClass ? ` ${colorClass}` : ''}`.trim()}>
           <div className="date-and-time">
             {date ? (
               <span className="date">
