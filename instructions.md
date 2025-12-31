@@ -4,6 +4,10 @@ Please make sure you have Node.js installed on your machine
 ```bash
 npm i
 ```
+## First, change the directory to the path of the repository
+```
+cd "repo path"
+```
 ## To run, open the terminal, write:
 ```bash
 npm run dev
