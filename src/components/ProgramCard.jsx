@@ -17,9 +17,12 @@ const ProgramCard = ({
       }
     : undefined;
 
+  const defaultColClass = className && className.includes('w-100') ? '' : 'col-md-6 col-xl-4';
+  const finalClassName = `${defaultColClass} filtered-item ${className || ''}`.trim();
+
   return (
     <div
-      className={`col-md-6 col-xl-4 filtered-item ${className}`.trim()}
+      className={finalClassName}
       data-name={dataName || undefined}
       data-school={dataSchool || undefined}
       data-degree={dataDegree || undefined}

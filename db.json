@@ -8585,5 +8585,252 @@
       "link": "https://www.ada.edu.az/en/news/33-ada-and-bp-launch-the-first-big-data-research-center",
       "image_url": "https://www.ada.edu.az/assets/img/no-photo.jpg"
     }
+  ],
+  "programs": [
+    {
+      "id": 1,
+      "title": "International Studies",
+      "school_label": "SPIA",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/spia/programs/international-studies"
+    },
+    {
+      "id": 2,
+      "title": "Communication and Digital Media",
+      "school_label": "SPIA",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/spia/programs/communication-and-digital-media"
+    },
+    {
+      "id": 3,
+      "title": "Public Affairs",
+      "school_label": "SPIA",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/spia/programs/public-affairs"
+    },
+    {
+      "id": 4,
+      "title": "Public Administration (in English)",
+      "school_label": "SPIA",
+      "level": "Graduate",
+      "link": "https://www.ada.edu.az/en/schools/spia/programs/public-administration-in-english"
+    },
+    {
+      "id": 5,
+      "title": "Public Administration (in Azerbaijani)",
+      "school_label": "SPIA",
+      "level": "Graduate",
+      "link": "https://www.ada.edu.az/en/schools/spia/programs/public-administration-in-azerbaijani"
+    },
+    {
+      "id": 6,
+      "title": "Diplomacy and International Affairs",
+      "school_label": "SPIA",
+      "level": "Graduate",
+      "link": "https://www.ada.edu.az/en/schools/spia/programs/diplomacy-and-international-affairs"
+    },
+    {
+      "id": 7,
+      "title": "Business Administration",
+      "school_label": "SB",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/sb/programs/business-administration"
+    },
+    {
+      "id": 8,
+      "title": "Economics",
+      "school_label": "SB",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/sb/programs/economics"
+    },
+    {
+      "id": 9,
+      "title": "Finance",
+      "school_label": "SB",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/sb/programs/finance"
+    },
+    {
+      "id": 10,
+      "title": "MBA",
+      "school_label": "SB",
+      "level": "Graduate",
+      "link": "https://www.ada.edu.az/en/schools/sb/programs/mba"
+    },
+    {
+      "id": 11,
+      "title": "MBA in Finance",
+      "school_label": "SB",
+      "level": "Graduate",
+      "link": "https://www.ada.edu.az/en/schools/sb/programs/mba-in-finance"
+    },
+    {
+      "id": 12,
+      "title": "Global Management and Politics (GMAP)",
+      "school_label": "SB",
+      "level": "Graduate",
+      "link": "https://www.ada.edu.az/en/schools/sb/programs/global-management-and-politics-gmap"
+    },
+    {
+      "id": 13,
+      "title": "Human Resource Management (HRM)",
+      "school_label": "SB",
+      "level": "Graduate",
+      "link": "https://www.ada.edu.az/en/schools/sb/programs/human-resource-management-hrm"
+    },
+    {
+      "id": 14,
+      "title": "Computer Science",
+      "school_label": "SITE",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/site/programs/computer-science"
+    },
+    {
+      "id": 15,
+      "title": "Computer Engineering",
+      "school_label": "SITE",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/site/programs/computer-engineering"
+    },
+    {
+      "id": 16,
+      "title": "Information Technology",
+      "school_label": "SITE",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/site/programs/information-technology"
+    },
+    {
+      "id": 17,
+      "title": "Mathematics",
+      "school_label": "SITE",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/site/programs/mathematics"
+    },
+    {
+      "id": 18,
+      "title": "Electrical and Electronics Engineering",
+      "school_label": "SITE",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/site/programs/electrical-and-electronics-engineering"
+    },
+    {
+      "id": 19,
+      "title": "Computer Science and Data Analytics",
+      "school_label": "SITE",
+      "level": "Graduate",
+      "link": "https://www.ada.edu.az/en/schools/site/programs/computer-science-and-data-analytics"
+    },
+    {
+      "id": 20,
+      "title": "Electrical and Power Engineering",
+      "school_label": "SITE",
+      "level": "Graduate",
+      "link": "https://www.ada.edu.az/en/schools/site/programs/electrical-and-power-engineering"
+    },
+    {
+      "id": 21,
+      "title": "Computer Engineering and High Performance Computing",
+      "school_label": "SITE",
+      "level": "Graduate",
+      "link": "https://www.ada.edu.az/en/schools/site/programs/computer-engineering-and-high-performance-computing"
+    },
+    {
+      "id": 22,
+      "title": "Educational Management (in English)",
+      "school_label": "SE",
+      "level": "Graduate",
+      "link": "https://www.ada.edu.az/en/schools/se/programs/education-management-in-english"
+    },
+    {
+      "id": 23,
+      "title": "Teaching and Learning (in English)",
+      "school_label": "SE",
+      "level": "Graduate",
+      "link": "https://www.ada.edu.az/en/schools/se/programs/teaching-and-learning-in-english"
+    },
+    {
+      "id": 24,
+      "title": "Educational Management (in Azerbaijani)",
+      "school_label": "SE",
+      "level": "Graduate",
+      "link": "https://www.ada.edu.az/en/schools/se/programs/education-management-in-azerbaijani"
+    },
+    {
+      "id": 25,
+      "title": "Teaching and Learning (in Azerbaijani)",
+      "school_label": "SE",
+      "level": "Graduate",
+      "link": "https://www.ada.edu.az/en/schools/se/programs/teaching-and-learning-in-azerbaijani"
+    },
+    {
+      "id": 26,
+      "title": "Laws (Legum Baccalaureus)",
+      "school_label": "LAW",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/law/programs/laws-legum-baccalaureus"
+    },
+    {
+      "id": 27,
+      "title": "Agricultural Technologies",
+      "school_label": "SAFS",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/safs/programs/agricultural-technologies"
+    },
+    {
+      "id": 28,
+      "title": "Food Technologies",
+      "school_label": "SAFS",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/safs/programs/food-technologies"
+    },
+    {
+      "id": 29,
+      "title": "Animal Science",
+      "school_label": "SAFS",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/safs/programs/animal-science"
+    },
+    {
+      "id": 30,
+      "title": "Agricultural and Food Systems Management",
+      "school_label": "SAFS",
+      "level": "Graduate",
+      "link": "https://www.ada.edu.az/en/schools/safs/programs/agricultural-and-food-system-management"
+    },
+    {
+      "id": 31,
+      "title": "Architecture",
+      "school_label": "SDA",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/sda/programs/architecture"
+    },
+    {
+      "id": 32,
+      "title": "Interior Design",
+      "school_label": "SDA",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/sda/programs/interior-design"
+    },
+    {
+      "id": 33,
+      "title": "Master of Laws (LL.M.)",
+      "school_label": "LAW",
+      "level": "Graduate",
+      "link": "https://www.ada.edu.az/en/schools/law/programs/master-of-laws-llm"
+    },
+    {
+      "id": 34,
+      "title": "Urban Planning",
+      "school_label": "SDA",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/sda/programs/bup"
+    },
+    {
+      "id": 35,
+      "title": "Communication Design",
+      "school_label": "SDA",
+      "level": "Undergraduate",
+      "link": "https://www.ada.edu.az/en/schools/sda/programs/bcd"
+    }
   ]
 }
