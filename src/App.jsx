@@ -10,6 +10,7 @@ import SchoolSite from './pages/SchoolSite';
 import SchoolSB from './pages/SchoolSB';
 import Research from './pages/Research';
 import AboutADA from './pages/AboutADA';
+import AboutItalyAzerbaijanUniversity from './pages/AboutItalyAzerbaijanUniversity';
 import Programs from './pages/Programs';
 import EventDetail from './pages/EventDetail';
 import NewsDetail from './pages/NewsDetail';
@@ -30,6 +31,7 @@ const App = () => (
       <Route path="/en/schools/sb" element={<SchoolSB />} />
       <Route path="/en/academics/research" element={<Research />} />
       <Route path="/en/about/ada-university" element={<AboutADA />} />
+      <Route path="/en/about/Italy-Azerbaijan-university" element={<AboutItalyAzerbaijanUniversity />} />
       <Route path="*" element={<Navigate to="/en" replace />} />
     </Routes>
     <Footer />
