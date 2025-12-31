@@ -220,40 +220,6 @@ const AboutADA = () => {
               </div>
 
               <div className="mt-5">
-                <h3 className="mb-4" style={{ color: '#336178', fontSize: '28px' }}>
-                  Brand Assets
-                </h3>
-                <div className="row">
-                  <div className="col-md-6 mb-4">
-                    <h5 className="mb-3" style={{ color: '#336178' }}>ADA University Logo</h5>
-                    <p style={{ fontSize: '16px', color: '#292929', marginBottom: '15px' }}>
-                      Our logo is our brand's shining star, the asset that everyone remembers.
-                    </p>
-                    <button className="btn" style={{ 
-                      backgroundColor: '#336178', 
-                      color: '#fff',
-                      border: 'none',
-                      padding: '10px 20px'
-                    }}>
-                      Download
-                    </button>
-                  </div>
-                  <div className="col-md-6 mb-4">
-                    <h5 className="mb-3" style={{ color: '#336178' }}>Logo Partnership Lockup</h5>
-                    <p style={{ fontSize: '16px', color: '#292929', marginBottom: '15px' }}>
-                      Leverage these tools to proudly demonstrate your collaborative alliance with ADA.
-                    </p>
-                    <button className="btn" style={{ 
-                      backgroundColor: '#336178', 
-                      color: '#fff',
-                      border: 'none',
-                      padding: '10px 20px'
-                    }}>
-                      Download
-                    </button>
-                  </div>
-                </div>
-
                 <div className="mt-4">
                   <h5 className="mb-3" style={{ color: '#336178' }}>Primary Colors</h5>
                   <div className="row">
