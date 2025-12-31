@@ -240,7 +240,7 @@
       "image_url": "https://www.ada.edu.az/media/2025/07/11/1to1_medium/turkan_huseynova.jpg",
       "source_page": "https://www.ada.edu.az/en/schools/site"
     }
-      ],
+  ],
   "sb_faculty": [
     {
       "name": "Huseyn Ismayilov",
@@ -482,5 +482,3598 @@
       "image_url": "https://www.ada.edu.az/media/2025/07/11/1to1_medium/lala_suleymanova-1.jpg",
       "source_page": "https://www.ada.edu.az/en/schools/sb"
     }
-      ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Açıq Qapı Günləri: ADA Universitetində sizi gözləyirik!",
+      "date": "21.06.2025",
+      "time": "14.00",
+      "link": "https://www.ada.edu.az/en/events/484-aciq-qapi-gunleri-ada-universitetinde-sizi-gozleyirik",
+      "image_url": "https://www.ada.edu.az/media/2025/06/16/b7690832_28c3_447e_b9cd_691076955f2a.jpeg",
+      "type": "Admission"
+    },
+    {
+      "id": 2,
+      "title": "Shaping Policies for Impact: Seminar on Public Administration & Policy Analysis",
+      "date": "21.02.2025",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/483-shaping-policies-for-impact-seminar-on-public-administration-policy-analysis",
+      "image_url": "https://www.ada.edu.az/media/2025/02/20/photo_2025_02_18_19_46_21.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 3,
+      "title": "First Info Session of ADA University's Master of Laws",
+      "date": "31.01.2025",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/482-first-info-session-of-ada-university-s-master-of-laws",
+      "image_url": "https://www.ada.edu.az/media/2025/01/27/31_yanvar_web.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 4,
+      "title": "Launch Event: Master of Laws (LL.M) Program",
+      "date": "16.12.2024",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/481-launch-event-master-of-laws-ll-m-program",
+      "image_url": "https://www.ada.edu.az/media/2024/12/11/law_new_master_program_website_adaptation_1_.jpg",
+      "type": "University"
+    },
+    {
+      "id": 5,
+      "title": "Seminar Series for Prospective ADA University Students",
+      "date": "30.10.2024",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/480-seminar-series-for-prospective-ada-university-students",
+      "image_url": "https://www.ada.edu.az/media/2024/10/18/web_ixtisas_1_.jpg",
+      "type": "Student"
+    },
+    {
+      "id": 6,
+      "title": "“Legal Talks” with Lawyer",
+      "date": "15.10.2024",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/479--legal-talks-with-lawyer",
+      "image_url": "https://www.ada.edu.az/media/2024/10/15/huquqsohbetleri_inara_camal_website_1_.jpg",
+      "type": "University"
+    },
+    {
+      "id": 7,
+      "title": "Undergraduate Info Session for Students and Parents",
+      "date": "08.10.2024",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/477-undergraduate-info-session-for-students-and-parents",
+      "image_url": "https://www.ada.edu.az/media/2024/10/02/photo_2024_10_02_09_40_41.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 8,
+      "title": "ADA School STEM Camp",
+      "date": "08.07.2024",
+      "time": "09:00-17:00",
+      "link": "https://www.ada.edu.az/en/events/473-ada-school-stem-camp",
+      "image_url": "https://www.ada.edu.az/media/2024/06/24/20240502112718_10095600.jpg",
+      "type": "ADA School"
+    },
+    {
+      "id": 9,
+      "title": "TriMedia: Explore, Capture, and Connect",
+      "date": "29.05.2024",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/476-trimedia-explore-capture-and-connect",
+      "image_url": "https://www.ada.edu.az/media/2024/06/24/20240529112750_89378300.jpg",
+      "type": "University"
+    },
+    {
+      "id": 10,
+      "title": "SITE Talks: The Best Guaranteed Result Principle and Decision-Making in Operations with Stochastic and Uncertain Factors",
+      "date": "23.05.2024",
+      "time": "10:00",
+      "link": "https://www.ada.edu.az/en/events/475-site-talks-the-best-guaranteed-result-principle-and-decision-making-in-operations-with-stochastic-and-uncertain-factors",
+      "image_url": "https://www.ada.edu.az/media/2024/06/24/20240522112416_54957800.jpeg",
+      "type": "Academic"
+    },
+    {
+      "id": 11,
+      "title": "\"How Ideas Take Shape\" design workshop",
+      "date": "10.05.2024",
+      "time": "16:00-17:30",
+      "link": "https://www.ada.edu.az/en/events/474--quot-how-ideas-take-shape-quot-design-workshop",
+      "image_url": "https://www.ada.edu.az/media/2024/06/24/20240507090533_28457300.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 12,
+      "title": "ADA University Career Fair",
+      "date": "02.05.2024",
+      "time": "11:00",
+      "link": "https://www.ada.edu.az/en/events/470-ada-university-career-fair",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240401171843_86831400.jpg",
+      "type": "Student"
+    },
+    {
+      "id": 13,
+      "title": "Hüquq məzunları ilə görüş",
+      "date": "27.04.2024",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/472-huquq-mezunlari-ile-gorus",
+      "image_url": "https://www.ada.edu.az/media/2024/06/24/20240424145756_68184700.jpg",
+      "type": "University"
+    },
+    {
+      "id": 14,
+      "title": "#EduDialogues session with Abbas Abbasov",
+      "date": "17.04.2024",
+      "time": "16:00-17:30",
+      "link": "https://www.ada.edu.az/en/events/471--edudialogues-session-with-abbas-abbasov",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240406180856_09207500.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 15,
+      "title": "How do we teach Economics?",
+      "date": "04.04.2024",
+      "time": "16:00-18:00",
+      "link": "https://www.ada.edu.az/en/events/469-how-do-we-teach-economics",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240327113442_72424400.jpg",
+      "type": "University"
+    },
+    {
+      "id": 16,
+      "title": "EduDialogues: Transforming Institutional Practices through Innovative Pedagogy and Data-driven Pathways",
+      "date": "29.03.2024",
+      "time": "16:00-17:30",
+      "link": "https://www.ada.edu.az/en/events/467-edudialogues-transforming-institutional-practices-through-innovative-pedagogy-and-data-driven-pathways",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240319125814_82973800.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 17,
+      "title": "Magistr müsahibəsi üçün məsləhətlər",
+      "date": "28.03.2024",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/468-magistr-musahibesi-ucun-meslehetler",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240319153638_84438800.jpg",
+      "type": "University"
+    },
+    {
+      "id": 18,
+      "title": "Magistr ixtisasları ilə maraqlananlar üçün \"Açıq Qapı\" günü",
+      "date": "13.03.2024",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/465-magistr-ixtisaslari-ile-maraqlananlar-ucun-quot-aciq-qapi-quot-gunu",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240312125652_16310500.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 19,
+      "title": "MGIMO-ADA online masterclass: Next Generation Fintech: Riding a New Wave",
+      "date": "12.03.2024",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/466-mgimo-ada-online-masterclass-next-generation-fintech-riding-a-new-wave",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240312144237_26599700.jpg",
+      "type": "University"
+    },
+    {
+      "id": 20,
+      "title": "ADA Model İƏT Simulyasiya Konfransı",
+      "date": "11.03.2024",
+      "time": "09:30",
+      "link": "https://www.ada.edu.az/en/events/464-ada-model-iet-simulyasiya-konfransi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240307160523_52357300.jpg",
+      "type": "University"
+    },
+    {
+      "id": 21,
+      "title": "Təhsildə Dialoq: \"Azərbaycan ümumtəhsil məktəblərində inklüziv pedaqogika təcrübəsi\"",
+      "date": "11.03.2024",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/462-tehsilde-dialoq-quot-azerbaycan-umumtehsil-mekteblerinde-inkluziv-pedaqogika-tecrubesi-quot",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240305143718_09539300.jpg",
+      "type": "University"
+    },
+    {
+      "id": 22,
+      "title": "ADA Universitetinin magistr təhsili almaq istəyən Gürcüstan azərbaycanlıları üçün onlayn Məlumat sessiyası",
+      "date": "11.03.2024",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/461-ada-universitetinin-magistr-tehsili-almaq-isteyen-gurcustan-azerbaycanlilari-ucun-onlayn-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240304170032_68092700.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 23,
+      "title": "ADA University Alumni Talks:",
+      "date": "07.03.2024",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/463-ada-university-alumni-talks",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240307123832_78729700.jpg",
+      "type": "Alumni"
+    },
+    {
+      "id": 24,
+      "title": "Mastering policy papers: From Research to Recommendations for Decision-Makers",
+      "date": "01.03.2024",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/460-mastering-policy-papers-from-research-to-recommendations-for-decision-makers",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240226130000_43855800.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 25,
+      "title": "Rəqəmsal medianın əhatəsində biz",
+      "date": "28.02.2024",
+      "time": "11:00",
+      "link": "https://www.ada.edu.az/en/events/457-reqemsal-medianin-ehatesinde-biz",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240220143515_96023800.jpg",
+      "type": "University"
+    },
+    {
+      "id": 26,
+      "title": "Azərbaycandilli ixtisaslar barədə onlayn məlumat sessiyası",
+      "date": "27.02.2024",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/459-azerbaycandilli-ixtisaslar-barede-onlayn-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240223175415_57196700.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 27,
+      "title": "ABŞ-nin Corc Vaşinqton Universiteti ilə birgə ikili diplom proqramları haqda Məlumat Sessiyası",
+      "date": "27.02.2024",
+      "time": "17:30",
+      "link": "https://www.ada.edu.az/en/events/458-abs-nin-corc-vasinqton-universiteti-ile-birge-ikili-diplom-proqramlari-haqda-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240222114638_89544900.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 28,
+      "title": "Teacher Training Program",
+      "date": "22.02.2024",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/452-teacher-training-program",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240216171137_41563400.jpg",
+      "type": "University"
+    },
+    {
+      "id": 29,
+      "title": "Master class alert: Vertical farming",
+      "date": "21.02.2024",
+      "time": "10:00",
+      "link": "https://www.ada.edu.az/en/events/456-master-class-alert-vertical-farming",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240219181044_82162000.jpg",
+      "type": "University"
+    },
+    {
+      "id": 30,
+      "title": "Finance workshop for prospective MBA candidates",
+      "date": "20.02.2024",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/451-finance-workshop-for-prospective-mba-candidates",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240216143224_99515300.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 31,
+      "title": "Food Systems Assessment for Azerbaijan",
+      "date": "19.02.2024",
+      "time": "14:00",
+      "link": "https://www.ada.edu.az/en/events/455-food-systems-assessment-for-azerbaijan",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240217134149_25548100.jpg",
+      "type": "University"
+    },
+    {
+      "id": 32,
+      "title": "#EduDialogues session - Unlocking the Power of Dress: Applying Semiotics in Education",
+      "date": "16.02.2024",
+      "time": "16:00-17:30",
+      "link": "https://www.ada.edu.az/en/events/446--edudialogues-session-unlocking-the-power-of-dress-applying-semiotics-in-education",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240203092705_37337500.png",
+      "type": "Academic"
+    },
+    {
+      "id": 33,
+      "title": "World Seminar Series: International Arbitration in a Globalized World: Challenges to Fundamental Concepts and Perspectives",
+      "date": "15.02.2024",
+      "time": "10:00 - 15:45",
+      "link": "https://www.ada.edu.az/en/events/448-world-seminar-series-international-arbitration-in-a-globalized-world-challenges-to-fundamental-concepts-and-perspectives",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240206141452_18815900.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 34,
+      "title": "Dizayn və Memarlıq fakültəsi ilə maraqlananlar üçün Açıq Qapı günü",
+      "date": "13.02.2024",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/449-dizayn-ve-memarliq-fakultesi-ile-maraqlananlar-ucun-aciq-qapi-gunu",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240209102703_62449000.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 35,
+      "title": "Dive into HR: Mastering your path to success",
+      "date": "09.02.2024",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/447-dive-into-hr-mastering-your-path-to-success",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240205122858_34600900.jpg",
+      "type": "University"
+    },
+    {
+      "id": 36,
+      "title": "\"Sərhədsiz Riyaziyyatçılar\" dərsləri bu dəfə Qazaxda",
+      "date": "03.02.2024",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/440--quot-serhedsiz-riyaziyyatcilar-quot-dersleri-bu-defe-qazaxda",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20231222122659_62435100.jpg",
+      "type": "University"
+    },
+    {
+      "id": 37,
+      "title": "Korporativ iş həyatında müasir təmayüllər: İşəgötürənlər nələrə diqqət yetirirlər?",
+      "date": "29.01.2024",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/444-korporativ-is-heyatinda-muasir-temayuller-isegoturenler-nelere-diqqet-yetirirler",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240122130257_90567400.jpg",
+      "type": "University"
+    },
+    {
+      "id": 38,
+      "title": "Master's fair for ADA University students and alumni",
+      "date": "29.01.2024",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/445-master-s-fair-for-ada-university-students-and-alumni",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240124111420_99674900.jpg",
+      "type": "Alumni"
+    },
+    {
+      "id": 39,
+      "title": "Biznes fakültəsində təqdim edilən magistr ixtisasları ilə bağlı Məlumat sessiyası",
+      "date": "19.01.2024",
+      "time": "18:30",
+      "link": "https://www.ada.edu.az/en/events/443-biznes-fakultesinde-teqdim-edilen-magistr-ixtisaslari-ile-bagli-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240118103424_26866800.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 40,
+      "title": "Pulsuz magistratura təhsili və tədqiqat imkanları",
+      "date": "12.01.2024",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/441-pulsuz-magistratura-tehsili-ve-tedqiqat-imkanlari",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20240107164024_56990300.jpg",
+      "type": "University"
+    },
+    {
+      "id": 41,
+      "title": "Magistr proqramları barədə Məlumat sessiyası",
+      "date": "19.12.2023",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/439-magistr-proqramlari-barede-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20231215182532_41781300.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 42,
+      "title": "SITE Talks: Electrical engineering among past, present and future",
+      "date": "30.11.2023",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/437-site-talks-electrical-engineering-among-past-present-and-future",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20231126234224_80273700.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 43,
+      "title": "Erasmus+ and the Transformative Power of Internationalization in Higher Education",
+      "date": "27.11.2023",
+      "time": "16:00-17:30",
+      "link": "https://www.ada.edu.az/en/events/438-erasmus-and-the-transformative-power-of-internationalization-in-higher-education",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20231124174204_00966200.jpg",
+      "type": "University"
+    },
+    {
+      "id": 44,
+      "title": "Alumni Forum 2023 in Vienna",
+      "date": "11.11.2023",
+      "time": "10:00",
+      "link": "https://www.ada.edu.az/en/events/431-alumni-forum-2023-in-vienna",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20231107162501_18175100.jpg",
+      "type": "Alumni"
+    },
+    {
+      "id": 45,
+      "title": "Görkəmli musiqi xadimlərinin iştirakı ilə \"Zəfər Günü\" konserti",
+      "date": "06.11.2023",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/436-gorkemli-musiqi-xadimlerinin-istiraki-ile-quot-zefer-gunu-quot-konserti",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20231104123704_50529100.png",
+      "type": "University"
+    },
+    {
+      "id": 46,
+      "title": "Meet us at International Education Fair, India",
+      "date": "04.11.2023",
+      "time": "13.00–17.00",
+      "link": "https://www.ada.edu.az/en/events/428-meet-us-at-international-education-fair-india",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230927182521_33205100.png",
+      "type": "University"
+    },
+    {
+      "id": 47,
+      "title": "Magistratura Proqramları üzrə Məlumat Sessiyası",
+      "date": "03.11.2023",
+      "time": "18:30",
+      "link": "https://www.ada.edu.az/en/events/435-magistratura-proqramlari-uzre-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20231027115556_86989200.jpeg",
+      "type": "Admission"
+    },
+    {
+      "id": 48,
+      "title": "Heydar Aliyev Centennial Book Fair",
+      "date": "25.10.2023",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/430-heydar-aliyev-centennial-book-fair",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20231017112409_73715700.jpg",
+      "type": "University"
+    },
+    {
+      "id": 49,
+      "title": "﻿Untangling Horizons: Enacting Global Agency in IB International Schools",
+      "date": "19.10.2023",
+      "time": "16:00- 17:30",
+      "link": "https://www.ada.edu.az/en/events/434-untangling-horizons-enacting-global-agency-in-ib-international-schools",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20231016111436_56104200.png",
+      "type": "University"
+    },
+    {
+      "id": 50,
+      "title": "ADA University will host the 17th IEEE International Conference on Application of Information and Communication Technologies (AICT2023)",
+      "date": "18.10.2023",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/424-ada-university-will-host-the-17th-ieee-international-conference-on-application-of-information-and-communication-technologies-aict2023",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230913233344_36993100.png",
+      "type": "Academic"
+    },
+    {
+      "id": 51,
+      "title": "Joint event marking the launch of the School of Agricultural and Food Sciences and World Food Day",
+      "date": "16.10.2023",
+      "time": "09:30",
+      "link": "https://www.ada.edu.az/en/events/433-joint-event-marking-the-launch-of-the-school-of-agricultural-and-food-sciences-and-world-food-day",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20231013180739_72021100.jpg",
+      "type": "University"
+    },
+    {
+      "id": 52,
+      "title": "Upcoming lectures of Edu Dialogues",
+      "date": "09.10.2023",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/429-upcoming-lectures-of-edu-dialogues",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20231004171238_46542000.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 53,
+      "title": "Meet us at International Education Fair, Uzbekistan",
+      "date": "06.10.2023",
+      "time": "10:00-18:00",
+      "link": "https://www.ada.edu.az/en/events/427-meet-us-at-international-education-fair-uzbekistan",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230927182018_99429600.png",
+      "type": "University"
+    },
+    {
+      "id": 54,
+      "title": "Meet us at International Education Fair, Kazakhstan",
+      "date": "04.10.2023",
+      "time": "11:00-18:00",
+      "link": "https://www.ada.edu.az/en/events/426-meet-us-at-international-education-fair-kazakhstan",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230926145545_57420200.png",
+      "type": "University"
+    },
+    {
+      "id": 55,
+      "title": "\"Uzeyir Hajibeyli\" International Music Festival",
+      "date": "26.09.2023",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/425--quot-uzeyir-hajibeyli-quot-international-music-festival",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230924105755_58900000.png",
+      "type": "University"
+    },
+    {
+      "id": 56,
+      "title": "The future of horticulture market: building skills to ensure competitiveness and tackle global challenges",
+      "date": "31.08.2023",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/423-the-future-of-horticulture-market-building-skills-to-ensure-competitiveness-and-tackle-global-challenges",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230825135645_79901100.jpg",
+      "type": "University"
+    },
+    {
+      "id": 57,
+      "title": "ADA Universitetində ixtisas seçimi ilə bağlı məsləhət saatları",
+      "date": "07.08.2023",
+      "time": "11:00-16:00",
+      "link": "https://www.ada.edu.az/en/events/422-ada-universitetinde-ixtisas-secimi-ile-bagli-meslehet-saatlari",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230810134854_01480300.jpg",
+      "type": "University"
+    },
+    {
+      "id": 58,
+      "title": "Abituriyentlər və valideynlər üçün \"Açıq qapı\" günləri",
+      "date": "02.08.2023",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/421-abituriyentler-ve-valideynler-ucun-quot-aciq-qapi-quot-gunleri",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230728103438_56869500.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 59,
+      "title": "İxtisasın sənin gələcəyindir",
+      "date": "29.07.2023",
+      "time": "11:00",
+      "link": "https://www.ada.edu.az/en/events/420-ixtisasin-senin-geleceyindir",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230724234945_06803900.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 60,
+      "title": "ADA School Science Camp",
+      "date": "03.07.2023",
+      "time": "09:00-17:00",
+      "link": "https://www.ada.edu.az/en/events/416-ada-school-science-camp",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230516110846_28270600.jpg",
+      "type": "ADA School"
+    },
+    {
+      "id": 61,
+      "title": "ADA Universitetində Açıq qapı günləri başlayır",
+      "date": "12.06.2023",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/419-ada-universitetinde-aciq-qapi-gunleri-baslayir",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230612134907_44704700.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 62,
+      "title": "11th ADA International Festival",
+      "date": "09.06.2023",
+      "time": "10:00-14:00",
+      "link": "https://www.ada.edu.az/en/events/418-11th-ada-international-festival",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230607155955_42482600.jpg",
+      "type": "University"
+    },
+    {
+      "id": 63,
+      "title": "Generative AI: Challenges to Higher education",
+      "date": "24.05.2023",
+      "time": "16:00-17:30",
+      "link": "https://www.ada.edu.az/en/events/417-generative-ai-challenges-to-higher-education",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230517182559_85815300.jpg",
+      "type": "University"
+    },
+    {
+      "id": 64,
+      "title": "ADA Universitetinin təklif etdiyi MBA proqramlarına qəbul üzrə Məlumat Sessiyası",
+      "date": "12.05.2023",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/414-ada-universitetinin-teklif-etdiyi-mba-proqramlarina-qebul-uzre-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230508115154_97377400.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 65,
+      "title": "Masterclass: Video recording and editing for social media",
+      "date": "12.05.2023",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/415-masterclass-video-recording-and-editing-for-social-media",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230511182238_21139400.jpg",
+      "type": "University"
+    },
+    {
+      "id": 66,
+      "title": "Idea Incubation Program",
+      "date": "06.05.2023",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/412-idea-incubation-program",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230501104634_70261100.jpg",
+      "type": "University"
+    },
+    {
+      "id": 67,
+      "title": "Haji Zeynalabdin Taghiyev (HZT) Awarding ceremony",
+      "date": "05.05.2023",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/409-haji-zeynalabdin-taghiyev-hzt-awarding-ceremony",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230425145054_82139800.jpg",
+      "type": "University"
+    },
+    {
+      "id": 68,
+      "title": "Azərbaycanın Qərb bölgəsində otlaqların ekoloji vəziyyəti",
+      "date": "02.05.2023",
+      "time": "10:00",
+      "link": "https://www.ada.edu.az/en/events/413-azerbaycanin-qerb-bolgesinde-otlaqlarin-ekoloji-veziyyeti",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230501165429_93248700.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 69,
+      "title": "11th ADA University Career Fair",
+      "date": "27.04.2023",
+      "time": "09:30 - 16:00",
+      "link": "https://www.ada.edu.az/en/events/403-11th-ada-university-career-fair",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230403124201_28047200.jpeg",
+      "type": "Student"
+    },
+    {
+      "id": 70,
+      "title": "Reading Competition dedicated to the 100th Anniversary of Heydar Aliyev",
+      "date": "26.04.2023",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/410-reading-competition-dedicated-to-the-100th-anniversary-of-heydar-aliyev",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230425182252_24654300.jpg",
+      "type": "University"
+    },
+    {
+      "id": 71,
+      "title": "STEAM Education - future focused learning experience",
+      "date": "20.04.2023",
+      "time": "15:45-16:45",
+      "link": "https://www.ada.edu.az/en/events/408-steam-education-future-focused-learning-experience",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230418175658_46431800.jpg",
+      "type": "University"
+    },
+    {
+      "id": 72,
+      "title": "Heydər Əliyev və Azərbaycan təhsilində ilk islahatlar",
+      "date": "13.04.2023",
+      "time": "11:00",
+      "link": "https://www.ada.edu.az/en/events/406-heyder-eliyev-ve-azerbaycan-tehsilinde-ilk-islahatlar",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230412114515_65973000.png",
+      "type": "University"
+    },
+    {
+      "id": 73,
+      "title": "Upcoming lectures of Edu Dialogues",
+      "date": "11.04.2023",
+      "time": "16:00-17:30",
+      "link": "https://www.ada.edu.az/en/events/405-upcoming-lectures-of-edu-dialogues",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230405170827_53853700.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 74,
+      "title": "Region müəllimləri üçün təlim proqramı",
+      "date": "01.04.2023",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/402-region-muellimleri-ucun-telim-proqrami",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230325003135_50448900.jpg",
+      "type": "University"
+    },
+    {
+      "id": 75,
+      "title": "Active Environment - Active Kids: The importance of health and physical education in school life",
+      "date": "17.03.2023",
+      "time": "16:00-17:30",
+      "link": "https://www.ada.edu.az/en/events/401-active-environment-active-kids-the-importance-of-health-and-physical-education-in-school-life",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230310164920_01612600.jpg",
+      "type": "University"
+    },
+    {
+      "id": 76,
+      "title": "ADA University's Traditional Novruz Gathering: Bahar Youth Festival",
+      "date": "14.03.2023",
+      "time": "15:00-17:00",
+      "link": "https://www.ada.edu.az/en/events/400-ada-university-s-traditional-novruz-gathering-bahar-youth-festival",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230307150326_27576300.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 77,
+      "title": "ADA 17th Birthday Concert",
+      "date": "06.03.2023",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/399-ada-17th-birthday-concert",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230301092330_75172600.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 78,
+      "title": "Top Masters Event",
+      "date": "04.03.2023",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/395-top-masters-event",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230216112320_96774500.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 79,
+      "title": "Upcoming lectures of Edu Dialogues",
+      "date": "01.03.2023",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/396-upcoming-lectures-of-edu-dialogues",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230217122651_14706500.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 80,
+      "title": "Paris Sülh Konfransı mövzusunda simulyasiya oyunu",
+      "date": "01.03.2023",
+      "time": "14:00",
+      "link": "https://www.ada.edu.az/en/events/398-paris-sulh-konfransi-movzusunda-simulyasiya-oyunu",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230224153233_02459700.png",
+      "type": "University"
+    },
+    {
+      "id": 81,
+      "title": "Workshop Series: Public-Private Partnership",
+      "date": "24.02.2023",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/391-workshop-series-public-private-partnership",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230221173438_11149800.jpeg",
+      "type": "Academic"
+    },
+    {
+      "id": 82,
+      "title": "ADA Universitetində \"SAT Günü\"",
+      "date": "23.02.2023",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/394-ada-universitetinde-quot-sat-gunu-quot",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230215184455_29766100.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 83,
+      "title": "MBA təhsilini ADA Universitetində almaq istəyənlər üçün Məlumat sessiyası",
+      "date": "23.02.2023",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/397-mba-tehsilini-ada-universitetinde-almaq-isteyenler-ucun-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230221120019_72043500.jpeg",
+      "type": "Admission"
+    },
+    {
+      "id": 84,
+      "title": "Finance specific MBA Masterclass!",
+      "date": "17.02.2023",
+      "time": "18:30",
+      "link": "https://www.ada.edu.az/en/events/393-finance-specific-mba-masterclass",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230210180252_98781200.png",
+      "type": "University"
+    },
+    {
+      "id": 85,
+      "title": "İtaliya-Azərbaycan Universiteti Magistratura Proqramları - İlk Məlumat Sessiyası",
+      "date": "13.02.2023",
+      "time": "18:30",
+      "link": "https://www.ada.edu.az/en/events/392-italiya-azerbaycan-universiteti-magistratura-proqramlari-ilk-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230208112133_80363200.jpeg",
+      "type": "Admission"
+    },
+    {
+      "id": 86,
+      "title": "\"Youth Day\" concert by Azerbaijan State String Quartet",
+      "date": "07.02.2023",
+      "time": "17:30",
+      "link": "https://www.ada.edu.az/en/events/389--quot-youth-day-quot-concert-by-azerbaijan-state-string-quartet",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230126130924_20967000.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 87,
+      "title": "Romani & Traveller Childhoods: Early Years Education & Care Provision for Gypsy, Roma, Traveller Families",
+      "date": "07.02.2023",
+      "time": "16:00-17:30",
+      "link": "https://www.ada.edu.az/en/events/390-romani-amp-traveller-childhoods-early-years-education-amp-care-provision-for-gypsy-roma-traveller-families",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230130015055_45144900.jpg",
+      "type": "University"
+    },
+    {
+      "id": 88,
+      "title": "Teacher Training Program",
+      "date": "25.01.2023",
+      "time": "16:00-19:00",
+      "link": "https://www.ada.edu.az/en/events/387-teacher-training-program",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230117143359_44719500.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 89,
+      "title": "Launching ceremony of First Graduate programs offered by Italy-Azerbaijan University",
+      "date": "25.01.2023",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/388-launching-ceremony-of-first-graduate-programs-offered-by-italy-azerbaijan-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230118180716_64930200.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 90,
+      "title": "Extracurricular education in the countries of the former Soviet Union: trends and challenges",
+      "date": "24.01.2023",
+      "time": "16:00-17:30",
+      "link": "https://www.ada.edu.az/en/events/385-extracurricular-education-in-the-countries-of-the-former-soviet-union-trends-and-challenges",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230116104822_70862500.jpg",
+      "type": "University"
+    },
+    {
+      "id": 91,
+      "title": "Sərhədsiz riyaziyyatçılar dərslərinə qeydiyyat başladı",
+      "date": "16.01.2023",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/378-serhedsiz-riyaziyyatcilar-derslerine-qeydiyyat-basladi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20221210123701_47468500.jpeg",
+      "type": "Admission"
+    },
+    {
+      "id": 92,
+      "title": "Fərdi İnkişaf Proqramı",
+      "date": "16.01.2023",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/384-ferdi-inkisaf-proqrami",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230111154115_32586600.jpg",
+      "type": "University"
+    },
+    {
+      "id": 93,
+      "title": "Individual consultations for MBA admissions",
+      "date": "16.01.2023",
+      "time": "09:00-18:00",
+      "link": "https://www.ada.edu.az/en/events/386-individual-consultations-for-mba-admissions",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230116155702_14679300.jpeg",
+      "type": "Admission"
+    },
+    {
+      "id": 94,
+      "title": "Magistraturanı pulsuz oxumaq imkanları",
+      "date": "10.01.2023",
+      "time": "19",
+      "link": "https://www.ada.edu.az/en/events/382-magistraturani-pulsuz-oxumaq-imkanlari",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230105193719_72943700.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 95,
+      "title": "Magistraturanı pulsuz oxumaq imkanları haqda məlumat sessiyası",
+      "date": "10.01.2023",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/383-magistraturani-pulsuz-oxumaq-imkanlari-haqda-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20230105194217_89241900.jpeg",
+      "type": "Admission"
+    },
+    {
+      "id": 96,
+      "title": "Edu Dialogues with Burcu Meltem Arik",
+      "date": "23.12.2022",
+      "time": "16:00-17:30",
+      "link": "https://www.ada.edu.az/en/events/379-edu-dialogues-with-burcu-meltem-arik",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20221208015710_58651600.jpg",
+      "type": "University"
+    },
+    {
+      "id": 97,
+      "title": "Artificial Intelligence in Business",
+      "date": "20.12.2022",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/381-artificial-intelligence-in-business",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20221219033016_31795300.png",
+      "type": "University"
+    },
+    {
+      "id": 98,
+      "title": "Corc Vaşinqton Universiteti ilə ikili diplom proqramları haqqında Məlumat sessiyası",
+      "date": "16.12.2022",
+      "time": "18:30",
+      "link": "https://www.ada.edu.az/en/events/380-corc-vasinqton-universiteti-ile-ikili-diplom-proqramlari-haqqinda-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20221210125029_06548400.png",
+      "type": "Admission"
+    },
+    {
+      "id": 99,
+      "title": "Magistratura proqramları üzrə məlumat sessiyası",
+      "date": "25.11.2022",
+      "time": "18:30",
+      "link": "https://www.ada.edu.az/en/events/377-magistratura-proqramlari-uzre-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20221119215258_67348000.jpeg",
+      "type": "Admission"
+    },
+    {
+      "id": 100,
+      "title": "First ADA University Alumni Forum in Europe",
+      "date": "06.11.2022",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/369-first-ada-university-alumni-forum-in-europe",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20221014121403_10422000.jpg",
+      "type": "Alumni"
+    },
+    {
+      "id": 101,
+      "title": "Səyahətçi-jurnalist Azər Qəriblə Sual-Cavab sessiyası",
+      "date": "02.11.2022",
+      "time": "13:00",
+      "link": "https://www.ada.edu.az/en/events/375-seyahetci-jurnalist-azer-qerible-sual-cavab-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20221110005414_80258500.jpg",
+      "type": "University"
+    },
+    {
+      "id": 102,
+      "title": "Photography Exhibition titled \"Chile: People and Landscape\"",
+      "date": "28.10.2022",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/373-photography-exhibition-titled-quot-chile-people-and-landscape-quot",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20221027154127_87564100.jpg",
+      "type": "University"
+    },
+    {
+      "id": 103,
+      "title": "The IEEE 16th International Conference on Application of Information and Communication Technologies will be co-organized by ADA University",
+      "date": "14.10.2022",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/370-the-ieee-16th-international-conference-on-application-of-information-and-communication-technologies-will-be-co-organized-by-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20221014161227_63582700.jpeg",
+      "type": "Academic"
+    },
+    {
+      "id": 104,
+      "title": "The first Club Fair will be hosted at ADA University",
+      "date": "07.10.2022",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/371-the-first-club-fair-will-be-hosted-at-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20221014162341_51612900.jpg",
+      "type": "University"
+    },
+    {
+      "id": 105,
+      "title": "ADA Universitetində ixtisas seçimləri ilə bağlı məsləhət saatları",
+      "date": "26.08.2022",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/368-ada-universitetinde-ixtisas-secimleri-ile-bagli-meslehet-saatlari",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220822133505_06316000.jpg",
+      "type": "University"
+    },
+    {
+      "id": 106,
+      "title": "ADA Universitetində hüquqşünaslıq ixtisasının məlumat sessiyası",
+      "date": "16.08.2022",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/367-ada-universitetinde-huquqsunasliq-ixtisasinin-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220819163410_47787400.jpeg",
+      "type": "Admission"
+    },
+    {
+      "id": 107,
+      "title": "Abituriyentlər və valideynlər üçün \"Açıq qapı\" günləri",
+      "date": "10.08.2022",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/366-abituriyentler-ve-valideynler-ucun-quot-aciq-qapi-quot-gunleri",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220804133804_41319000.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 108,
+      "title": "Yay tətilinizi tələbə klubları ilə maraqlı edin",
+      "date": "21.07.2022",
+      "time": "14:00",
+      "link": "https://www.ada.edu.az/en/events/364-yay-tetilinizi-telebe-klublari-ile-maraqli-edin",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220719095919_27657400.jpg",
+      "type": "Student"
+    },
+    {
+      "id": 109,
+      "title": "ADA University Commencement Ceremony will kick off on July 1",
+      "date": "01.07.2022",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/362-ada-university-commencement-ceremony-will-kick-off-on-july-1",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220624193344_95660000.png",
+      "type": "University"
+    },
+    {
+      "id": 110,
+      "title": "ADA Universitetinin yeni Hüquqşünaslıq fakültəsinin Məlumat sessiyası",
+      "date": "24.06.2022",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/361-ada-universitetinin-yeni-huquqsunasliq-fakultesinin-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220622164719_62771300.png",
+      "type": "Admission"
+    },
+    {
+      "id": 111,
+      "title": "Special concert dedicated to 100th birth anniversary of the prominent composer Rauf Hajiyev",
+      "date": "24.06.2022",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/363-special-concert-dedicated-to-100th-birth-anniversary-of-the-prominent-composer-rauf-hajiyev",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220624193756_84942100.png",
+      "type": "University"
+    },
+    {
+      "id": 112,
+      "title": "Upcoming lecture: Leadership and Organizational Ambidexterity",
+      "date": "05.05.2022",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/359-upcoming-lecture-leadership-and-organizational-ambidexterity",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220430120454_52121300.png",
+      "type": "Academic"
+    },
+    {
+      "id": 113,
+      "title": "Workshop alert: Water Security in Central Asia and South Caucasus: Legacy of Three Seas",
+      "date": "22.04.2022",
+      "time": "16:00 - 17:15",
+      "link": "https://www.ada.edu.az/en/events/356-workshop-alert-water-security-in-central-asia-and-south-caucasus-legacy-of-three-seas",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220413112326_49797700.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 114,
+      "title": "X-XI Sinif Şagirdləri üçün Seminar: Maliyyəçi olmaq üçün nə etməli?",
+      "date": "18.04.2022",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/357-x-xi-sinif-sagirdleri-ucun-seminar-maliyyeci-olmaq-ucun-ne-etmeli",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220413153202_66273600.png",
+      "type": "Academic"
+    },
+    {
+      "id": 115,
+      "title": "10th ADA University Career Fair",
+      "date": "06.04.2022",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/358-10th-ada-university-career-fair",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220413154205_08426400.jpg",
+      "type": "Student"
+    },
+    {
+      "id": 116,
+      "title": "On-campus seminar: The role of a leader in education management",
+      "date": "25.02.2022",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/354-on-campus-seminar-the-role-of-a-leader-in-education-management",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220219090644_94093500.png",
+      "type": "Academic"
+    },
+    {
+      "id": 117,
+      "title": "Seminar alert: Metaverse - A New Playground for Financial Wealth",
+      "date": "24.02.2022",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/352-seminar-alert-metaverse-a-new-playground-for-financial-wealth",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220215065554_66325300.png",
+      "type": "Academic"
+    },
+    {
+      "id": 118,
+      "title": "Training for PHD Applicants",
+      "date": "19.02.2022",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/353-training-for-phd-applicants",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220216154228_46067800.png",
+      "type": "University"
+    },
+    {
+      "id": 119,
+      "title": "The Global Perspectives Lecture presented by academician Roald Sagdeev",
+      "date": "04.02.2022",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/351-the-global-perspectives-lecture-presented-by-academician-roald-sagdeev",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220201155754_00540100.png",
+      "type": "Academic"
+    },
+    {
+      "id": 120,
+      "title": "Meet the expert: Learn fundamentals of Public Management",
+      "date": "28.01.2022",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/348-meet-the-expert-learn-fundamentals-of-public-management",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220118174312_38625100.png",
+      "type": "University"
+    },
+    {
+      "id": 121,
+      "title": "ADA Faculty Lecture: Art and Science of Branding",
+      "date": "27.01.2022",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/346-ada-faculty-lecture-art-and-science-of-branding",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220115142644_37954000.png",
+      "type": "Academic"
+    },
+    {
+      "id": 122,
+      "title": "Diplomatik Protokol və Etiket mövzusunda Seminar",
+      "date": "26.01.2022",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/349-diplomatik-protokol-ve-etiket-movzusunda-seminar",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220121154826_53012100.png",
+      "type": "Academic"
+    },
+    {
+      "id": 123,
+      "title": "Join our on-demand seminar: Research methods in International Relations",
+      "date": "21.01.2022",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/347-join-our-on-demand-seminar-research-methods-in-international-relations",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220118093609_27477700.png",
+      "type": "Academic"
+    },
+    {
+      "id": 124,
+      "title": "Seminar alert: Learn the fundamentals of electrical and electronic engineering",
+      "date": "19.01.2022",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/345-seminar-alert-learn-the-fundamentals-of-electrical-and-electronic-engineering",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220112151210_16135200.png",
+      "type": "Academic"
+    },
+    {
+      "id": 125,
+      "title": "ADA-lılar xaricdəI Mübadilə proqramının iştirakçıları ilə onlayn görüş",
+      "date": "10.01.2022",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/344-ada-lilar-xaricdei-mubadile-proqraminin-istirakcilari-ile-onlayn-gorus",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220112141618_56436300.png",
+      "type": "University"
+    },
+    {
+      "id": 126,
+      "title": "ADA-da ödənişsiz magistr təhsili və tədqiqat təqaüdü ilə bağlı məlumatı bizdən öyrənin",
+      "date": "06.01.2022",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/343-ada-da-odenissiz-magistr-tehsili-ve-tedqiqat-teqaudu-ile-bagli-melumati-bizden-oyrenin",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20220106190127_71666200.png",
+      "type": "Admission"
+    },
+    {
+      "id": 127,
+      "title": "Seminar alert: Essentials of Project Management: Register today!",
+      "date": "27.12.2021",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/341-seminar-alert-essentials-of-project-management-register-today",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211217171826_49325800.png",
+      "type": "Academic"
+    },
+    {
+      "id": 128,
+      "title": "Weekly Mathematics Research Online Seminar with Toronto University's Professor",
+      "date": "21.12.2021",
+      "time": "16:00 (Baku time)",
+      "link": "https://www.ada.edu.az/en/events/342-weekly-mathematics-research-online-seminar-with-toronto-university-s-professor",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211221142219_02467200.png",
+      "type": "Academic"
+    },
+    {
+      "id": 129,
+      "title": "İxtisas seçimində valideynllərin rolu mövzusunda seminar",
+      "date": "17.12.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/338-ixtisas-seciminde-valideynllerin-rolu-movzusunda-seminar",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211214191210_36536400.png",
+      "type": "Academic"
+    },
+    {
+      "id": 130,
+      "title": "Seminar alert: Essentials of Project Management: Register today!",
+      "date": "17.12.2021",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/340-seminar-alert-essentials-of-project-management-register-today",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211217171524_67740600.png",
+      "type": "Academic"
+    },
+    {
+      "id": 131,
+      "title": "Upcoming webinar with BBC Global News Commercial Representatives in Eurasia",
+      "date": "15.12.2021",
+      "time": "16:00 (Baku time)",
+      "link": "https://www.ada.edu.az/en/events/337-upcoming-webinar-with-bbc-global-news-commercial-representatives-in-eurasia",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211209125921_77369300.png",
+      "type": "University"
+    },
+    {
+      "id": 132,
+      "title": "SITE Talks with GW University professor Abdou Youssef",
+      "date": "13.12.2021",
+      "time": "19:00 (Baku time); 10:00 ((Washington DC time)",
+      "link": "https://www.ada.edu.az/en/events/339-site-talks-with-gw-university-professor-abdou-youssef",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211214191645_38436000.png",
+      "type": "Academic"
+    },
+    {
+      "id": 133,
+      "title": "Corc Vaşinqton Universiteti ilə birgə ikili diploma proqramları barədə Məlumat sessiyası",
+      "date": "30.11.2021",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/335-corc-vasinqton-universiteti-ile-birge-ikili-diploma-proqramlari-barede-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211127132759_87824600.png",
+      "type": "Admission"
+    },
+    {
+      "id": 134,
+      "title": "SITE Talks: Pure Mathematics, Applications, And Writing Proofs",
+      "date": "23.11.2021",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/334-site-talks-pure-mathematics-applications-and-writing-proofs",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211123123142_42197100.png",
+      "type": "Academic"
+    },
+    {
+      "id": 135,
+      "title": "\"Global Perspectives Lecture Series\" with Michael Doran on US foreign policy in Caucasus",
+      "date": "22.11.2021",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/333--quot-global-perspectives-lecture-series-quot-with-michael-doran-on-us-foreign-policy-in-caucasus",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211116180900_60207900.png",
+      "type": "Academic"
+    },
+    {
+      "id": 136,
+      "title": "Magistratura proqramları ilə bağlı tədris ilinin ilk Məlumat sessiyası",
+      "date": "19.11.2021",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/331-magistratura-proqramlari-ile-bagli-tedris-ilinin-ilk-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211112210438_28560900.png",
+      "type": "Admission"
+    },
+    {
+      "id": 137,
+      "title": "\"SITE Talks\" seminar: Machine Learning life cycle and Oracle cloud services",
+      "date": "19.11.2021",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/332--quot-site-talks-quot-seminar-machine-learning-life-cycle-and-oracle-cloud-services",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211115154853_66787600.png",
+      "type": "Academic"
+    },
+    {
+      "id": 138,
+      "title": "ADA Universiteti riyaziyyat üzrə ödənişsiz onlayn həftəsonu dərsləri təqdim edir",
+      "date": "04.11.2021",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/336-ada-universiteti-riyaziyyat-uzre-odenissiz-onlayn-heftesonu-dersleri-teqdim-edir",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211129155150_92239200.png",
+      "type": "University"
+    },
+    {
+      "id": 139,
+      "title": "ADA Universitetinin təhsil yenilikləri ilə bağlı İnstaqramda canlı yayım",
+      "date": "27.10.2021",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/330-ada-universitetinin-tehsil-yenilikleri-ile-bagli-instaqramda-canli-yayim",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211021180923_89915400.png",
+      "type": "University"
+    },
+    {
+      "id": 140,
+      "title": "Upcoming SITE Talks: Explanation of robotisation in Industry and impact of Industry 4.0 on future specialisations",
+      "date": "22.10.2021",
+      "time": "14:00",
+      "link": "https://www.ada.edu.az/en/events/329-upcoming-site-talks-explanation-of-robotisation-in-industry-and-impact-of-industry-4-0-on-future-specialisations",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211021152354_01754700.png",
+      "type": "Academic"
+    },
+    {
+      "id": 141,
+      "title": "Round-table discussion with NATO Secretary General’s Special Representative for the Caucasus and Central Asia",
+      "date": "18.10.2021",
+      "time": "17:30",
+      "link": "https://www.ada.edu.az/en/events/328-round-table-discussion-with-nato-secretary-general-s-special-representative-for-the-caucasus-and-central-asia",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211015172450_91397100.png",
+      "type": "University"
+    },
+    {
+      "id": 142,
+      "title": "SITE Talks Seminar On Apache Cassandra Architecture",
+      "date": "08.10.2021",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/327-site-talks-seminar-on-apache-cassandra-architecture",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211007143007_62011100.png",
+      "type": "Academic"
+    },
+    {
+      "id": 143,
+      "title": "Round Table discussion: Re-search poverty",
+      "date": "05.10.2021",
+      "time": "15:00-17:00",
+      "link": "https://www.ada.edu.az/en/events/326-round-table-discussion-re-search-poverty",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20211003141622_38279000.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 144,
+      "title": "Lecture by Anne Miller: France's startup movement, powered by its ecosystem and bolstered by its government",
+      "date": "28.09.2021",
+      "time": "17:00 (Baku time)",
+      "link": "https://www.ada.edu.az/en/events/325-lecture-by-anne-miller-france-s-startup-movement-powered-by-its-ecosystem-and-bolstered-by-its-government",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210928095225_87176500.png",
+      "type": "Academic"
+    },
+    {
+      "id": 145,
+      "title": "Global Perspectives Lecture Series: U.S.-Turkish Ties in the Biden Era",
+      "date": "04.09.2021",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/324-global-perspectives-lecture-series-u-s-turkish-ties-in-the-biden-era",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210906103522_91506100.png",
+      "type": "Academic"
+    },
+    {
+      "id": 146,
+      "title": "Workshop on Artificial Intelligence run by The Washington Center of ADA University",
+      "date": "21.08.2021",
+      "time": "10.00 (Washington time), 18.00 (Baku time)",
+      "link": "https://www.ada.edu.az/en/events/323-workshop-on-artificial-intelligence-run-by-the-washington-center-of-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210820105258_42969600.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 147,
+      "title": "ADA Universitetində “Açıq qapı” günləri başlayır",
+      "date": "06.08.2021",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/315-ada-universitetinde-aciq-qapi-gunleri-baslayir",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210716165549_81394800.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 148,
+      "title": "Bakalavr proqramlarımızla bağlı İnstaqramda canlı yayım",
+      "date": "05.08.2021",
+      "time": "18:00",
+      "link": "https://www.ada.edu.az/en/events/322-bakalavr-proqramlarimizla-bagli-instaqramda-canli-yayim",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210805145556_35883600.png",
+      "type": "University"
+    },
+    {
+      "id": 149,
+      "title": "Лекция:Искусственный Интеллект и Правовые Вызовы Современности",
+      "date": "03.08.2021",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/320-lekciia-iskusstvennyi-intellekt-i-pravovye-vyzovy-sovremennosti",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210803095601_41448400.png",
+      "type": "University"
+    },
+    {
+      "id": 150,
+      "title": "\"SITE Talks\" seminar: Transformers and Attention models in Natural Language Processing",
+      "date": "03.08.2021",
+      "time": "20:00  (Baku time), 12:00 (Washington DC time).",
+      "link": "https://www.ada.edu.az/en/events/321--quot-site-talks-quot-seminar-transformers-and-attention-models-in-natural-language-processing",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210803092653_53149200.png",
+      "type": "Academic"
+    },
+    {
+      "id": 151,
+      "title": "\"ADA-lı\" tələbələrlə İnstaqramda canlı yayım",
+      "date": "02.08.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/319--quot-ada-li-quot-telebelerle-instaqramda-canli-yayim",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210729153105_92639200.png",
+      "type": "Student"
+    },
+    {
+      "id": 152,
+      "title": "Riyaziyyat İxtisası üzrə ADA Kampusunda Açıq Qapı Günü",
+      "date": "30.07.2021",
+      "time": "18:00",
+      "link": "https://www.ada.edu.az/en/events/316-riyaziyyat-ixtisasi-uzre-ada-kampusunda-aciq-qapi-gunu",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210723121013_06101000.png",
+      "type": "Admission"
+    },
+    {
+      "id": 153,
+      "title": "Onlayn Məlumat Sessiyası: Bakalavr Proqramlarına İxtisas Seçimi",
+      "date": "30.07.2021",
+      "time": "18:00",
+      "link": "https://www.ada.edu.az/en/events/317-onlayn-melumat-sessiyasi-bakalavr-proqramlarina-ixtisas-secimi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210724162136_72043400.png",
+      "type": "Admission"
+    },
+    {
+      "id": 154,
+      "title": "\"SITE Talks\" seminar with Roald Sagdeev, Professor Emeritus at University of Maryland",
+      "date": "26.07.2021",
+      "time": "6 pm (Baku time); 10 am ((Washington DC time)",
+      "link": "https://www.ada.edu.az/en/events/318--quot-site-talks-quot-seminar-with-roald-sagdeev-professor-emeritus-at-university-of-maryland",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210725220247_72225500.png",
+      "type": "Academic"
+    },
+    {
+      "id": 155,
+      "title": "Upcoming AFSP course: Writing a Policy Memo",
+      "date": "05.07.2021",
+      "time": "09:00",
+      "link": "https://www.ada.edu.az/en/events/312-upcoming-afsp-course-writing-a-policy-memo",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210628154948_97026000.png",
+      "type": "University"
+    },
+    {
+      "id": 156,
+      "title": "ADA School Commencement 2021",
+      "date": "02.07.2021",
+      "time": "18:00",
+      "link": "https://www.ada.edu.az/en/events/314-ada-school-commencement-2021",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210701123641_98407600.png",
+      "type": "ADA School"
+    },
+    {
+      "id": 157,
+      "title": "ADA 2021- 5th International Education Conference: July, 1-2, 2021",
+      "date": "01.07.2021",
+      "time": "10:00",
+      "link": "https://www.ada.edu.az/en/events/313-ada-2021-5th-international-education-conference-july-1-2-2021",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210628154528_82194500.png",
+      "type": "Academic"
+    },
+    {
+      "id": 158,
+      "title": "ADA University Commencement 2021: June 23-25",
+      "date": "25.06.2021",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/311-ada-university-commencement-2021-june-23-25",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210621172640_75096200.jpg",
+      "type": "University"
+    },
+    {
+      "id": 159,
+      "title": "Kompüter elmləri və Data analitikası proqramı ilə bağlı onlayn Məlumat Sessiyası",
+      "date": "24.06.2021",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/310-komputer-elmleri-ve-data-analitikasi-proqrami-ile-bagli-onlayn-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210621125929_95295600.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 160,
+      "title": "ADA 9th Annual International Festival: June 21-23",
+      "date": "21.06.2021",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/305-ada-9th-annual-international-festival-june-21-23",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210605124400_30138000.png",
+      "type": "University"
+    },
+    {
+      "id": 161,
+      "title": "International conference: Azerbaijan's contribution to the Euro-Atlantic Peace and Security",
+      "date": "16.06.2021",
+      "time": "14:00",
+      "link": "https://www.ada.edu.az/en/events/308-international-conference-azerbaijan-s-contribution-to-the-euro-atlantic-peace-and-security",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210614171755_30191000.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 162,
+      "title": "GCRF COMPASS Roundtable: Zangazur Corridor: The Importance of Connectivity for Rebuilding the Region",
+      "date": "15.06.2021",
+      "time": "12:00",
+      "link": "https://www.ada.edu.az/en/events/307-gcrf-compass-roundtable-zangazur-corridor-the-importance-of-connectivity-for-rebuilding-the-region",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210610204510_92745600.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 163,
+      "title": "Poetry Night: Literature Today and Its Role In The National Revival",
+      "date": "15.06.2021",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/309-poetry-night-literature-today-and-its-role-in-the-national-revival",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210615134513_35694600.jpg",
+      "type": "University"
+    },
+    {
+      "id": 164,
+      "title": "Public Speaking Contest on Nizami Ganjavi's wisdom",
+      "date": "11.06.2021",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/306-public-speaking-contest-on-nizami-ganjavi-s-wisdom",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210609171248_93489600.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 165,
+      "title": "\"SITE Talks\" seminar with Dr. Franco Maria Nardini, National Research Council of Italy",
+      "date": "31.05.2021",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/303--quot-site-talks-quot-seminar-with-dr-franco-maria-nardini-national-research-council-of-italy",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210527125527_84637800.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 166,
+      "title": "Online Seminar: Investment Climate in Central Asian  and South Caucasian Countries",
+      "date": "29.05.2021",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/304-online-seminar-investment-climate-in-central-asian-and-south-caucasian-countries",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210529134157_25048300.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 167,
+      "title": "Online Event: Azerbaijan-Georgia Strategic Relations",
+      "date": "27.05.2021",
+      "time": "12:00",
+      "link": "https://www.ada.edu.az/en/events/302-online-event-azerbaijan-georgia-strategic-relations",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210526113902_04210100.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 168,
+      "title": "ADA Universitetində “SAT günü”",
+      "date": "21.05.2021",
+      "time": "18:00",
+      "link": "https://www.ada.edu.az/en/events/301-ada-universitetinde-sat-gunu",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210517110133_45316200.png",
+      "type": "University"
+    },
+    {
+      "id": 169,
+      "title": "Complimentary Webinar by Executive Education: Design Thinking and Creativity",
+      "date": "07.05.2021",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/292-complimentary-webinar-by-executive-education-design-thinking-and-creativity",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210421140723_78692500.jpg",
+      "type": "Executive Education"
+    },
+    {
+      "id": 170,
+      "title": "X-XI sinif şagirdləri üçün “Mən Maliyyəçiyəm” təlimi",
+      "date": "07.05.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/299-x-xi-sinif-sagirdleri-ucun-men-maliyyeciyem-telimi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210504173254_69827900.jpg",
+      "type": "University"
+    },
+    {
+      "id": 171,
+      "title": "“Systematic Performance Tuning in PostgreSQL” by Dr. Fadai Ganjaliyev",
+      "date": "07.05.2021",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/300--systematic-performance-tuning-in-postgresql-by-dr-fadai-ganjaliyev",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210507114353_47737300.png",
+      "type": "University"
+    },
+    {
+      "id": 172,
+      "title": "Bakalavr Proqramlar ilə Bağlı “Instagram” səhifəmizdə canlı yayım",
+      "date": "06.05.2021",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/297-bakalavr-proqramlar-ile-bagli-instagram-sehifemizde-canli-yayim",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210427134501_71468900.jpg",
+      "type": "University"
+    },
+    {
+      "id": 173,
+      "title": "Yeni Riyaziyyat İxtisası ilə Bağlı Onlayn Seminar",
+      "date": "03.05.2021",
+      "time": "18:00",
+      "link": "https://www.ada.edu.az/en/events/290-yeni-riyaziyyat-ixtisasi-ile-bagli-onlayn-seminar",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210419153515_88853800.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 174,
+      "title": "Kimya Fənni Üzrə Onlayn Açıq Dərs",
+      "date": "03.05.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/294-kimya-fenni-uzre-onlayn-aciq-ders",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210426134210_54320400.jpg",
+      "type": "University"
+    },
+    {
+      "id": 175,
+      "title": "Bir günlük ADA tələbəsi olun!",
+      "date": "30.04.2021",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/261-bir-gunluk-ada-telebesi-olun",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210108163318_79428100.png",
+      "type": "Student"
+    },
+    {
+      "id": 176,
+      "title": "Elektrik və Elektroenergetika Mühəndisliyi Üzrə Yeni İkili Diplom Proqramının Onlayn Məlumat Sessiyası",
+      "date": "30.04.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/295-elektrik-ve-elektroenergetika-muhendisliyi-uzre-yeni-ikili-diplom-proqraminin-onlayn-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210426204639_26263300.png",
+      "type": "Admission"
+    },
+    {
+      "id": 177,
+      "title": "Upcoming Webinar: Post-War Messages from Baku. A Critical Reading",
+      "date": "29.04.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/296-upcoming-webinar-post-war-messages-from-baku-a-critical-reading",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210427133024_60752000.jpg",
+      "type": "University"
+    },
+    {
+      "id": 178,
+      "title": "Senior Design Projects Presentation and Demonstration Day organized by SITE",
+      "date": "29.04.2021",
+      "time": "10:00-13:00",
+      "link": "https://www.ada.edu.az/en/events/298-senior-design-projects-presentation-and-demonstration-day-organized-by-site",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210429101805_87074800.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 179,
+      "title": "“Mən Hüquqşünasam” Mövzusunda Təlim",
+      "date": "27.04.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/293--men-huquqsunasam-movzusunda-telim",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210422170441_63739900.jpg",
+      "type": "University"
+    },
+    {
+      "id": 180,
+      "title": "Next Webinar Dedicated to the International Day of Multilateralism and Diplomacy for Peace",
+      "date": "24.04.2021",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/291-next-webinar-dedicated-to-the-international-day-of-multilateralism-and-diplomacy-for-peace",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210421134922_13842200.jpg",
+      "type": "University"
+    },
+    {
+      "id": 181,
+      "title": "X və XI sinif şagirdləri üçün onlayn təlimlər keçiriləcək",
+      "date": "23.04.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/289-x-ve-xi-sinif-sagirdleri-ucun-onlayn-telimler-kecirilecek",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210409001011_51346500.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 182,
+      "title": "Join the Complimentary Webinar Series by Executive Education",
+      "date": "22.04.2021",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/287-join-the-complimentary-webinar-series-by-executive-education",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210407121308_49298700.png",
+      "type": "Executive Education"
+    },
+    {
+      "id": 183,
+      "title": "Online  discussion with Thomas De Wall, author of “Black Garden” book",
+      "date": "09.04.2021",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/288-online-discussion-with-thomas-de-wall-author-of-black-garden-book",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210407203723_08883200.jpg",
+      "type": "University"
+    },
+    {
+      "id": 184,
+      "title": "ADA Məktəbində Təhsillə bağlı Onlayn Məlumat Sessiyası",
+      "date": "08.04.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/286-ada-mektebinde-tehsille-bagli-onlayn-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210405144045_45122500.jpg",
+      "type": "ADA School"
+    },
+    {
+      "id": 185,
+      "title": "Onlayn Təlim: “Beynəlxalq münasibətlərdə böyük debatlar”",
+      "date": "01.04.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/285-onlayn-telim-beynelxalq-munasibetlerde-boyuk-debatlar",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210327215359_93878900.png",
+      "type": "University"
+    },
+    {
+      "id": 186,
+      "title": "Magistr Proqramlarımızla bağlı Onlayn Məlumat Sessiyası",
+      "date": "19.03.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/284-magistr-proqramlarimizla-bagli-onlayn-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210315155123_17518700.png",
+      "type": "Admission"
+    },
+    {
+      "id": 187,
+      "title": "Online Workshop: writing a statement of purpose or motivation letter for further study",
+      "date": "18.03.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/279-online-workshop-writing-a-statement-of-purpose-or-motivation-letter-for-further-study",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210309214129_85883300.png",
+      "type": "Academic"
+    },
+    {
+      "id": 188,
+      "title": "ADA Universiteti 3 yeni ixtisası üzrə Təqdimat günləri keçirəcək",
+      "date": "18.03.2021",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/280-ada-universiteti-3-yeni-ixtisasi-uzre-teqdimat-gunleri-kecirecek",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210310174630_11837900.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 189,
+      "title": "Yeni Kommunikasiya və Rəqəmsal media ixtisasımız üzrə Təqdimat günü",
+      "date": "18.03.2021",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/283-yeni-kommunikasiya-ve-reqemsal-media-ixtisasimiz-uzre-teqdimat-gunu",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210316191959_30267700.png",
+      "type": "University"
+    },
+    {
+      "id": 190,
+      "title": "Yeni Maliyyə ixtisasımızın onlayn Təqdimat günü keçiriləcək",
+      "date": "17.03.2021",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/282-yeni-maliyye-ixtisasimizin-onlayn-teqdimat-gunu-kecirilecek",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210315140207_71999200.png",
+      "type": "University"
+    },
+    {
+      "id": 191,
+      "title": "Yeni Bakalvr İxtisası - Riyaziyyat üzrə Onlayn Təqdimat Günü",
+      "date": "15.03.2021",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/281-yeni-bakalvr-ixtisasi-riyaziyyat-uzre-onlayn-teqdimat-gunu",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210312221940_16836800.png",
+      "type": "University"
+    },
+    {
+      "id": 192,
+      "title": "Online Master Class by Evgeny Pogrebnyak, MGIMO University Dean",
+      "date": "10.03.2021",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/276-online-master-class-by-evgeny-pogrebnyak-mgimo-university-dean",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210304153842_36023700.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 193,
+      "title": "Növbəti Onlayn Məlumat sessiyasında Sizi də gözləyirik: Magistr pilləsində Kompüter elmləri və Data analitikası üzrə ikili diplom proqramı",
+      "date": "10.03.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/277-novbeti-onlayn-melumat-sessiyasinda-sizi-de-gozleyirik-magistr-pillesinde-komputer-elmleri-ve-data-analitikasi-uzre-ikili-diplom-proqrami",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210305141827_78025300.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 194,
+      "title": "Online Panel Discussion: Climate Change: Time For Action",
+      "date": "10.03.2021",
+      "time": "14:00",
+      "link": "https://www.ada.edu.az/en/events/278-online-panel-discussion-climate-change-time-for-action",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210309213731_15893300.png",
+      "type": "University"
+    },
+    {
+      "id": 195,
+      "title": "Online Lecture by Dr. Abzatdin Adamov and Dr. Samir Rustamov, SITE faculty members",
+      "date": "05.03.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/275-online-lecture-by-dr-abzatdin-adamov-and-dr-samir-rustamov-site-faculty-members",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210301105717_34472200.jpeg",
+      "type": "Academic"
+    },
+    {
+      "id": 196,
+      "title": "ADA Online Public Lecture: Gender-Based Barriers to Leadership for Women",
+      "date": "04.03.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/274-ada-online-public-lecture-gender-based-barriers-to-leadership-for-women",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210225155453_19062200.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 197,
+      "title": "“Instagram” səhifəmizdəki canlı yayım",
+      "date": "25.02.2021",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/269--instagram-sehifemizdeki-canli-yayim",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210202154544_25067800.png",
+      "type": "University"
+    },
+    {
+      "id": 198,
+      "title": "X və XI sinif şagirdləri üçün İnformasiya Texnologiyaları üzrə Fərdi İnkişaf Proqramı",
+      "date": "24.02.2021",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/268-x-ve-xi-sinif-sagirdleri-ucun-informasiya-texnologiyalari-uzre-ferdi-inkisaf-proqrami",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210202153523_29428900.jpg",
+      "type": "University"
+    },
+    {
+      "id": 199,
+      "title": "ADA Online Master Classes: Educational Organizations in a New Era: Challenges and Opportunities",
+      "date": "23.02.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/273-ada-online-master-classes-educational-organizations-in-a-new-era-challenges-and-opportunities",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210211214820_52890000.jpg",
+      "type": "University"
+    },
+    {
+      "id": 200,
+      "title": "Online Discussion for ADA Students and Faculty",
+      "date": "22.02.2021",
+      "time": "18:00",
+      "link": "https://www.ada.edu.az/en/events/272-online-discussion-for-ada-students-and-faculty",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210211154237_76494200.jpg",
+      "type": "Student"
+    },
+    {
+      "id": 201,
+      "title": "Onlayn Məlumat Sessiyasına Qoşulun: Magistr Pilləsində Kompüter elmləri və Data analitikası üzrə İkili Diplom Proqramı",
+      "date": "15.02.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/271-onlayn-melumat-sessiyasina-qosulun-magistr-pillesinde-komputer-elmleri-ve-data-analitikasi-uzre-ikili-diplom-proqrami",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210208160901_92793600.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 202,
+      "title": "Onlayn Seminar: İxtisas Seçimində Valideynlərin Rolu",
+      "date": "12.02.2021",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/267-onlayn-seminar-ixtisas-seciminde-valideynlerin-rolu",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210201215357_17674200.png",
+      "type": "Academic"
+    },
+    {
+      "id": 203,
+      "title": "Yuxarı Sinif Şagirdləri üçün Təlim: Akademik Yazı Bacarıqları",
+      "date": "10.02.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/266-yuxari-sinif-sagirdleri-ucun-telim-akademik-yazi-bacariqlari",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210127200448_38488400.jpg",
+      "type": "University"
+    },
+    {
+      "id": 204,
+      "title": "ADA Məktəbinin X və XI sinfinə Hazırlaşanlar üçün İlk Onlayn Məlumat Sessiyası",
+      "date": "10.02.2021",
+      "time": "16:30",
+      "link": "https://www.ada.edu.az/en/events/270-ada-mektebinin-x-ve-xi-sinfine-hazirlasanlar-ucun-ilk-onlayn-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210208094733_74799300.jpeg",
+      "type": "ADA School"
+    },
+    {
+      "id": 205,
+      "title": "Discussion by Academician Roald Sagdeev dedicated to 100th anniversary of Lotfi Zadeh",
+      "date": "04.02.2021",
+      "time": "18:00",
+      "link": "https://www.ada.edu.az/en/events/265-discussion-by-academician-roald-sagdeev-dedicated-to-100th-anniversary-of-lotfi-zadeh",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210126170726_88832100.png",
+      "type": "Academic"
+    },
+    {
+      "id": 206,
+      "title": "Magistr Proqramlarımızla bağlı Onlayn Məlumat Sessiyası",
+      "date": "29.01.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/264-magistr-proqramlarimizla-bagli-onlayn-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210125205500_20621200.png",
+      "type": "Admission"
+    },
+    {
+      "id": 207,
+      "title": "ADA Online Master Class by Elchin Ibadov, FCCA",
+      "date": "23.01.2021",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/262-ada-online-master-class-by-elchin-ibadov-fcca",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210116175442_89366900.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 208,
+      "title": "Online event: “Global Energy Outlook” by Mr. Eirik Waerness",
+      "date": "22.01.2021",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/263-online-event-global-energy-outlook-by-mr-eirik-waerness",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210119213252_54602700.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 209,
+      "title": "Onlayn Məlumat sessiyasına qoşulun: Magistr pilləsində Kompüter elmləri və Data analitikası üzrə ikili diplom proqramı",
+      "date": "14.01.2021",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/260-onlayn-melumat-sessiyasina-qosulun-magistr-pillesinde-komputer-elmleri-ve-data-analitikasi-uzre-ikili-diplom-proqrami",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20210107112618_86430900.jpeg",
+      "type": "Admission"
+    },
+    {
+      "id": 210,
+      "title": "Online Public Lecture by Dr. Lala Jumayeva from ADA University",
+      "date": "25.12.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/255-online-public-lecture-by-dr-lala-jumayeva-from-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201216171829_12826800.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 211,
+      "title": "“ADA Writes History” online Award Ceremony",
+      "date": "24.12.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/257--ada-writes-history-online-award-ceremony",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201218194054_31851100.jpg",
+      "type": "University"
+    },
+    {
+      "id": 212,
+      "title": "Online lecture by Marco Koschier, MGIMO University Visiting expert",
+      "date": "24.12.2020",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/258-online-lecture-by-marco-koschier-mgimo-university-visiting-expert",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201219220645_26367800.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 213,
+      "title": "Joint discussion on Karabakh with University of Kent and University of Cambridge",
+      "date": "22.12.2020",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/259-joint-discussion-on-karabakh-with-university-of-kent-and-university-of-cambridge",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201220154516_52005500.jpg",
+      "type": "University"
+    },
+    {
+      "id": 214,
+      "title": "Online Public Lecture by Dr. Robert Pless from the GW University",
+      "date": "21.12.2020",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/248-online-public-lecture-by-dr-robert-pless-from-the-gw-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201209135615_12167300.png",
+      "type": "Academic"
+    },
+    {
+      "id": 215,
+      "title": "The Next Online Lecture of \"My Karabakh\" Series",
+      "date": "19.12.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/256-the-next-online-lecture-of-quot-my-karabakh-quot-series",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201218192627_86581000.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 216,
+      "title": "One day@online ADA!",
+      "date": "18.12.2020",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/242-one-day-online-ada",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201126154838_03660200.png",
+      "type": "University"
+    },
+    {
+      "id": 217,
+      "title": "Online lecture with Adjunct Professor of ADA University, CEO of Gilan Holding",
+      "date": "18.12.2020",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/250-online-lecture-with-adjunct-professor-of-ada-university-ceo-of-gilan-holding",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201209142314_01718300.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 218,
+      "title": "Upcoming online GPLS with guest speaker from University of Haifa",
+      "date": "18.12.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/254-upcoming-online-gpls-with-guest-speaker-from-university-of-haifa",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201215152106_78909000.png",
+      "type": "University"
+    },
+    {
+      "id": 219,
+      "title": "Online Public Lecture: Conflict and Conflict Resolution in Education",
+      "date": "16.12.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/249-online-public-lecture-conflict-and-conflict-resolution-in-education",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201209141720_50617800.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 220,
+      "title": "ADA Universitetinin MBA proqramı üzrə onlayn İnformasiya sessiyası",
+      "date": "15.12.2020",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/247-ada-universitetinin-mba-proqrami-uzre-onlayn-informasiya-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201204140454_90835000.png",
+      "type": "University"
+    },
+    {
+      "id": 221,
+      "title": "Онлайн дискуссия с Саадат Кадыровой",
+      "date": "12.12.2020",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/251-onlain-diskussiia-s-saadat-kadyrovoi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201210153716_66814100.png",
+      "type": "University"
+    },
+    {
+      "id": 222,
+      "title": "Online Session of “My Karabakh” Lecture Series with Dr. Farhad Jabbarov",
+      "date": "12.12.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/253-online-session-of-my-karabakh-lecture-series-with-dr-farhad-jabbarov",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201212115804_61201800.png",
+      "type": "Academic"
+    },
+    {
+      "id": 223,
+      "title": "Diplomatiya və beynəlxalq münasibətlər və Dövlət idarəetməsi üzrə magistr proqramlarının onlayn Məlumat sessiyası",
+      "date": "11.12.2020",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/246-diplomatiya-ve-beynelxalq-munasibetler-ve-dovlet-idareetmesi-uzre-magistr-proqramlarinin-onlayn-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201204140247_28313000.png",
+      "type": "Admission"
+    },
+    {
+      "id": 224,
+      "title": "Upcoming GPLS with former Ukrainian President",
+      "date": "11.12.2020",
+      "time": "16:30",
+      "link": "https://www.ada.edu.az/en/events/252-upcoming-gpls-with-former-ukrainian-president",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201210155543_31166700.png",
+      "type": "University"
+    },
+    {
+      "id": 225,
+      "title": "Təhsil üzrə Menecment və Təlim və Tədrisin Təşkili və Metodikası proqramları üzrə onlayn İnformasiya Sessiyası",
+      "date": "08.12.2020",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/245-tehsil-uzre-menecment-ve-telim-ve-tedrisin-teskili-ve-metodikasi-proqramlari-uzre-onlayn-informasiya-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201204135758_40641900.png",
+      "type": "University"
+    },
+    {
+      "id": 226,
+      "title": "Online Information Session: Master of Science in Computer Science and Data Analytics offered with the George Washington University",
+      "date": "04.12.2020",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/243-online-information-session-master-of-science-in-computer-science-and-data-analytics-offered-with-the-george-washington-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201127093515_32453200.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 227,
+      "title": "Next Online Session of “My Karabakh” Lecture Series with Dr. Elchin Ahmadov",
+      "date": "03.12.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/244-next-online-session-of-my-karabakh-lecture-series-with-dr-elchin-ahmadov",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201202172330_57718200.jpeg",
+      "type": "Academic"
+    },
+    {
+      "id": 228,
+      "title": "Online Information Session on Dual-degree MBA Program in Finance by ADA University and MGIMO University",
+      "date": "01.12.2020",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/241-online-information-session-on-dual-degree-mba-program-in-finance-by-ada-university-and-mgimo-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201126150737_16410800.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 229,
+      "title": "Upcoming Executive Education’s Paid Online Open Enrollment Courses",
+      "date": "27.11.2020",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/234-upcoming-executive-education-s-paid-online-open-enrollment-courses",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201113214753_67545200.jpeg",
+      "type": "Executive Education"
+    },
+    {
+      "id": 230,
+      "title": "Magistr Proqramları üzrə onlayn Məlumat Sessiyası",
+      "date": "27.11.2020",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/236-magistr-proqramlari-uzre-onlayn-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201123131517_37752500.png",
+      "type": "Admission"
+    },
+    {
+      "id": 231,
+      "title": "Magistr Proqramları üzrə onlayn Məlumat Sessiyası",
+      "date": "27.11.2020",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/237-magistr-proqramlari-uzre-onlayn-melumat-sessiyasi",
+      "image_url": null,
+      "type": "Admission"
+    },
+    {
+      "id": 232,
+      "title": "Global Perspectives Lecture Series with former President of Serbia, H.E. Boris Tadic",
+      "date": "27.11.2020",
+      "time": "16:30",
+      "link": "https://www.ada.edu.az/en/events/239-global-perspectives-lecture-series-with-former-president-of-serbia-h-e-boris-tadic",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201125135648_31950200.png",
+      "type": "Academic"
+    },
+    {
+      "id": 233,
+      "title": "New Webinar: COVID Strategy Blues? Five Ideas You Must Embrace As You Retool Your Strategy for the New Reality",
+      "date": "26.11.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/235-new-webinar-covid-strategy-blues-five-ideas-you-must-embrace-as-you-retool-your-strategy-for-the-new-reality",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201118223418_63128700.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 234,
+      "title": "The new initiative of the Office of Student Services - “My Karabakh” lecture series",
+      "date": "26.11.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/238-the-new-initiative-of-the-office-of-student-services-my-karabakh-lecture-series",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201124170543_53200200.jpg",
+      "type": "Student"
+    },
+    {
+      "id": 235,
+      "title": "Joint Online International Conference: Azerbaijan-Armenia Armed Conflict: Causes & Implications",
+      "date": "26.11.2020",
+      "time": "10:30",
+      "link": "https://www.ada.edu.az/en/events/240-joint-online-international-conference-azerbaijan-armenia-armed-conflict-causes-amp-implications",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201126105824_45405800.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 236,
+      "title": "Upcoming Workshop: Writing and History",
+      "date": "09.11.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/233-upcoming-workshop-writing-and-history",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201108191154_10983400.jpeg",
+      "type": "Academic"
+    },
+    {
+      "id": 237,
+      "title": "Next online workshop: “Rhetorical Devices and Strong Beginnings and Endings”",
+      "date": "07.11.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/232-next-online-workshop-rhetorical-devices-and-strong-beginnings-and-endings",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201107170215_98295800.jpeg",
+      "type": "Academic"
+    },
+    {
+      "id": 238,
+      "title": "Join the online discussion with former President of Bulgaria H.E. Rosen Plevneliev",
+      "date": "06.11.2020",
+      "time": "16:30",
+      "link": "https://www.ada.edu.az/en/events/231-join-the-online-discussion-with-former-president-of-bulgaria-h-e-rosen-plevneliev",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201106152638_38876500.png",
+      "type": "University"
+    },
+    {
+      "id": 239,
+      "title": "Upcoming Workshop: Dialogues and Interviews in Creative Writing",
+      "date": "05.11.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/230-upcoming-workshop-dialogues-and-interviews-in-creative-writing",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201105120710_21686900.jpeg",
+      "type": "Academic"
+    },
+    {
+      "id": 240,
+      "title": "ADA Universitetinin İxtisasartırma Proqramları sizi “Beynəlxalq Kommersiya Müqavilələri” mövzusunda ödənişli onlayn kursa dəvət edir",
+      "date": "04.11.2020",
+      "time": "11:00-13:00",
+      "link": "https://www.ada.edu.az/en/events/218-ada-universitetinin-ixtisasartirma-proqramlari-sizi-beynelxalq-kommersiya-muqavileleri-movzusunda-odenisli-onlayn-kursa-devet-edir",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200924171358_91749000.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 241,
+      "title": "Workshop alert: Digital Storytelling",
+      "date": "02.11.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/229-workshop-alert-digital-storytelling",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201102140546_65909000.jpeg",
+      "type": "Academic"
+    },
+    {
+      "id": 242,
+      "title": "ADA \"Writes History\" Workshops",
+      "date": "30.10.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/223-ada-quot-writes-history-quot-workshops",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201021103554_45427400.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 243,
+      "title": "Join our Workshop: Using Visuals in Writing",
+      "date": "30.10.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/228-join-our-workshop-using-visuals-in-writing",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201030105033_48627700.jpeg",
+      "type": "Academic"
+    },
+    {
+      "id": 244,
+      "title": "Next Workshop: Descriptive Writing: Impression, Sensory Details, Vivid Language",
+      "date": "28.10.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/227-next-workshop-descriptive-writing-impression-sensory-details-vivid-language",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201028102157_52332700.jpeg",
+      "type": "Academic"
+    },
+    {
+      "id": 245,
+      "title": "Workshop on History and Writing",
+      "date": "26.10.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/225-workshop-on-history-and-writing",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201026122714_40650400.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 246,
+      "title": "“Global Perspective Lecture Series” with the former President of Latvia Valdis Zatlers",
+      "date": "26.10.2020",
+      "time": "18:00",
+      "link": "https://www.ada.edu.az/en/events/226--global-perspective-lecture-series-with-the-former-president-of-latvia-valdis-zatlers",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201026143856_57410300.png",
+      "type": "Academic"
+    },
+    {
+      "id": 247,
+      "title": "Workshop: Intro to Elements of Creative Writing: Plot, Character, Setting, Style",
+      "date": "23.10.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/224-workshop-intro-to-elements-of-creative-writing-plot-character-setting-style",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201025223954_14152200.jpeg",
+      "type": "Academic"
+    },
+    {
+      "id": 248,
+      "title": "Workshop: “How to Get Started” with Betty Blair",
+      "date": "21.10.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/222-workshop-how-to-get-started-with-betty-blair",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201021003118_37953200.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 249,
+      "title": "Webinar: \"Azerbaijan from Foreign Perspective\" dedicated to Independence Day of Republic of Azerbaijan",
+      "date": "19.10.2020",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/221-webinar-quot-azerbaijan-from-foreign-perspective-quot-dedicated-to-independence-day-of-republic-of-azerbaijan",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20201019135905_21416000.jpg",
+      "type": "University"
+    },
+    {
+      "id": 250,
+      "title": "Executive Education invites ADA University Partners to the new webinar: NEW POST-COVID STRATEGY BLUES?",
+      "date": "01.10.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/219-executive-education-invites-ada-university-partners-to-the-new-webinar-new-post-covid-strategy-blues",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200924180226_19219800.jpeg",
+      "type": "Executive Education"
+    },
+    {
+      "id": 251,
+      "title": "Bakalavra qeydiyyatla bağlı sualları hər gün canlı olaraq onlayn sual-cavab sessiyasında bizdən soruşun!",
+      "date": "26.09.2020",
+      "time": "10:00-17:00",
+      "link": "https://www.ada.edu.az/en/events/220-bakalavra-qeydiyyatla-bagli-suallari-her-gun-canli-olaraq-onlayn-sual-cavab-sessiyasinda-bizden-sorusun",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200926102129_62407400.png",
+      "type": "Admission"
+    },
+    {
+      "id": 252,
+      "title": "Bakalavra qeydiyyata əvvəlcədən hazırlıqlı olmaq üçün \"Instagram\" səhifəmizdəki canlı yayıma qoşulun!",
+      "date": "21.09.2020",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/217-bakalavra-qeydiyyata-evvelceden-hazirliqli-olmaq-ucun-quot-instagram-quot-sehifemizdeki-canli-yayima-qosulun",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200918115433_88857900.jpeg",
+      "type": "Admission"
+    },
+    {
+      "id": 253,
+      "title": "ADA Universitetinin “Instagram” səhifəsində canlı yayım",
+      "date": "14.09.2020",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/216-ada-universitetinin-instagram-sehifesinde-canli-yayim",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200913002232_91387600.png",
+      "type": "University"
+    },
+    {
+      "id": 254,
+      "title": "Abituriyentləri və valideynləri “Onlayn Açıq Qapı” Günlərinə dəvət edirik",
+      "date": "28.08.2020",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/213-abituriyentleri-ve-valideynleri-onlayn-aciq-qapi-gunlerine-devet-edirik",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200817162313_02731000.png",
+      "type": "Admission"
+    },
+    {
+      "id": 255,
+      "title": "Abituriyentlər üçün növbəti canlı yayım “Facebook” səhifəmizdə",
+      "date": "25.08.2020",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/215-abituriyentler-ucun-novbeti-canli-yayim-facebook-sehifemizde",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200819144112_84157300.png",
+      "type": "Admission"
+    },
+    {
+      "id": 256,
+      "title": "ADA Universitetinin “Instagram” səhifəsində canlı yayım",
+      "date": "24.08.2020",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/212-ada-universitetinin-instagram-sehifesinde-canli-yayim",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200817161835_31158000.png",
+      "type": "University"
+    },
+    {
+      "id": 257,
+      "title": "Interactive Webinar alert: Re-Defining Global “Careers” and Education in Uncertain Times",
+      "date": "20.08.2020",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/214-interactive-webinar-alert-re-defining-global-careers-and-education-in-uncertain-times",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200819113945_41530900.png",
+      "type": "University"
+    },
+    {
+      "id": 258,
+      "title": "ADA-ya qəbul şərtləri, ixtisas seçimi ilə bağlı “ADA-lılar”la həmsöhbət olun",
+      "date": "17.08.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/211-ada-ya-qebul-sertleri-ixtisas-secimi-ile-bagli-ada-lilar-la-hemsohbet-olun",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200804114216_08456700.png",
+      "type": "University"
+    },
+    {
+      "id": 259,
+      "title": "“Instagram” səhifəmizdəki canlı yayıma qoşulun",
+      "date": "05.08.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/210--instagram-sehifemizdeki-canli-yayima-qosulun",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200730143618_70493400.png",
+      "type": "University"
+    },
+    {
+      "id": 260,
+      "title": "Mock lecture by Dr. Javid Musayev",
+      "date": "27.07.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/209-mock-lecture-by-dr-javid-musayev",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200723182704_99489800.png",
+      "type": "Academic"
+    },
+    {
+      "id": 261,
+      "title": "Upcoming online discussion on current challenges of diplomacy",
+      "date": "09.07.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/208-upcoming-online-discussion-on-current-challenges-of-diplomacy",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200702185719_41519900.png",
+      "type": "University"
+    },
+    {
+      "id": 262,
+      "title": "Open Enrollment Course: 'Scenario Analysis and Planning: How to Deal with the World Changing Because of the Corona Pandemic'",
+      "date": "08.07.2020",
+      "time": "11:00-13:00",
+      "link": "https://www.ada.edu.az/en/events/205-open-enrollment-course-scenario-analysis-and-planning-how-to-deal-with-the-world-changing-because-of-the-corona-pandemic",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200621004230_24481900.png",
+      "type": "University"
+    },
+    {
+      "id": 263,
+      "title": "Webinar alert: Global economic effects of COVID-19 and how it affects our country today",
+      "date": "03.07.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/203-webinar-alert-global-economic-effects-of-covid-19-and-how-it-affects-our-country-today",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200617145632_86606900.png",
+      "type": "University"
+    },
+    {
+      "id": 264,
+      "title": "Executive Education Online Information Session via Zoom",
+      "date": "30.06.2020",
+      "time": "11:00",
+      "link": "https://www.ada.edu.az/en/events/206-executive-education-online-information-session-via-zoom",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200624143854_51000100.jpeg",
+      "type": "Executive Education"
+    },
+    {
+      "id": 265,
+      "title": "ADA University will celebrate its Class of 2020 on June 30",
+      "date": "30.06.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/207-ada-university-will-celebrate-its-class-of-2020-on-june-30",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200626022722_14483300.png",
+      "type": "University"
+    },
+    {
+      "id": 266,
+      "title": "Upcoming Webinar: “Public Diplomacy Today and After COVID-19”",
+      "date": "25.06.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/204-upcoming-webinar-public-diplomacy-today-and-after-covid-19",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200619012849_35516300.png",
+      "type": "University"
+    },
+    {
+      "id": 267,
+      "title": "Executive Education Open Enrolment Webinar on Business Law",
+      "date": "23.06.2020",
+      "time": "11:00-13:00",
+      "link": "https://www.ada.edu.az/en/events/198-executive-education-open-enrolment-webinar-on-business-law",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200531083122_27931700.png",
+      "type": "Executive Education"
+    },
+    {
+      "id": 268,
+      "title": "Next webinar: Geopolitics and the Pandemic: Implications for Sustainable Development",
+      "date": "19.06.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/202-next-webinar-geopolitics-and-the-pandemic-implications-for-sustainable-development",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200612134418_59701700.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 269,
+      "title": "ADA Executive Education Open Enrollment Webinar on Project Management",
+      "date": "16.06.2020",
+      "time": "11:00",
+      "link": "https://www.ada.edu.az/en/events/200-ada-executive-education-open-enrollment-webinar-on-project-management",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200601164414_25751000.png",
+      "type": "Executive Education"
+    },
+    {
+      "id": 270,
+      "title": "SAT üzrə onlayn sual-cavab sessiyası",
+      "date": "13.06.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/201-sat-uzre-onlayn-sual-cavab-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200603141227_08205600.png",
+      "type": "University"
+    },
+    {
+      "id": 271,
+      "title": "Agile Teams: Webinar with Vice President Human Resources for Azerbaijan, Georgia, and Turkey (AGT), BP",
+      "date": "12.06.2020",
+      "time": "11:00",
+      "link": "https://www.ada.edu.az/en/events/199-agile-teams-webinar-with-vice-president-human-resources-for-azerbaijan-georgia-and-turkey-agt-bp",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200601152619_16580200.png",
+      "type": "University"
+    },
+    {
+      "id": 272,
+      "title": "Upcoming webinar: Vice-Rector of Academic Affairs of ADA University will talk about online and in-person teaching and learning",
+      "date": "29.05.2020",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/197-upcoming-webinar-vice-rector-of-academic-affairs-of-ada-university-will-talk-about-online-and-in-person-teaching-and-learning",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200528031534_00469800.png",
+      "type": "Academic"
+    },
+    {
+      "id": 273,
+      "title": "Webinar with Behnam Gurbanzada, Head of Islamic Finance Department, Sberbank",
+      "date": "27.05.2020",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/196-webinar-with-behnam-gurbanzada-head-of-islamic-finance-department-sberbank",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200525211224_22043100.jpg",
+      "type": "University"
+    },
+    {
+      "id": 274,
+      "title": "Next webinar with Henry Penikas, Advisor of Bank Regulation Department, Bank of Russia",
+      "date": "25.05.2020",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/195-next-webinar-with-henry-penikas-advisor-of-bank-regulation-department-bank-of-russia",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200522165726_47785800.jpg",
+      "type": "University"
+    },
+    {
+      "id": 275,
+      "title": "Online SAT Info Sessions on Undergraduate Programs",
+      "date": "24.05.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/193-online-sat-info-sessions-on-undergraduate-programs",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200519233020_57790800.jpg",
+      "type": "Admission"
+    },
+    {
+      "id": 276,
+      "title": "Next webinar with Dr. Taleh Ziyadov, Director-General of \"Baku International Sea Trade Port\"",
+      "date": "22.05.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/192-next-webinar-with-dr-taleh-ziyadov-director-general-of-quot-baku-international-sea-trade-port-quot",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200519151405_80384300.png",
+      "type": "University"
+    },
+    {
+      "id": 277,
+      "title": "Upcoming webinar with Iqor Turuyev, head of Internal Audit Department, Gazprombank",
+      "date": "22.05.2020",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/194-upcoming-webinar-with-iqor-turuyev-head-of-internal-audit-department-gazprombank",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200519234802_19424900.jpg",
+      "type": "University"
+    },
+    {
+      "id": 278,
+      "title": "Online Program Information Day",
+      "date": "20.05.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/190-online-program-information-day",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200515235400_09785600.png",
+      "type": "University"
+    },
+    {
+      "id": 279,
+      "title": "How to prepare for ADA Graduate Interview?\"",
+      "date": "19.05.2020",
+      "time": "19:00",
+      "link": "https://www.ada.edu.az/en/events/191-how-to-prepare-for-ada-graduate-interview-quot",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200516000506_15772400.png",
+      "type": "University"
+    },
+    {
+      "id": 280,
+      "title": "Online Graduate Information Session",
+      "date": "17.05.2020",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/189-online-graduate-information-session",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200513114953_17944900.png",
+      "type": "University"
+    },
+    {
+      "id": 281,
+      "title": "Webinar with Elnur Soltanov, Deputy Minister of Energy",
+      "date": "15.05.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/187-webinar-with-elnur-soltanov-deputy-minister-of-energy",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200511174818_29739600.png",
+      "type": "University"
+    },
+    {
+      "id": 282,
+      "title": "Webinar on Post-Pandemic Career Prospects with ADA University's Associate Vice-Rector",
+      "date": "15.05.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/188-webinar-on-post-pandemic-career-prospects-with-ada-university-s-associate-vice-rector",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200513004701_19589600.png",
+      "type": "University"
+    },
+    {
+      "id": 283,
+      "title": "Upcoming webinar: The Future of Diplomacy with a former senior Serbian and UN official",
+      "date": "14.05.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/186-upcoming-webinar-the-future-of-diplomacy-with-a-former-senior-serbian-and-un-official",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200510141824_65705900.png",
+      "type": "University"
+    },
+    {
+      "id": 284,
+      "title": "Presentation by professor of University of Bern in Switzerland, Dr. George van Driem",
+      "date": "07.05.2020",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/185-presentation-by-professor-of-university-of-bern-in-switzerland-dr-george-van-driem",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200505151443_55488700.png",
+      "type": "University"
+    },
+    {
+      "id": 285,
+      "title": "Kompüter elmləri və Data analitikası üzrə magistr proqramının onlayn Məlumat Sessiyası",
+      "date": "02.05.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/184-komputer-elmleri-ve-data-analitikasi-uzre-magistr-proqraminin-onlayn-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200428192928_43697500.png",
+      "type": "Admission"
+    },
+    {
+      "id": 286,
+      "title": "Join our next webinar: Media Communication in time of crisis: what diplomats should know about it",
+      "date": "01.05.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/181-join-our-next-webinar-media-communication-in-time-of-crisis-what-diplomats-should-know-about-it",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200424225345_61720200.png",
+      "type": "University"
+    },
+    {
+      "id": 287,
+      "title": "Magistr proqramlarımız barədə Onlayn Məlumat Sessiyası",
+      "date": "01.05.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/182-magistr-proqramlarimiz-barede-onlayn-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200427202534_06710400.png",
+      "type": "Admission"
+    },
+    {
+      "id": 288,
+      "title": "Online \"Global Perspectives\" with Ambassador of Hungary",
+      "date": "30.04.2020",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/183-online-quot-global-perspectives-quot-with-ambassador-of-hungary",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200428191712_50410200.png",
+      "type": "University"
+    },
+    {
+      "id": 289,
+      "title": "Book your spot for webinar: Multilateral diplomacy during a COVID-19 pandemic",
+      "date": "24.04.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/179-book-your-spot-for-webinar-multilateral-diplomacy-during-a-covid-19-pandemic",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200417204753_86405100.png",
+      "type": "University"
+    },
+    {
+      "id": 290,
+      "title": "Limited public access to selected online class:  “Current issues in Higher Education”",
+      "date": "20.04.2020",
+      "time": "18:45",
+      "link": "https://www.ada.edu.az/en/events/180-limited-public-access-to-selected-online-class-current-issues-in-higher-education",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200418203454_03299000.png",
+      "type": "University"
+    },
+    {
+      "id": 291,
+      "title": "Webinar alert: Policy Analysis in time of crisis'' by Dr. Anar Valiyev",
+      "date": "17.04.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/177-webinar-alert-policy-analysis-in-time-of-crisis-by-dr-anar-valiyev",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200413182442_18762100.png",
+      "type": "University"
+    },
+    {
+      "id": 292,
+      "title": "Next ADA online class: Open for public with limited seats",
+      "date": "17.04.2020",
+      "time": "11:30",
+      "link": "https://www.ada.edu.az/en/events/178-next-ada-online-class-open-for-public-with-limited-seats",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200414231126_10959900.png",
+      "type": "University"
+    },
+    {
+      "id": 293,
+      "title": "ADA Virtual Job Fair",
+      "date": "14.04.2020",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/173-ada-virtual-job-fair",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200330232553_79234700.png",
+      "type": "University"
+    },
+    {
+      "id": 294,
+      "title": "Limited seats in ADA Online class is open for public.",
+      "date": "14.04.2020",
+      "time": "10:00",
+      "link": "https://www.ada.edu.az/en/events/176-limited-seats-in-ada-online-class-is-open-for-public",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200412122528_76403100.png",
+      "type": "University"
+    },
+    {
+      "id": 295,
+      "title": "AFSP Webinar: Strategic consequences of COVID-19 for the Future of International Relations.",
+      "date": "10.04.2020",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/175-afsp-webinar-strategic-consequences-of-covid-19-for-the-future-of-international-relations",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200405145117_71707400.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 296,
+      "title": "Online GPLS: How embassy operates in crisis management situation?",
+      "date": "09.04.2020",
+      "time": "18:00",
+      "link": "https://www.ada.edu.az/en/events/174-online-gpls-how-embassy-operates-in-crisis-management-situation",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200403225016_90561600.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 297,
+      "title": "X, XI sinif şagirdləri üçün İnformasiya Texnologiyaları seminarları",
+      "date": "12.03.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/169-x-xi-sinif-sagirdleri-ucun-informasiya-texnologiyalari-seminarlari",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200218132101_15289300.png",
+      "type": "Academic"
+    },
+    {
+      "id": 298,
+      "title": "ADA Universitetində \"SAT Günü\"",
+      "date": "06.03.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/163-ada-universitetinde-quot-sat-gunu-quot",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200211122846_98679500.png",
+      "type": "University"
+    },
+    {
+      "id": 299,
+      "title": "Master Class Alert: \"Leadership Effectiveness for Women in Business\"",
+      "date": "04.03.2020",
+      "time": "10:00-13:00",
+      "link": "https://www.ada.edu.az/en/events/168-master-class-alert-quot-leadership-effectiveness-for-women-in-business-quot",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200218095242_05649100.png",
+      "type": "University"
+    },
+    {
+      "id": 300,
+      "title": "\"Biznes-Mən\" və \"Gənc iqtisadçı\"",
+      "date": "24.02.2020",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/165--quot-biznes-men-quot-ve-quot-genc-iqtisadci-quot",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200211083613_12587700.png",
+      "type": "University"
+    },
+    {
+      "id": 301,
+      "title": "Natiqlik və Liderlik Bacarıqları",
+      "date": "20.02.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/167-natiqlik-ve-liderlik-bacariqlari",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200211220111_75026400.png",
+      "type": "University"
+    },
+    {
+      "id": 302,
+      "title": "The Art of Feedback: Giving, seeking and receiving feedback",
+      "date": "14.02.2020",
+      "time": "16:30",
+      "link": "https://www.ada.edu.az/en/events/166-the-art-of-feedback-giving-seeking-and-receiving-feedback",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200211200603_66994200.png",
+      "type": "University"
+    },
+    {
+      "id": 303,
+      "title": "ADA Məktəbində şagird olmaq istəyənlər üçün növbəti Məlumat saatına start verdik",
+      "date": "11.02.2020",
+      "time": "16:30",
+      "link": "https://www.ada.edu.az/en/events/161-ada-mektebinde-sagird-olmaq-isteyenler-ucun-novbeti-melumat-saatina-start-verdik",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200127171749_12922600.png",
+      "type": "ADA School"
+    },
+    {
+      "id": 304,
+      "title": "Seminar alert: How to use HR metrics to develop High Performance work system?",
+      "date": "07.02.2020",
+      "time": "16:30",
+      "link": "https://www.ada.edu.az/en/events/164-seminar-alert-how-to-use-hr-metrics-to-develop-high-performance-work-system",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200131142139_66377600.png",
+      "type": "Academic"
+    },
+    {
+      "id": 305,
+      "title": "ADA Universitetində növbəti Məlumat sessiyası: Bu dəfə fərqli formatda",
+      "date": "31.01.2020",
+      "time": "18:30",
+      "link": "https://www.ada.edu.az/en/events/162-ada-universitetinde-novbeti-melumat-sessiyasi-bu-defe-ferqli-formatda",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200128112937_56464700.png",
+      "type": "Admission"
+    },
+    {
+      "id": 306,
+      "title": "Лекция А.Торкунова на тему «Новые процессы в современных международных отношениях»",
+      "date": "25.01.2020",
+      "time": "11:00",
+      "link": "https://www.ada.edu.az/en/events/160-lekciia-a-torkunova-na-temu-novye-processy-v-sovremennyx-mezdunarodnyx-otnoseniiax",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200123170527_53942600.png",
+      "type": "University"
+    },
+    {
+      "id": 307,
+      "title": "ADA Lectures: US-Iran opposition and future implications for the South Caucasus region",
+      "date": "24.01.2020",
+      "time": "16:30",
+      "link": "https://www.ada.edu.az/en/events/156-ada-lectures-us-iran-opposition-and-future-implications-for-the-south-caucasus-region",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200116171542_78067800.png",
+      "type": "Academic"
+    },
+    {
+      "id": 308,
+      "title": "\"ADA-da 1 gün\" layihəsi davam edir",
+      "date": "23.01.2020",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/159--quot-ada-da-1-gun-quot-layihesi-davam-edir",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200123104957_98343500.png",
+      "type": "University"
+    },
+    {
+      "id": 309,
+      "title": "The opening ceremony of GIC Innovation Accelerator (iX) Program",
+      "date": "22.01.2020",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/158-the-opening-ceremony-of-gic-innovation-accelerator-ix-program",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200121175939_25325000.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 310,
+      "title": "30th Anniversary of Black January tragedy",
+      "date": "17.01.2020",
+      "time": "10:00",
+      "link": "https://www.ada.edu.az/en/events/157-30th-anniversary-of-black-january-tragedy",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20200117095750_94687600.png",
+      "type": "University"
+    },
+    {
+      "id": 311,
+      "title": "Məktəbdəki çoxsaylı fənlərə hazırlaşmağın yollarını bizimlə öyrən!",
+      "date": "15.01.2020",
+      "time": "16:30",
+      "link": "https://www.ada.edu.az/en/events/154-mektebdeki-coxsayli-fenlere-hazirlasmagin-yollarini-bizimle-oyren",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191225184724_53949000.png",
+      "type": "University"
+    },
+    {
+      "id": 312,
+      "title": "Fərdi İnkişaf Proqramı",
+      "date": "09.01.2020",
+      "time": "16:00-18:00",
+      "link": "https://www.ada.edu.az/en/events/155-ferdi-inkisaf-proqrami",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191226182132_74487200.png",
+      "type": "University"
+    },
+    {
+      "id": 313,
+      "title": "Winter workshop on ''How life works'' for IX and X grade school students",
+      "date": "24.12.2019",
+      "time": "16:30-18:30",
+      "link": "https://www.ada.edu.az/en/events/146-winter-workshop-on-how-life-works-for-ix-and-x-grade-school-students",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191203111852_07972400.png",
+      "type": "Student"
+    },
+    {
+      "id": 314,
+      "title": "Workshop alert: ''Three components of Educational Management''",
+      "date": "24.12.2019",
+      "time": "16:15 – 18:30",
+      "link": "https://www.ada.edu.az/en/events/153-workshop-alert-three-components-of-educational-management",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191218150204_44718600.png",
+      "type": "Academic"
+    },
+    {
+      "id": 315,
+      "title": "Save the dates for Administration and Management Workshop",
+      "date": "17.12.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/152-save-the-dates-for-administration-and-management-workshop",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191216121014_57609100.png",
+      "type": "Academic"
+    },
+    {
+      "id": 316,
+      "title": "ADA Universiteti Pedaqogika üzrə yeni magistr proqramını təqdim edir",
+      "date": "16.12.2019",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/145-ada-universiteti-pedaqogika-uzre-yeni-magistr-proqramini-teqdim-edir",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191203110007_35784700.png",
+      "type": "University"
+    },
+    {
+      "id": 317,
+      "title": "Launch event: Dual Degree MBA Program in Finance with MGIMO University",
+      "date": "13.12.2019",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/147-launch-event-dual-degree-mba-program-in-finance-with-mgimo-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191203181225_95947300.png",
+      "type": "University"
+    },
+    {
+      "id": 318,
+      "title": "ADA Məktəbində növbəti Məlumat saatı",
+      "date": "12.12.2019",
+      "time": "16:30",
+      "link": "https://www.ada.edu.az/en/events/150-ada-mektebinde-novbeti-melumat-saati",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191206183711_63555900.png",
+      "type": "ADA School"
+    },
+    {
+      "id": 319,
+      "title": "Proqramlaşdırmanın əsaslarını bir saata ADA Universiteti ilə öyrənin!",
+      "date": "11.12.2019",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/151-proqramlasdirmanin-esaslarini-bir-saata-ada-universiteti-ile-oyrenin",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191206185542_21017000.png",
+      "type": "University"
+    },
+    {
+      "id": 320,
+      "title": "Workshop on International Affairs and Diplomacy",
+      "date": "10.12.2019",
+      "time": "16:30-18:30",
+      "link": "https://www.ada.edu.az/en/events/148-workshop-on-international-affairs-and-diplomacy",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191204111838_86982500.png",
+      "type": "Academic"
+    },
+    {
+      "id": 321,
+      "title": "Commemoration of the legacy of Heydar Aliyev",
+      "date": "10.12.2019",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/149-commemoration-of-the-legacy-of-heydar-aliyev",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191205171819_78680800.png",
+      "type": "University"
+    },
+    {
+      "id": 322,
+      "title": "Presentation of 2020 Graduate and Intern Recruitment Programme of BP Azerbaijan at ADA campus",
+      "date": "04.12.2019",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/144-presentation-of-2020-graduate-and-intern-recruitment-programme-of-bp-azerbaijan-at-ada-campus",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191202172232_89563200.jpg",
+      "type": "University"
+    },
+    {
+      "id": 323,
+      "title": "Five-day workshop on designing business plan",
+      "date": "02.12.2019",
+      "time": "16:16-18:30",
+      "link": "https://www.ada.edu.az/en/events/142-five-day-workshop-on-designing-business-plan",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191126205651_58515800.png",
+      "type": "Academic"
+    },
+    {
+      "id": 324,
+      "title": "Today's lecture: Tango history as a part of Argentinian culture",
+      "date": "28.11.2019",
+      "time": "16:00-17:00",
+      "link": "https://www.ada.edu.az/en/events/143-today-s-lecture-tango-history-as-a-part-of-argentinian-culture",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191128105257_51995900.png",
+      "type": "Academic"
+    },
+    {
+      "id": 325,
+      "title": "Upcoming public lecture titled \"International Education partnerships: Current opportunities for Azerbaijan\"",
+      "date": "26.11.2019",
+      "time": "16:30-17:30",
+      "link": "https://www.ada.edu.az/en/events/134-upcoming-public-lecture-titled-quot-international-education-partnerships-current-opportunities-for-azerbaijan-quot",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191114114001_96604900.jpeg",
+      "type": "Academic"
+    },
+    {
+      "id": 326,
+      "title": "Ambassador Olaph Terribile, chief of staff of the office of President (Malta) will conduct a training",
+      "date": "25.11.2019",
+      "time": "09:00-17:00",
+      "link": "https://www.ada.edu.az/en/events/132-ambassador-olaph-terribile-chief-of-staff-of-the-office-of-president-malta-will-conduct-a-training",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191108091138_66378000.png",
+      "type": "University"
+    },
+    {
+      "id": 327,
+      "title": "Upcoming Training Program: \"Transition to Sustainability: Life Cycle Approach\"",
+      "date": "25.11.2019",
+      "time": "14:00-18:00",
+      "link": "https://www.ada.edu.az/en/events/139-upcoming-training-program-quot-transition-to-sustainability-life-cycle-approach-quot",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191120181144_98780600.png",
+      "type": "University"
+    },
+    {
+      "id": 328,
+      "title": "Public Talk by Mr. Taleh Kazimov",
+      "date": "25.11.2019",
+      "time": "14:45",
+      "link": "https://www.ada.edu.az/en/events/141-public-talk-by-mr-taleh-kazimov",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191125115002_82443400.png",
+      "type": "University"
+    },
+    {
+      "id": 329,
+      "title": "Lecture and Book launch event with Dr. Bambang Susantono from ADB",
+      "date": "21.11.2019",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/138-lecture-and-book-launch-event-with-dr-bambang-susantono-from-adb",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191120144347_09512800.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 330,
+      "title": "Lecture and book launch event with Dr. Bambang Susantono from ADB",
+      "date": "21.11.2019",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/140-lecture-and-book-launch-event-with-dr-bambang-susantono-from-adb",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191120182240_24144600.png",
+      "type": "Academic"
+    },
+    {
+      "id": 331,
+      "title": "International  Dinner at ADA University",
+      "date": "20.11.2019",
+      "time": "15:30 PM",
+      "link": "https://www.ada.edu.az/en/events/137-international-dinner-at-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191120133912_38731000.jpg",
+      "type": "University"
+    },
+    {
+      "id": 332,
+      "title": "Magistratura proqramları ilə maraqlananlar üçün Məlumat Sessiyası",
+      "date": "18.11.2019",
+      "time": "18:30",
+      "link": "https://www.ada.edu.az/en/events/135-magistratura-proqramlari-ile-maraqlananlar-ucun-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191114114934_02820400.png",
+      "type": "Admission"
+    },
+    {
+      "id": 333,
+      "title": "National Day of Slovakia and Czech Republic",
+      "date": "18.11.2019",
+      "time": "12:45-13:15",
+      "link": "https://www.ada.edu.az/en/events/136-national-day-of-slovakia-and-czech-republic",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191115120819_14060600.jpg",
+      "type": "University"
+    },
+    {
+      "id": 334,
+      "title": "Announcement for Essay Contest among ADA University students",
+      "date": "15.11.2019",
+      "time": "Deadline:November 15, 2019",
+      "link": "https://www.ada.edu.az/en/events/125-announcement-for-essay-contest-among-ada-university-students",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191028163944_15894900.png",
+      "type": "Student"
+    },
+    {
+      "id": 335,
+      "title": "30 years fall of Berlin wall. Lecture by German historian at ADA University",
+      "date": "13.11.2019",
+      "time": "15:30",
+      "link": "https://www.ada.edu.az/en/events/133-30-years-fall-of-berlin-wall-lecture-by-german-historian-at-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191108110332_42500700.png",
+      "type": "Academic"
+    },
+    {
+      "id": 336,
+      "title": "\"İxtisas seçimində valideynlərin rolu\"",
+      "date": "01.11.2019",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/122--quot-ixtisas-seciminde-valideynlerin-rolu-quot",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191022142126_73254400.png",
+      "type": "University"
+    },
+    {
+      "id": 337,
+      "title": "Deloitte career event at ADA University",
+      "date": "31.10.2019",
+      "time": "13:00",
+      "link": "https://www.ada.edu.az/en/events/124-deloitte-career-event-at-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191024102203_57180300.png",
+      "type": "University"
+    },
+    {
+      "id": 338,
+      "title": "Vice President of BP Russia will deliver lecture at ADA University",
+      "date": "31.10.2019",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/126-vice-president-of-bp-russia-will-deliver-lecture-at-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191029095139_25349000.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 339,
+      "title": "Google analytical consultant will deliver a lecture  ADA University",
+      "date": "31.10.2019",
+      "time": "18:30",
+      "link": "https://www.ada.edu.az/en/events/128-google-analytical-consultant-will-deliver-a-lecture-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191029123400_71704000.png",
+      "type": "Academic"
+    },
+    {
+      "id": 340,
+      "title": "South Eastern European Platform (SEEP)  at ADA University",
+      "date": "31.10.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/129-south-eastern-european-platform-seep-at-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191031111121_29509700.jpg",
+      "type": "University"
+    },
+    {
+      "id": 341,
+      "title": "Turkmenistan day at ADA University",
+      "date": "29.10.2019",
+      "time": "12:45-13:15",
+      "link": "https://www.ada.edu.az/en/events/127-turkmenistan-day-at-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191029100232_00822500.png",
+      "type": "University"
+    },
+    {
+      "id": 342,
+      "title": "United Nations Day at ADA University",
+      "date": "24.10.2019",
+      "time": "15.30-17.30",
+      "link": "https://www.ada.edu.az/en/events/123-united-nations-day-at-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191024094345_71916100.png",
+      "type": "University"
+    },
+    {
+      "id": 343,
+      "title": "The IEEE 13th International Conference on  Application of Information and Communication Technologies",
+      "date": "23.10.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/107-the-ieee-13th-international-conference-on-application-of-information-and-communication-technologies",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191018172602_48378400.png",
+      "type": "Academic"
+    },
+    {
+      "id": 344,
+      "title": "NASA Space Apps 2019",
+      "date": "18.10.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/118-nasa-space-apps-2019",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191015112255_01090000.jpg",
+      "type": "University"
+    },
+    {
+      "id": 345,
+      "title": "ADA Universitetində magistratura proqramları üzrə ilk məlumat sessiyası",
+      "date": "18.10.2019",
+      "time": "18:30",
+      "link": "https://www.ada.edu.az/en/events/120-ada-universitetinde-magistratura-proqramlari-uzre-ilk-melumat-sessiyasi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191016155043_22075400.png",
+      "type": "Admission"
+    },
+    {
+      "id": 346,
+      "title": "Raimonds Vejonis, Former Latvian President will deliver a lecture at ADA University",
+      "date": "18.10.2019",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/121-raimonds-vejonis-former-latvian-president-will-deliver-a-lecture-at-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191018100259_54623600.jpg",
+      "type": "Academic"
+    },
+    {
+      "id": 347,
+      "title": "ADA University alumnus Mr. Orkhan Ahmadli will conduct on-campus recruitment in Energy Management and Automation",
+      "date": "17.10.2019",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/119-ada-university-alumnus-mr-orkhan-ahmadli-will-conduct-on-campus-recruitment-in-energy-management-and-automation",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191015163043_08439600.png",
+      "type": "University"
+    },
+    {
+      "id": 348,
+      "title": "Tracing Gandhi's Journey through Clothing",
+      "date": "14.10.2019",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/117-tracing-gandhi-s-journey-through-clothing",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191014115725_56505600.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 349,
+      "title": "ADB YOUTH Debates",
+      "date": "12.10.2019",
+      "time": "10 AM – 4 PM",
+      "link": "https://www.ada.edu.az/en/events/100-adb-youth-debates",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190902091632_66130600.jpg",
+      "type": "University"
+    },
+    {
+      "id": 350,
+      "title": "UAE Ambassador will deliver a speech \"Foreign and Tolerance Policy of UAE\"",
+      "date": "10.10.2019",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/114-uae-ambassador-will-deliver-a-speech-quot-foreign-and-tolerance-policy-of-uae-quot",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191008123825_51842500.png",
+      "type": "University"
+    },
+    {
+      "id": 351,
+      "title": "Elchin Ibadov will deliver a seminar at ADA University",
+      "date": "09.10.2019",
+      "time": "10:00-13:00",
+      "link": "https://www.ada.edu.az/en/events/113-elchin-ibadov-will-deliver-a-seminar-at-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191003120318_69082000.png",
+      "type": "Academic"
+    },
+    {
+      "id": 352,
+      "title": "Nigerian day at ADA University",
+      "date": "09.10.2019",
+      "time": "12:45",
+      "link": "https://www.ada.edu.az/en/events/116-nigerian-day-at-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191010101904_96970100.png",
+      "type": "University"
+    },
+    {
+      "id": 353,
+      "title": "\"Teaching and Learning with a Growth Mindset\" lecture with Chris Andre",
+      "date": "08.10.2019",
+      "time": "16:15 - 17:30",
+      "link": "https://www.ada.edu.az/en/events/115--quot-teaching-and-learning-with-a-growth-mindset-quot-lecture-with-chris-andre",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191009143249_46231100.png",
+      "type": "Academic"
+    },
+    {
+      "id": 354,
+      "title": "Google comes to ADA University",
+      "date": "03.10.2019",
+      "time": "13:00",
+      "link": "https://www.ada.edu.az/en/events/109-google-comes-to-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190930104828_71150100.png",
+      "type": "University"
+    },
+    {
+      "id": 355,
+      "title": "Clive Marshall will speak at ADA University",
+      "date": "03.10.2019",
+      "time": "4 P.M.",
+      "link": "https://www.ada.edu.az/en/events/112-clive-marshall-will-speak-at-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191003113003_84844700.png",
+      "type": "University"
+    },
+    {
+      "id": 356,
+      "title": "\"Selected states and regional security\"  with Dr. Walter Feichtinger",
+      "date": "02.10.2019",
+      "time": "16:00 - 17:30",
+      "link": "https://www.ada.edu.az/en/events/39--quot-selected-states-and-regional-security-quot-with-dr-walter-feichtinger",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20170210182432_09561900.png",
+      "type": "University"
+    },
+    {
+      "id": 357,
+      "title": "“Comprehensive security needs cooperation” with Dr. Gernot Erler",
+      "date": "01.10.2019",
+      "time": "16:00 - 17:30",
+      "link": "https://www.ada.edu.az/en/events/40--comprehensive-security-needs-cooperation-with-dr-gernot-erler",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20170210184946_77190500.png",
+      "type": "University"
+    },
+    {
+      "id": 358,
+      "title": "CEE PwC New Partners & ADA University students Immersion session",
+      "date": "01.10.2019",
+      "time": "3:00 p.m. - 5:00 p.m.",
+      "link": "https://www.ada.edu.az/en/events/110-cee-pwc-new-partners-amp-ada-university-students-immersion-session",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190926181624_05030400.png",
+      "type": "Student"
+    },
+    {
+      "id": 359,
+      "title": "“Mediation and Its Benefits for Business” seminar at ADA University",
+      "date": "01.10.2019",
+      "time": "5 P.M.",
+      "link": "https://www.ada.edu.az/en/events/111--mediation-and-its-benefits-for-business-seminar-at-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191001103633_62744400.png",
+      "type": "Academic"
+    },
+    {
+      "id": 360,
+      "title": "Multi-Disciplinary and Collaborative Efforts Toward the Novel Catalyst and Technology Design",
+      "date": "30.09.2019",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/104-multi-disciplinary-and-collaborative-efforts-toward-the-novel-catalyst-and-technology-design",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190916180844_29674500.png",
+      "type": "University"
+    },
+    {
+      "id": 361,
+      "title": "The Ca’ Foscari Short Film Festival will come to ADA University",
+      "date": "27.09.2019",
+      "time": "3 P.M.-4.30 P.M.",
+      "link": "https://www.ada.edu.az/en/events/108-the-ca-foscari-short-film-festival-will-come-to-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190925172150_13586000.png",
+      "type": "University"
+    },
+    {
+      "id": 362,
+      "title": "Beynəlxalq Sahilyanı Təmizlik Günü",
+      "date": "21.09.2019",
+      "time": "10:00",
+      "link": "https://www.ada.edu.az/en/events/106-beynelxalq-sahilyani-temizlik-gunu",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190917105657_58530700.png",
+      "type": "University"
+    },
+    {
+      "id": 363,
+      "title": "Discussion of the book titled, \"The Nagorno-Karabakh deadlock”",
+      "date": "17.09.2019",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/102-discussion-of-the-book-titled-quot-the-nagorno-karabakh-deadlock",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190916102819_04228400.png",
+      "type": "University"
+    },
+    {
+      "id": 364,
+      "title": "ADA University invites you to celebrate National Day of Chile on campus",
+      "date": "17.09.2019",
+      "time": "12:45 to 13:15.",
+      "link": "https://www.ada.edu.az/en/events/103-ada-university-invites-you-to-celebrate-national-day-of-chile-on-campus",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190916121822_78617300.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 365,
+      "title": "ADA University invites you to celebrate National Day of Chile on campus",
+      "date": "17.09.2019",
+      "time": "12:45 to 13:15",
+      "link": "https://www.ada.edu.az/en/events/105-ada-university-invites-you-to-celebrate-national-day-of-chile-on-campus",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190917103727_81980200.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 366,
+      "title": "Honor Code Honor Code Ceremony",
+      "date": "12.09.2019",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/101-honor-code-honor-code-ceremony",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190909183111_87352800.png",
+      "type": "University"
+    },
+    {
+      "id": 367,
+      "title": "Graduate and undergraduate Orientation days",
+      "date": "24.08.2019",
+      "time": "9:30-16:40",
+      "link": "https://www.ada.edu.az/en/events/99-graduate-and-undergraduate-orientation-days",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190817114729_01039700.png",
+      "type": "University"
+    },
+    {
+      "id": 368,
+      "title": "The 31st International Olympiad in Informatics (IOI 2019)",
+      "date": "05.08.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/98-the-31st-international-olympiad-in-informatics-ioi-2019",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190802103236_30867300.png",
+      "type": "University"
+    },
+    {
+      "id": 369,
+      "title": "4th ADA-EU Summer Camp / 4-cü ADA-Aİ Yay Düşərgəsi",
+      "date": "08.07.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/80-4th-ada-eu-summer-camp-4-cu-ada-ai-yay-dusergesi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190503150418_82315700.jpg",
+      "type": "University"
+    },
+    {
+      "id": 370,
+      "title": "The 13th Annual Baku Summer Energy School",
+      "date": "06.07.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/78-the-13th-annual-baku-summer-energy-school",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190503143647_87196500.jpg",
+      "type": "University"
+    },
+    {
+      "id": 371,
+      "title": "ADA University Alumni Forum",
+      "date": "05.07.2019",
+      "time": "9.30",
+      "link": "https://www.ada.edu.az/en/events/93-ada-university-alumni-forum",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190529092641_30710200.png",
+      "type": "Alumni"
+    },
+    {
+      "id": 372,
+      "title": "ADA University Alumni Forum 2019",
+      "date": "05.07.2019",
+      "time": "09:30",
+      "link": "https://www.ada.edu.az/en/events/97-ada-university-alumni-forum-2019",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190628171309_13025400.png",
+      "type": "Alumni"
+    },
+    {
+      "id": 373,
+      "title": "Info sessions for ADA University admission",
+      "date": "04.07.2019",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/96-info-sessions-for-ada-university-admission",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190620104931_87476700.png",
+      "type": "Admission"
+    },
+    {
+      "id": 374,
+      "title": "Music Night dedicated to People's Artist Cavan Zaynalli",
+      "date": "20.06.2019",
+      "time": "17:00-18:30",
+      "link": "https://www.ada.edu.az/en/events/95-music-night-dedicated-to-people-s-artist-cavan-zaynalli",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190618103641_72618300.png",
+      "type": "University"
+    },
+    {
+      "id": 375,
+      "title": "IV ADA Beynəlxalq Təhsil Konfransı / ADA 4th International Education Conference",
+      "date": "19.06.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/82-iv-ada-beynelxalq-tehsil-konfransi-ada-4th-international-education-conference",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190506121026_82263100.png",
+      "type": "Academic"
+    },
+    {
+      "id": 376,
+      "title": "5th International Forum BIG DATA DAY",
+      "date": "11.06.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/94-5th-international-forum-big-data-day",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190607105656_70232500.png",
+      "type": "University"
+    },
+    {
+      "id": 377,
+      "title": "5th ADA University-EU Summer School 2019",
+      "date": "10.06.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/79-5th-ada-university-eu-summer-school-2019",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190503145433_91757800.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 378,
+      "title": "Graduation Ceremony 2019",
+      "date": "31.05.2019",
+      "time": "18:00",
+      "link": "https://www.ada.edu.az/en/events/91-graduation-ceremony-2019",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190520180813_56542100.png",
+      "type": "University"
+    },
+    {
+      "id": 379,
+      "title": "Master Class by the President of SKOLKOVO Business School",
+      "date": "27.05.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/86-master-class-by-the-president-of-skolkovo-business-school",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190516182140_58818600.png",
+      "type": "University"
+    },
+    {
+      "id": 380,
+      "title": "Master Class by the President of SKOLKOVO Business School",
+      "date": "27.05.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/88-master-class-by-the-president-of-skolkovo-business-school",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190518120448_15185600.png",
+      "type": "University"
+    },
+    {
+      "id": 381,
+      "title": "Info sessions for ADA University admission",
+      "date": "24.05.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/92-info-sessions-for-ada-university-admission",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190523094037_68155700.png",
+      "type": "Admission"
+    },
+    {
+      "id": 382,
+      "title": "Political Economy of reforms in the EU Neighborhood",
+      "date": "14.05.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/85-political-economy-of-reforms-in-the-eu-neighborhood",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190514162921_75551900.jpg",
+      "type": "University"
+    },
+    {
+      "id": 383,
+      "title": "The 6th Turkic Council Junior Diplomats Joint Training Program",
+      "date": "12.05.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/83-the-6th-turkic-council-junior-diplomats-joint-training-program",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190510185814_66989700.png",
+      "type": "University"
+    },
+    {
+      "id": 384,
+      "title": "The 6th Turkic Council Junior Diplomats Joint Training Program",
+      "date": "12.05.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/89-the-6th-turkic-council-junior-diplomats-joint-training-program",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190518121034_97903800.png",
+      "type": "University"
+    },
+    {
+      "id": 385,
+      "title": "ADA Public Speaking and Persuasion Contest 2019",
+      "date": "10.05.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/87-ada-public-speaking-and-persuasion-contest-2019",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190517130820_93313600.png",
+      "type": "University"
+    },
+    {
+      "id": 386,
+      "title": "Təhsil Sərgisi",
+      "date": "05.05.2019",
+      "time": "12:00-18:00",
+      "link": "https://www.ada.edu.az/en/events/81-tehsil-sergisi",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190503194542_45018000.jpg",
+      "type": "University"
+    },
+    {
+      "id": 387,
+      "title": "Haji Zeynabdin Taghiyev Awards 2019",
+      "date": "03.05.2019",
+      "time": "15:00-17:00",
+      "link": "https://www.ada.edu.az/en/events/76-haji-zeynabdin-taghiyev-awards-2019",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190503053011_87418400.png",
+      "type": "University"
+    },
+    {
+      "id": 388,
+      "title": "ADA University 8th Annual International Festival",
+      "date": "18.04.2019",
+      "time": "14:00-17:00",
+      "link": "https://www.ada.edu.az/en/events/77-ada-university-8th-annual-international-festival",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190503053719_81965100.png",
+      "type": "University"
+    },
+    {
+      "id": 389,
+      "title": "ADA Məktəbində növbəti \"Açıq Qapı\" günü",
+      "date": "28.03.2019",
+      "time": "17:00",
+      "link": "https://www.ada.edu.az/en/events/71-ada-mektebinde-novbeti-quot-aciq-qapi-quot-gunu",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190318155950_24945500.png",
+      "type": "ADA School"
+    },
+    {
+      "id": 390,
+      "title": "7th Bahar Youth Festival",
+      "date": "15.03.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/84-7th-bahar-youth-festival",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190513154015_72958300.png",
+      "type": "University"
+    },
+    {
+      "id": 391,
+      "title": "7th Career Week",
+      "date": "27.02.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/63-7th-career-week",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190222120714_76313300.png",
+      "type": "University"
+    },
+    {
+      "id": 392,
+      "title": "2nd GCRF COMPASS International Training School for Early Career Researchers:Good Governance and Effectiveness of Public Institutions in Post-Soviet Eurasia",
+      "date": "17.02.2019",
+      "time": null,
+      "link": "https://www.ada.edu.az/en/events/131-2nd-gcrf-compass-international-training-school-for-early-career-researchers-good-governance-and-effectiveness-of-public-institutions-in-post-soviet-eurasia",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20191107113341_88618000.png",
+      "type": "Academic"
+    },
+    {
+      "id": 393,
+      "title": "Online Platforms: A Practical Approach to their Economic and Social Impacts",
+      "date": "14.02.2019",
+      "time": "15:30",
+      "link": "https://www.ada.edu.az/en/events/54-online-platforms-a-practical-approach-to-their-economic-and-social-impacts",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190123170605_17926200.jpeg",
+      "type": "University"
+    },
+    {
+      "id": 394,
+      "title": "Ambassador of Romania in Baku will speak at ADA University",
+      "date": "01.02.2019",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/44-ambassador-of-romania-in-baku-will-speak-at-ada-university",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190109172415_48782600.png",
+      "type": "University"
+    },
+    {
+      "id": 395,
+      "title": "How to choose your future career path?",
+      "date": "18.12.2018",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/42-how-to-choose-your-future-career-path",
+      "image_url": null,
+      "type": "University"
+    },
+    {
+      "id": 396,
+      "title": "Graduate Information Session",
+      "date": "17.12.2018",
+      "time": "16:00",
+      "link": "https://www.ada.edu.az/en/events/41-graduate-information-session",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190109170951_09226300.png",
+      "type": "University"
+    },
+    {
+      "id": 397,
+      "title": "Careers that inspire: working for education",
+      "date": "06.12.2018",
+      "time": "18:30",
+      "link": "https://www.ada.edu.az/en/events/45-careers-that-inspire-working-for-education",
+      "image_url": null,
+      "type": "University"
+    },
+    {
+      "id": 398,
+      "title": "Master Class: Project Finance",
+      "date": "10.11.2018",
+      "time": "15:00",
+      "link": "https://www.ada.edu.az/en/events/43-master-class-project-finance",
+      "image_url": "https://www.ada.edu.az/media/2024/04/19/20190109171608_80911300.png",
+      "type": "University"
+    },
+    {
+      "id": 399,
+      "title": "\"IT Technology in Business\" with Shervin Pishevar",
+      "date": "25.09.2017",
+      "time": "16:30 - 17:30",
+      "link": "https://www.ada.edu.az/en/events/37--quot-it-technology-in-business-quot-with-shervin-pishevar",
+      "image_url": null,
+      "type": "University"
+    }
+  ]
 }

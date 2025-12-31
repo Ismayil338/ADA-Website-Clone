@@ -11,6 +11,7 @@ import SchoolSB from './pages/SchoolSB';
 import Research from './pages/Research';
 import AboutADA from './pages/AboutADA';
 import Programs from './pages/Programs';
+import EventDetail from './pages/EventDetail';
 
 const App = () => (
   <BrowserRouter>
@@ -20,6 +21,7 @@ const App = () => (
       <Route path="/en" element={<Home />} />
       <Route path="/en/news" element={<News />} />
       <Route path="/en/events" element={<Events />} />
+      <Route path="/en/events/:id" element={<EventDetail />} />
       <Route path="/en/news-and-events" element={<NewsAndEvents />} />
       <Route path="/en/admission/find-your-program" element={<Programs />} />
       <Route path="/en/schools/site" element={<SchoolSite />} />
