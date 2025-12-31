@@ -35,7 +35,8 @@ const SchoolSite = () => {
               name={member.name}
               role={member.role}
               imageSrc={member.image_url}
-              department="School of IT and Engineering"
+              department={member.department || "School of IT and Engineering"}
+              profileUrl={member.profile_url}
             />
           </div>
         ))}

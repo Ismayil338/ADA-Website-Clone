@@ -35,7 +35,8 @@ const SchoolSB = () => {
               name={member.name}
               role={member.role}
               imageSrc={member.image_url}
-              department="School of Business"
+              department={member.department || "School of Business"}
+              profileUrl={member.profile_url}
             />
           </div>
         ))}

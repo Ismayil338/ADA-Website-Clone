@@ -1,10 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const SchoolsCard = ({ name, role, imageSrc, department, href }) => {
+const SchoolsCard = ({ name, role, imageSrc, department, profileUrl }) => {
   return (
     <div className="grid-item-style-2">
-      <Link className="grid-url text-decoration-none" to={href || "#"}>
+      <a 
+        className="grid-url text-decoration-none" 
+        href={profileUrl || "#"}
+        target={profileUrl ? "_blank" : undefined}
+        rel={profileUrl ? "noopener noreferrer" : undefined}
+      >
         <div className="image">
           <img alt={name} src={imageSrc} />
         </div>
@@ -14,7 +18,7 @@ const SchoolsCard = ({ name, role, imageSrc, department, href }) => {
           <br />
           {department}
         </div>
-      </Link>
+      </a>
     </div>
   );
 };
