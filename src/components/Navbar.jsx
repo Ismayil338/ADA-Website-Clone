@@ -133,7 +133,7 @@ const Navbar = () => {
           <div className="col-md-2 col-logo">
             <div className="header-logo">
               <a href="/en/">
-                <img src="/assets/img/logo.svg" alt="ADA University Logo" />
+                <img src="https://www.ada.edu.az/assets/img/logo.svg" alt="ADA University Logo" />
               </a>
             </div>
           </div>
@@ -279,4 +279,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
