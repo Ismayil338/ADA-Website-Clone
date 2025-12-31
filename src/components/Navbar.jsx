@@ -196,7 +196,7 @@ const Navbar = () => {
 
               <div className="header-buttons">
                 <div className="lang-dropdown">
-                  <a className="switch" href="javascript:;">
+                  <a className="switch" href="#" onClick={(e) => e.preventDefault()}>
                     <img src="/assets/img/flags/gb.svg" alt="English" />
                     EN
                   </a>
@@ -205,7 +205,7 @@ const Navbar = () => {
               </div>
 
               <div className="header-nav header-nav-mobile">
-                <a href="javascript:;" className="onoff-nav-btn" onClick={toggleMobileMenu}>
+                <a href="#" className="onoff-nav-btn" onClick={(e) => { e.preventDefault(); toggleMobileMenu(); }}>
                   <span>MENU</span>
                   <div className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}>
                     <span></span>
