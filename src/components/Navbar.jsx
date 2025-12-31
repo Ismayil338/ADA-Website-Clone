@@ -152,7 +152,7 @@ const Navbar = () => {
                       <div className="desctop-sub-btn">
                         <span>{item.name}</span>
                         <span>
-                          <i className="fa-solid fa-chevron-down"></i>
+                          <i className={`fa-solid ${activeDropdown === item.name ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
                         </span>
                       </div>
                       {activeDropdown === item.name && (
@@ -186,6 +186,9 @@ const Navbar = () => {
                       <button type="submit">
                         <i className="fa fa-search"></i>
                       </button>
+                      <button type="button" onClick={toggleSearch} style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '16px', color: '#333', marginLeft: '5px' }}>
+                        <i className="fa-solid fa-xmark"></i>
+                      </button>
                     </form>
                   </div>
                 )}
@@ -193,7 +196,7 @@ const Navbar = () => {
 
               <div className="header-buttons">
                 <div className="lang-dropdown">
-                  <a className="switch" href="javascript:;">
+                  <a className="switch" href="#" onClick={(e) => e.preventDefault()}>
                     <img src="/assets/img/flags/gb.svg" alt="English" />
                     EN
                   </a>
@@ -202,7 +205,7 @@ const Navbar = () => {
               </div>
 
               <div className="header-nav header-nav-mobile">
-                <a href="javascript:;" className="onoff-nav-btn" onClick={toggleMobileMenu}>
+                <a href="#" className="onoff-nav-btn" onClick={(e) => { e.preventDefault(); toggleMobileMenu(); }}>
                   <span>MENU</span>
                   <div className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}>
                     <span></span>
@@ -215,6 +218,12 @@ const Navbar = () => {
                 {isMobileMenuOpen && (
                   <div className="navbar-section">
                     <div className="navbar-in-section">
+                      <div className="mobile-menu-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px', marginBottom: '10px' }}>
+                        <h3 style={{ margin: 0 }}>Menu</h3>
+                        <button onClick={toggleMobileMenu} style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '20px', color: '#333' }}>
+                          <i className="fa-solid fa-xmark"></i>
+                        </button>
+                      </div>
                       <div className="search-container">
                         <form action="">
                           <input type="text" placeholder="Search..." name="search" />
@@ -237,7 +246,7 @@ const Navbar = () => {
                               >
                                 <span>{item.name}</span>
                                 <span>
-                                  <i className="fa-solid fa-chevron-down"></i>
+                                  <i className={`fa-solid ${mobileDropdowns[item.name] ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
                                 </span>
                               </div>
                               {mobileDropdowns[item.name] && (
@@ -279,5 +288,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
 
