@@ -16,22 +16,32 @@ const Navbar = () => {
     const savedTheme = localStorage.getItem('theme') || 'light';
     setTheme(savedTheme);
     document.documentElement.setAttribute('data-theme', savedTheme);
+    document.body.classList.remove('dark-theme', 'high-contrast-theme');
     if (savedTheme === 'dark') {
       document.body.classList.add('dark-theme');
-    } else {
-      document.body.classList.remove('dark-theme');
+    } else if (savedTheme === 'high-contrast') {
+      document.body.classList.add('high-contrast-theme');
     }
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
+    let newTheme;
+    if (theme === 'light') {
+      newTheme = 'dark';
+    } else if (theme === 'dark') {
+      newTheme = 'high-contrast';
+    } else {
+      newTheme = 'light';
+    }
+    
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme);
     document.documentElement.setAttribute('data-theme', newTheme);
+    document.body.classList.remove('dark-theme', 'high-contrast-theme');
     if (newTheme === 'dark') {
       document.body.classList.add('dark-theme');
-    } else {
-      document.body.classList.remove('dark-theme');
+    } else if (newTheme === 'high-contrast') {
+      document.body.classList.add('high-contrast-theme');
     }
   };
 
@@ -292,9 +302,21 @@ const Navbar = () => {
                   e.currentTarget.style.backgroundColor = 'transparent';
                   e.currentTarget.style.transform = 'scale(1)';
                 }}
-                title={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
+                title={
+                  theme === 'light' 
+                    ? 'Switch to dark mode' 
+                    : theme === 'dark' 
+                    ? 'Switch to high contrast mode' 
+                    : 'Switch to light mode'
+                }
               >
-                <i className={theme === 'light' ? 'fa-solid fa-moon' : 'fa-solid fa-sun'}></i>
+                <i className={
+                  theme === 'light' 
+                    ? 'fa-solid fa-moon' 
+                    : theme === 'dark' 
+                    ? 'fa-solid fa-adjust' 
+                    : 'fa-solid fa-sun'
+                }></i>
               </a>
               <div className={`header-search-icon ${isSearchOpen ? 'show' : ''}`}>
                 <a className="search-btn" onClick={toggleSearch}>
