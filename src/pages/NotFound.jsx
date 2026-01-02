@@ -1,20 +1,9 @@
 import React from 'react';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
-import PageHeading from '../components/PageHeading';
-import { generateBreadcrumbs } from '../utils/breadcrumbs';
+import { Link } from 'react-router-dom';
 
 const NotFound = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-
   return (
     <main className="page">
-      <PageHeading
-        title="404 - Page Not Found"
-        imageSrc="https://www.ada.edu.az/static/images/hero-campus.jpg"
-        breadcrumb={generateBreadcrumbs(location.pathname, '404 - Page Not Found')}
-      />
-
       <div className="container py-5">
         <div className="row justify-content-center">
           <div className="col-md-8 text-center">
