@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './PageHeading.css';
 
 const PageHeading = ({ title, imageSrc, breadcrumb }) => {
   return (

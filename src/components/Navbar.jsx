@@ -407,150 +407,141 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <div className="header-nav header-nav-mobile">
-                <a href="#" className="onoff-nav-btn" onClick={(e) => { e.preventDefault(); toggleMobileMenu(); }}>
+              <div className={`header-nav header-nav-mobile ${isMobileMenuOpen ? 'open-nav' : ''}`}>
+                <a href="javascript:;" className="onoff-nav-btn" onClick={(e) => { e.preventDefault(); toggleMobileMenu(); }}>
                   <span>MENU</span>
-                  <div className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}>
+                  <div className={`hamburger ${isMobileMenuOpen ? 'open' : ''}`}>
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
                   </div>
                 </a>
-
-                {isMobileMenuOpen && (
-                  <div className="navbar-section">
-                    <div className="navbar-in-section">
-                      <div className="mobile-menu-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px', marginBottom: '10px' }}>
-                        <h3 style={{ margin: 0 }}>Menu</h3>
-                        <button onClick={toggleMobileMenu} style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '20px', color: '#333' }}>
-                          <i className="fa-solid fa-xmark"></i>
+                <div className="navbar-section">
+                  <div className="navbar-in-section">
+                    <div className="search-container">
+                      <form onSubmit={handleSearch}>
+                        <input 
+                          type="text" 
+                          placeholder="Search..." 
+                          name="search" 
+                          value={searchQuery}
+                          onChange={handleSearchInputChange}
+                        />
+                        <button type="submit">
+                          <i className="fa fa-search"></i>
                         </button>
-                      </div>
-                      <div className="search-container">
-                        <form onSubmit={handleSearch}>
-                          <input 
-                            type="text" 
-                            placeholder="Search..." 
-                            name="search" 
-                            value={searchQuery}
-                            onChange={handleSearchInputChange}
-                          />
-                          <button type="submit">
-                            <i className="fa fa-search"></i>
-                          </button>
-                        </form>
-                        {(searchResults.news.length > 0 || searchResults.programs.length > 0) && (
-                          <div style={{
-                            marginTop: '10px',
-                            maxHeight: '300px',
-                            overflowY: 'auto',
-                            border: '1px solid #e5e6e7',
-                            borderRadius: '4px'
-                          }}>
-                            {searchResults.news.length > 0 && (
-                              <div style={{ padding: '10px' }}>
-                                <div style={{ fontWeight: 'bold', marginBottom: '8px', color: '#003366' }}>News</div>
-                                {searchResults.news.map((item) => (
-                                  <a
-                                    key={item.id}
-                                    href={`/en/news/${item.id}`}
-                                    onClick={(e) => {
-                                      e.preventDefault();
-                                      navigate(`/en/news/${item.id}`);
-                                      toggleMobileMenu();
-                                      toggleSearch();
-                                    }}
-                                    style={{
-                                      display: 'block',
-                                      padding: '8px',
-                                      textDecoration: 'none',
-                                      color: '#292929',
-                                      borderBottom: '1px solid #f0f0f0'
-                                    }}
-                                  >
-                                    <div style={{ fontWeight: '600', fontSize: '14px' }}>{item.title}</div>
-                                    {item.category && (
-                                      <div style={{ fontSize: '12px', color: '#666', marginTop: '4px' }}>{item.category}</div>
-                                    )}
-                                  </a>
-                                ))}
-                              </div>
-                            )}
-                            {searchResults.programs.length > 0 && (
-                              <div style={{ padding: '10px', borderTop: searchResults.news.length > 0 ? '1px solid #e5e6e7' : 'none' }}>
-                                <div style={{ fontWeight: 'bold', marginBottom: '8px', color: '#003366' }}>Programs</div>
-                                {searchResults.programs.map((item) => (
-                                  <a
-                                    key={item.id}
-                                    href={item.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    style={{
-                                      display: 'block',
-                                      padding: '8px',
-                                      textDecoration: 'none',
-                                      color: '#292929',
-                                      borderBottom: '1px solid #f0f0f0'
-                                    }}
-                                  >
-                                    <div style={{ fontWeight: '600', fontSize: '14px' }}>{item.title}</div>
-                                    {item.school_label && (
-                                      <div style={{ fontSize: '12px', color: '#666', marginTop: '4px' }}>{item.school_label}</div>
-                                    )}
-                                  </a>
-                                ))}
-                              </div>
-                            )}
-                          </div>
-                        )}
-                      </div>
-
-                      <nav className="navbar">
-                        <ul className="navbar-nav">
-                          {menuItems.map((item, index) => (
-                            <li
-                              key={index}
-                              className={`sub-menu ${mobileDropdowns[item.name] ? 'active' : ''}`}
-                            >
-                              <div
-                                className="sub-btn"
-                                onClick={() => toggleMobileDropdown(item.name)}
-                              >
-                                <span>{item.name}</span>
-                                <span>
-                                  <i className={`fa-solid ${mobileDropdowns[item.name] ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
-                                </span>
-                              </div>
-                              {mobileDropdowns[item.name] && (
-                                <ul>
-                                  {item.submenu.map((subItem, subIndex) => (
-                                    <li key={subIndex}>
-                                      <a
-                                        href={subItem.href}
-                                        target={subItem.target || undefined}
-                                      >
-                                        {subItem.text}
-                                      </a>
-                                    </li>
-                                  ))}
-                                </ul>
-                              )}
-                            </li>
-                          ))}
-
-                          {topNavLinks.map((link, index) => (
-                            <li key={`mobile-${index}`}>
-                              <a href={link.href} target={link.target || undefined}>
-                                {link.text}
-                              </a>
-                            </li>
-                          ))}
-                        </ul>
-                      </nav>
+                      </form>
+                      {(searchResults.news.length > 0 || searchResults.programs.length > 0) && (
+                        <div style={{
+                          marginTop: '10px',
+                          maxHeight: '300px',
+                          overflowY: 'auto',
+                          border: '1px solid #e5e6e7',
+                          borderRadius: '4px'
+                        }}>
+                          {searchResults.news.length > 0 && (
+                            <div style={{ padding: '10px' }}>
+                              <div style={{ fontWeight: 'bold', marginBottom: '8px', color: '#003366' }}>News</div>
+                              {searchResults.news.map((item) => (
+                                <a
+                                  key={item.id}
+                                  href={`/en/news/${item.id}`}
+                                  onClick={(e) => {
+                                    e.preventDefault();
+                                    navigate(`/en/news/${item.id}`);
+                                    toggleMobileMenu();
+                                    toggleSearch();
+                                  }}
+                                  style={{
+                                    display: 'block',
+                                    padding: '8px',
+                                    textDecoration: 'none',
+                                    color: '#292929',
+                                    borderBottom: '1px solid #f0f0f0'
+                                  }}
+                                >
+                                  <div style={{ fontWeight: '600', fontSize: '14px' }}>{item.title}</div>
+                                  {item.category && (
+                                    <div style={{ fontSize: '12px', color: '#666', marginTop: '4px' }}>{item.category}</div>
+                                  )}
+                                </a>
+                              ))}
+                            </div>
+                          )}
+                          {searchResults.programs.length > 0 && (
+                            <div style={{ padding: '10px', borderTop: searchResults.news.length > 0 ? '1px solid #e5e6e7' : 'none' }}>
+                              <div style={{ fontWeight: 'bold', marginBottom: '8px', color: '#003366' }}>Programs</div>
+                              {searchResults.programs.map((item) => (
+                                <a
+                                  key={item.id}
+                                  href={item.link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  style={{
+                                    display: 'block',
+                                    padding: '8px',
+                                    textDecoration: 'none',
+                                    color: '#292929',
+                                    borderBottom: '1px solid #f0f0f0'
+                                  }}
+                                >
+                                  <div style={{ fontWeight: '600', fontSize: '14px' }}>{item.title}</div>
+                                  {item.school_label && (
+                                    <div style={{ fontSize: '12px', color: '#666', marginTop: '4px' }}>{item.school_label}</div>
+                                  )}
+                                </a>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      )}
                     </div>
+
+                    <nav className="navbar">
+                      <ul className="navbar-nav">
+                        {menuItems.map((item, index) => (
+                          <li
+                            key={index}
+                            className={`sub-menu ${mobileDropdowns[item.name] ? 'active' : ''}`}
+                          >
+                            <div
+                              className="sub-btn"
+                              onClick={() => toggleMobileDropdown(item.name)}
+                            >
+                              <span>{item.name}</span>
+                              <span>
+                                <i className={`fa-solid ${mobileDropdowns[item.name] ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
+                              </span>
+                            </div>
+                            {mobileDropdowns[item.name] && (
+                              <ul>
+                                {item.submenu.map((subItem, subIndex) => (
+                                  <li key={subIndex}>
+                                    <a
+                                      href={subItem.href}
+                                      target={subItem.target || undefined}
+                                    >
+                                      {subItem.text}
+                                    </a>
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                          </li>
+                        ))}
+
+                        {topNavLinks.map((link, index) => (
+                          <li key={`mobile-${index}`}>
+                            <a href={link.href} target={link.target || undefined}>
+                              {link.text}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </nav>
                   </div>
-                )}
+                </div>
               </div>
             </div>
           </div>

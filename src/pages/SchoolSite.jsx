@@ -67,6 +67,24 @@ const SchoolSite = () => {
           </p>
         </div>
       </section>
+      <div class="row main-team-anchor meet-our-faculty justify-content-center">
+        <div class="col-12">
+          <div class="headline border-decor">
+            <i class="line-left"></i>
+            <h2 class="title color-primary">Meet Our Faculty</h2>
+            <i class="line-right"></i>
+          </div>
+          <div class="content">
+            <p>
+              The School of it faculty members are recognized experts in their
+              fields and are dedicated to the study and practice of it and
+              economics. They possess an extensive scholarship and wide-ranging
+              real-world experience, which brings breadth and depth to classroom
+              discussions.
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="container py-5">
         <div className="row g-4">
           {faculty.map((member, index) => (
