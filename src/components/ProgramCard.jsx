@@ -34,7 +34,7 @@ const ProgramCard = ({
           style={{
             minHeight: '160px',
             fontWeight: 600,
-            ...(bgStyle || {}),
+            ...(bgStyle || { backgroundImage: "url('https://www.ada.edu.az/media/2024/07/04/4-1.jpg')" }),
           }}
         >
           <span>{title}</span>

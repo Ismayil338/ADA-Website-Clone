@@ -10,7 +10,7 @@ const AboutADA = () => {
     <main className="page page-about">
       <PageHeading
         title="ADA University"
-        imageSrc="https://www.ada.edu.az/assets/img/header/header_about.jpg"
+        imageSrc="https://www.ada.edu.az/assets/img/header/header-img-ada-university.jpg"
         breadcrumb={generateBreadcrumbs(location.pathname)}
       />
 
@@ -376,3 +376,4 @@ const AboutADA = () => {
 };
 
 export default AboutADA;
+

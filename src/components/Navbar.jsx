@@ -285,12 +285,11 @@ const Navbar = () => {
               >
                 <i className={theme === 'light' ? 'fa-solid fa-moon' : 'fa-solid fa-sun'}></i>
               </a>
-              <div className="header-search-icon">
+              <div className={`header-search-icon ${isSearchOpen ? 'show' : ''}`}>
                 <a className="search-btn" onClick={toggleSearch}>
                   <i className={isSearchOpen ? 'fa-solid fa-xmark' : 'fa fa-search'}></i>
                 </a>
-                {isSearchOpen && (
-                  <div className="search-container">
+                <div className="search-container">
                     <form onSubmit={handleSearch}>
                       <input 
                         type="text" 
@@ -394,7 +393,6 @@ const Navbar = () => {
                       </div>
                     )}
                   </div>
-                )}
               </div>
 
               <div className="header-buttons">

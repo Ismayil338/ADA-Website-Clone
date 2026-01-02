@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Hero from '../components/Hero';
 
-const Home = () => (
+const Home = () => {
+  const [activeTab, setActiveTab] = useState('815');
+
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabId);
+  };
+
+  return (
   <main className="page page-home">
     <div id="page" className="wrapper">
       <section className="cs-slide-paralax-bg">
@@ -431,17 +438,37 @@ const Home = () => (
         <div className="container">
           <div className="cs-tab-container style-1">
             <div className="cs-tab-nav">
-              <div className="cs-tab-nav-item active" data-id="815">
+              <div 
+                className={`cs-tab-nav-item ${activeTab === '815' ? 'active' : ''}`} 
+                data-id="815"
+                onClick={() => handleTabClick('815')}
+              >
                 Studying at ADA
               </div>
-              <div className="cs-tab-nav-item" data-id="814">Financial Aid</div>
-              <div className="cs-tab-nav-item" data-id="816">ADA Experience</div>
+              <div 
+                className={`cs-tab-nav-item ${activeTab === '814' ? 'active' : ''}`} 
+                data-id="814"
+                onClick={() => handleTabClick('814')}
+              >
+                Financial Aid
+              </div>
+              <div 
+                className={`cs-tab-nav-item ${activeTab === '816' ? 'active' : ''}`} 
+                data-id="816"
+                onClick={() => handleTabClick('816')}
+              >
+                ADA Experience
+              </div>
             </div>
             <div className="cs-tab-contents">
-              <div className="cs-tab-nav-item active" data-id="815">
+              <div 
+                className={`cs-tab-nav-item ${activeTab === '815' ? 'active' : ''}`} 
+                data-id="815"
+                onClick={() => handleTabClick('815')}
+              >
                 Studying at ADA
               </div>
-              <div className="tab show" data-id="815">
+              <div className={`tab ${activeTab === '815' ? 'show' : ''}`} data-id="815">
                 <div className="row">
                   <div className="col-lg-9">
                     <h3 className="color-primary">Programs</h3>
@@ -475,10 +502,14 @@ const Home = () => (
                   </div>
                 </div>
               </div>
-              <div className="cs-tab-nav-item undefined" data-id="814">
+              <div 
+                className={`cs-tab-nav-item ${activeTab === '814' ? 'active' : ''}`} 
+                data-id="814"
+                onClick={() => handleTabClick('814')}
+              >
                 Financial Aid
               </div>
-              <div className="tab" data-id="814">
+              <div className={`tab ${activeTab === '814' ? 'show' : ''}`} data-id="814">
                 <div className="row">
                   <div className="col-lg-6">
                     <h3 className="color-primary">Financial Aid</h3>
@@ -520,10 +551,14 @@ const Home = () => (
                   </div>
                 </div>
               </div>
-              <div className="cs-tab-nav-item undefined" data-id="816">
+              <div 
+                className={`cs-tab-nav-item ${activeTab === '816' ? 'active' : ''}`} 
+                data-id="816"
+                onClick={() => handleTabClick('816')}
+              >
                 ADA Experience
               </div>
-              <div className="tab" data-id="816">
+              <div className={`tab ${activeTab === '816' ? 'show' : ''}`} data-id="816">
                 <div className="row">
                   <div className="col-lg-6">
                     <h3 className="color-primary">ADA Experience</h3>
@@ -1154,6 +1189,7 @@ const Home = () => (
       </section>
     </div>
   </main>
-);
+  );
+};
 
 export default Home;
