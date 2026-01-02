@@ -110,6 +110,22 @@ body.dark-theme h5 {
     color: #fff;
 }
 
+body.dark-theme h1,
+body.dark-theme h3 {
+    color: #ffffff !important;
+}
+
+body.dark-theme .headline h1,
+body.dark-theme .headline h3,
+body.dark-theme .headline .title h1,
+body.dark-theme .headline .title h3,
+body.dark-theme section h1,
+body.dark-theme section h3,
+body.dark-theme .section h1,
+body.dark-theme .section h3 {
+    color: #ffffff !important;
+}
+
 body.dark-theme .headline {
     color: #fff;
 }
@@ -623,6 +639,24 @@ body.high-contrast-theme h3,
 body.high-contrast-theme h4,
 body.high-contrast-theme h5 {
     color: #ffffff;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+body.high-contrast-theme h1,
+body.high-contrast-theme h3 {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+body.high-contrast-theme .headline h1,
+body.high-contrast-theme .headline h3,
+body.high-contrast-theme .headline .title h1,
+body.high-contrast-theme .headline .title h3,
+body.high-contrast-theme section h1,
+body.high-contrast-theme section h3,
+body.high-contrast-theme .section h1,
+body.high-contrast-theme .section h3 {
+    color: #ffffff !important;
     text-shadow: 2px 2px 0px #000000;
 }
 
