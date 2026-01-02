@@ -1,12 +1,86 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Hero from '../components/Hero';
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState('815');
+  const photoOverlaySwiperRef = useRef(null);
+  const ada4AllSwiperRef = useRef(null);
 
   const handleTabClick = (tabId) => {
     setActiveTab(tabId);
   };
+
+  useEffect(() => {
+    // Initialize photoOverlay-carousel slider
+    const initPhotoOverlaySwiper = async () => {
+      const { default: Swiper } = await import('swiper');
+      const { Navigation } = await import('swiper/modules');
+      
+      const swiperEl = document.querySelector('.photoOverlay-carousel');
+      if (swiperEl) {
+        // Destroy existing instance if any
+        if (swiperEl.swiper) {
+          swiperEl.swiper.destroy(true, true);
+        }
+        
+        photoOverlaySwiperRef.current = new Swiper(swiperEl, {
+          modules: [Navigation],
+          slidesPerView: 'auto',
+          spaceBetween: 30,
+          navigation: {
+            nextEl: '.photoOverlay-carousel .swiper-navigation-box .swiper-button-next',
+            prevEl: '.photoOverlay-carousel .swiper-navigation-box .swiper-button-prev',
+          },
+        });
+      }
+    };
+
+    // Initialize ada-4all-slider
+    const initAda4AllSwiper = async () => {
+      const { default: Swiper } = await import('swiper');
+      const { Navigation, Pagination } = await import('swiper/modules');
+      
+      const swiperEl = document.querySelector('.ada-4all-slider');
+      if (swiperEl) {
+        // Destroy existing instance if any
+        if (swiperEl.swiper) {
+          swiperEl.swiper.destroy(true, true);
+        }
+        
+        ada4AllSwiperRef.current = new Swiper(swiperEl, {
+          modules: [Navigation, Pagination],
+          slidesPerView: 1,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: '.ada-4all-slider .swiper-button-next',
+            prevEl: '.ada-4all-slider .swiper-button-prev',
+          },
+          pagination: {
+            el: '.ada-4all-slider-pagination',
+            clickable: true,
+          },
+        });
+      }
+    };
+
+    // Small delay to ensure DOM is ready
+    const timer = setTimeout(() => {
+      initPhotoOverlaySwiper();
+      initAda4AllSwiper();
+    }, 100);
+
+    return () => {
+      clearTimeout(timer);
+      if (photoOverlaySwiperRef.current) {
+        photoOverlaySwiperRef.current.destroy(true, true);
+        photoOverlaySwiperRef.current = null;
+      }
+      if (ada4AllSwiperRef.current) {
+        ada4AllSwiperRef.current.destroy(true, true);
+        ada4AllSwiperRef.current = null;
+      }
+    };
+  }, []);
 
   return (
   <main className="page page-home">
@@ -1072,6 +1146,12 @@ const Home = () => {
               aria-live="assertive"
               aria-atomic="true"
             ></span>
+            <div className="swiper-button-prev">
+              <i className="fa-solid fa-chevron-left"></i>
+            </div>
+            <div className="swiper-button-next">
+              <i className="fa-solid fa-chevron-right"></i>
+            </div>
           </div>
           <div
             className="ada-4all-slider-pagination swiper-pagination --horizontal swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
