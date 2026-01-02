@@ -28,9 +28,10 @@ const routePathToLabel = {
  * Generates breadcrumb array from current pathname
  * @param {string} pathname - Current route pathname (e.g., '/en/schools/site')
  * @param {string} currentPageLabel - Optional custom label for the current page
+ * @param {string} filterName - Optional filter name to add to breadcrumb (e.g., 'Academic', 'ADA School')
  * @returns {Array} Breadcrumb array with {label, link} objects
  */
-export const generateBreadcrumbs = (pathname, currentPageLabel = null) => {
+export const generateBreadcrumbs = (pathname, currentPageLabel = null, filterName = null) => {
   // Always start with Home
   const breadcrumbs = [{ label: 'Home', link: '/en' }];
 
@@ -110,9 +111,18 @@ export const generateBreadcrumbs = (pathname, currentPageLabel = null) => {
   // For single-level routes like /en/news or /en/events
   if (pathSegments.length === 1) {
     breadcrumbs.push({
-      label: currentPageLabel || firstSegmentLabel,
-      link: null
+      label: firstSegmentLabel,
+      link: filterName ? firstSegmentLink : null
     });
+    
+    // Add filter name if provided
+    if (filterName) {
+      breadcrumbs.push({
+        label: filterName,
+        link: null
+      });
+    }
+    
     return breadcrumbs;
   }
 
