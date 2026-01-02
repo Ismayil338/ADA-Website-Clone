@@ -131,7 +131,7 @@ const Events = () => {
       <PageHeading
         title="Events"
         imageSrc="https://www.ada.edu.az/assets/img/header/events-detail.jpg"
-        breadcrumb={generateBreadcrumbs(location.pathname)}
+        breadcrumb={generateBreadcrumbs(location.pathname, null, selectedType)}
       />
 
       <div className="container py-5">

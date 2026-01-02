@@ -135,9 +135,9 @@ const News = () => {
   return (
     <main className="page page-news">
       <PageHeading
-        title="News at ADA University"
+        title="News"
         imageSrc="https://www.ada.edu.az/assets/img/header/header_news.jpg"
-        breadcrumb={generateBreadcrumbs(location.pathname)}
+        breadcrumb={generateBreadcrumbs(location.pathname, null, selectedCategory)}
       />
 
       <div className="container py-5">
