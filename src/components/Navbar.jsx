@@ -272,14 +272,25 @@ const Navbar = () => {
                 style={{ 
                   cursor: 'pointer', 
                   color: '#292929', 
-                  fontSize: '16px',
+                  fontSize: '18px',
                   textDecoration: 'none',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  width: '24px',
-                  height: '24px',
-                  marginRight: '10px'
+                  width: '32px',
+                  height: '32px',
+                  marginRight: '10px',
+                  borderRadius: '50%',
+                  transition: 'all 0.3s ease',
+                  padding: '4px'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.05)';
+                  e.currentTarget.style.transform = 'scale(1.1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'transparent';
+                  e.currentTarget.style.transform = 'scale(1)';
                 }}
                 title={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
               >
