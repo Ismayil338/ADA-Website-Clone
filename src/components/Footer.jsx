@@ -1,5 +1,3 @@
-import logoWhite from '../pics/logo-white.svg';
-
 const Footer = () => {
   return (
     <footer className="footer">
@@ -15,7 +13,7 @@ const Footer = () => {
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
               >
-                <img src={logoWhite} alt="ADA University" />
+                <img src="https://www.ada.edu.az/assets/img/logo-white.svg" alt="ADA University" />
               </a>
               <div className="title footer-social-title w-auto">Connect With Us</div>
               <div className="social-set">
@@ -51,7 +49,7 @@ const Footer = () => {
                 <a href="/en/about/campus">Campus</a>
               </li>
               <li>
-                <a href="https://ada.edu.az/en/admission/find-your-program">Admissions</a>
+                <a href="/en/admission/find-your-program">Admissions</a>
               </li>
               <li>
                 <a href="/en/experience/student-life">Student Life</a>
