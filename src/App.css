@@ -3836,7 +3836,16 @@ a:hover {
     opacity: 0;
     visibility: hidden;
     height: 0;
-    transition: all .3s ease-in
+    transition: all .3s ease-in;
+    overflow: hidden;
+}
+
+.navbar-section .sub-menu.active ul {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .open-nav .navbar-section {

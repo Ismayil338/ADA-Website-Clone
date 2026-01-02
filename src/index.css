@@ -27,10 +27,30 @@ body.dark-theme .header .top-section .navbar .navbar-nav li a {
 
 body.dark-theme .header .top-section a.nav-link.hover-bg {
     color: #e0e0e0 !important;
+    background-color: transparent;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+body.dark-theme .header .top-section a.nav-link.hover-bg::before {
+    background-color: #ae485e !important;
+    z-index: 0;
+}
+
+body.dark-theme .header .top-section a.nav-link.hover-bg span {
+    position: relative;
+    z-index: 1;
 }
 
 body.dark-theme .header .top-section a.nav-link.hover-bg:hover {
-    color: #ae485e !important;
+    color: #ffffff !important;
+    background-color: transparent;
+}
+
+body.dark-theme .header .top-section a.nav-link.hover-bg:hover::before {
+    opacity: 1;
+    width: 100%;
 }
 
 body.dark-theme .header .top-section a.nav-link,
@@ -41,6 +61,23 @@ body.dark-theme .header .header-buttons a.nav-link {
 body.dark-theme .header .top-section a.nav-link:hover,
 body.dark-theme .header .header-buttons a.nav-link:hover {
     color: #ae485e;
+}
+
+body.dark-theme .header .header-buttons .lang-dropdown a {
+    color: #e0e0e0 !important;
+    background-color: transparent;
+    border: 1px solid rgba(224, 224, 224, 0.3);
+    border-radius: 4px;
+    padding: 2px 7px !important;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    min-width: fit-content;
+}
+
+body.dark-theme .header .header-buttons .lang-dropdown a:hover {
+    color: #ffffff !important;
+    background-color: rgba(174, 72, 94, 0.2);
+    border-color: #ae485e;
 }
 
 body.dark-theme .header .header-nav .navbar ul.nav li a.nav-link {
@@ -357,6 +394,20 @@ body.dark-theme .navbar-section .sub-menu .sub-btn span:nth-child(2) {
     border-color: #444;
 }
 
+body.dark-theme .navbar-section .sub-menu.active ul {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}
+
+body.dark-theme .navbar-section .sub-menu ul li a {
+    color: #e0e0e0;
+}
+
+body.dark-theme .navbar-section .sub-menu ul li a:hover {
+    color: #ae485e;
+}
+
 body.dark-theme .program-result-item .title {
     background: #2d2d2d;
     border-color: #444;
@@ -544,12 +595,43 @@ body.high-contrast-theme .header .top-section .navbar .navbar-nav li a {
 
 body.high-contrast-theme .header .top-section a.nav-link.hover-bg {
     color: #ffffff !important;
-    border: 2px solid #ffff00;
+    border: 3px solid #ffff00 !important;
+    background-color: transparent !important;
+    padding: 8px 16px !important;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+body.high-contrast-theme .header .top-section a.nav-link.hover-bg::before {
+    background-color: #ffff00 !important;
+    z-index: 0;
+}
+
+body.high-contrast-theme .header .top-section a.nav-link.hover-bg span {
+    position: relative;
+    z-index: 1;
 }
 
 body.high-contrast-theme .header .top-section a.nav-link.hover-bg:hover {
     color: #000000 !important;
+    background-color: transparent !important;
+    border-color: #ffff00 !important;
+    outline: 3px solid #ffffff;
+    outline-offset: 2px;
+}
+
+body.high-contrast-theme .header .top-section a.nav-link.hover-bg:hover::before {
+    opacity: 1;
+    width: 100%;
     background-color: #ffff00 !important;
+}
+
+body.high-contrast-theme .header .top-section a.nav-link.hover-bg:focus {
+    outline: 3px solid #ffff00 !important;
+    outline-offset: 2px !important;
 }
 
 body.high-contrast-theme .header .top-section a.nav-link,
@@ -562,6 +644,33 @@ body.high-contrast-theme .header .top-section a.nav-link:hover,
 body.high-contrast-theme .header .header-buttons a.nav-link:hover {
     color: #000000;
     background-color: #ffff00;
+}
+
+body.high-contrast-theme .header .header-buttons .lang-dropdown a {
+    color: #ffffff !important;
+    background-color: transparent !important;
+    border: 2px solid #ffff00 !important;
+    border-radius: 4px;
+    padding: 2px 7px !important;
+    box-sizing: border-box;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    min-width: fit-content;
+}
+
+body.high-contrast-theme .header .header-buttons .lang-dropdown a:hover {
+    color: #000000 !important;
+    background-color: #ffff00 !important;
+    border-color: #ffff00 !important;
+    outline: 2px solid #ffffff;
+    outline-offset: -2px;
+}
+
+body.high-contrast-theme .header .header-buttons .lang-dropdown a:focus {
+    outline: 2px solid #ffff00 !important;
+    outline-offset: 2px !important;
 }
 
 body.high-contrast-theme .header .header-nav .navbar ul.nav li a.nav-link {
@@ -1039,6 +1148,23 @@ body.high-contrast-theme .navbar-section .sub-menu .sub-btn span:nth-child(2) {
     border: 3px solid #ffffff;
 }
 
+body.high-contrast-theme .navbar-section .sub-menu.active ul {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}
+
+body.high-contrast-theme .navbar-section .sub-menu ul li a {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding: 8px 0;
+}
+
+body.high-contrast-theme .navbar-section .sub-menu ul li a:hover {
+    color: #000000;
+    background-color: #ffff00;
+}
+
 body.high-contrast-theme .program-result-item .title {
     background: #000000;
     border: 3px solid #ffffff;
@@ -1337,4 +1463,119 @@ body.high-contrast-theme img,
 body.high-contrast-theme video,
 body.high-contrast-theme svg {
     transition: none;
+}
+
+/* Category Filter Buttons - Light Mode (Default) */
+.category-filter-btn {
+    background-color: transparent;
+    color: #000;
+    border: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    padding: 10px 15px 10px 25px;
+    position: relative;
+    box-shadow: none;
+    text-align: left;
+}
+
+.category-filter-btn:hover:not(.active) {
+    color: #ae485e;
+}
+
+.category-filter-btn.active {
+    background-color: #ae485e;
+    color: #fff;
+}
+
+.news-category-dot {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+}
+
+.category-filter-btn:hover:not(.active) .news-category-dot {
+    border-color: #ae485e;
+}
+
+.category-filter-btn.active .news-category-dot {
+    border-color: #fff;
+}
+
+/* Dark Mode Styles for Category Filter Buttons */
+body.dark-theme .category-filter-btn {
+    background-color: transparent;
+    color: #e0e0e0;
+}
+
+body.dark-theme .category-filter-btn:hover:not(.active) {
+    color: #ae485e;
+    background-color: rgba(174, 72, 94, 0.1);
+}
+
+body.dark-theme .category-filter-btn.active {
+    background-color: #ae485e;
+    color: #fff;
+}
+
+body.dark-theme .news-category-dot {
+    border-color: #e0e0e0;
+}
+
+body.dark-theme .category-filter-btn:hover:not(.active) .news-category-dot {
+    border-color: #ae485e;
+}
+
+body.dark-theme .category-filter-btn.active .news-category-dot {
+    border-color: #fff;
+}
+
+/* High Contrast Mode Styles for Category Filter Buttons */
+body.high-contrast-theme .category-filter-btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid transparent;
+    font-weight: 600;
+}
+
+body.high-contrast-theme .category-filter-btn:hover:not(.active) {
+    color: #000000;
+    background-color: #ffff00;
+    border-color: #ffff00;
+    outline: 2px solid #ffffff;
+    outline-offset: -2px;
+}
+
+body.high-contrast-theme .category-filter-btn.active {
+    background-color: #ffff00;
+    color: #000000;
+    border: 3px solid #ffffff;
+    font-weight: 700;
+}
+
+body.high-contrast-theme .category-filter-btn:focus {
+    outline: 3px solid #ffff00;
+    outline-offset: 2px;
+}
+
+body.high-contrast-theme .news-category-dot {
+    border: 3px solid #ffffff;
+    width: 8px;
+    height: 8px;
+}
+
+body.high-contrast-theme .category-filter-btn:hover:not(.active) .news-category-dot {
+    border-color: #000000;
+    background-color: #000000;
+}
+
+body.high-contrast-theme .category-filter-btn.active .news-category-dot {
+    border-color: #000000;
+    background-color: #000000;
 }

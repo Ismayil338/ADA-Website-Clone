@@ -362,54 +362,12 @@ const News = () => {
                     <button
                       key={category.name}
                       type="button"
-                      className="btn text-start"
-                      style={{
-                        backgroundColor: isActive ? '#ae485e' : 'transparent',
-                        color: isActive ? '#fff' : '#000',
-                        border: 'none',
-                        transition: 'all 0.3s ease',
-                        width: '100%',
-                        padding: '10px 15px 10px 25px',
-                        position: 'relative',
-                        boxShadow: 'none'
-                      }}
-                      onMouseEnter={(e) => {
-                        if (!isActive) {
-                          e.target.style.color = '#ae485e';
-                          const dot = e.target.querySelector('.news-category-dot');
-                          if (dot) {
-                            dot.style.borderColor = '#ae485e';
-                          }
-                        }
-                      }}
-                      onMouseLeave={(e) => {
-                        if (!isActive) {
-                          e.target.style.color = '#000';
-                          const dot = e.target.querySelector('.news-category-dot');
-                          if (dot) {
-                            dot.style.borderColor = '#000';
-                          }
-                        }
-                      }}
+                      className={`btn text-start category-filter-btn ${isActive ? 'active' : ''}`}
                       onClick={() => {
                         setSelectedCategory(isActive ? null : category.name);
                       }}
                     >
-                      <span
-                        className="news-category-dot"
-                        style={{
-                          position: 'absolute',
-                          left: '10px',
-                          top: '50%',
-                          transform: 'translateY(-50%)',
-                          width: '6px',
-                          height: '6px',
-                          borderRadius: '50%',
-                          border: `2px solid ${isActive ? '#fff' : '#000'}`,
-                          backgroundColor: 'transparent',
-                          transition: 'border-color 0.3s ease'
-                        }}
-                      />
+                      <span className="news-category-dot" />
                       {category.name} ({count})
                     </button>
                   );

@@ -354,51 +354,18 @@ const Events = () => {
                     <button
                       key={type.name}
                       type="button"
-                      className="btn text-start"
+                      className={`btn text-start category-filter-btn ${isActive ? 'active' : ''}`}
                       style={{
-                        backgroundColor: 'transparent',
-                        color: '#000',
-                        border: 'none',
-                        transition: 'all 0.3s ease',
-                        width: '100%',
-                        padding: '10px 15px 10px 25px',
-                        position: 'relative',
-                        boxShadow: 'none',
                         display: 'flex',
                         justifyContent: 'space-between',
                         alignItems: 'center'
-                      }}
-                      onMouseEnter={(e) => {
-                        e.target.style.color = '#dc3545';
-                        const dot = e.target.querySelector('.event-type-dot');
-                        if (dot) {
-                          dot.style.borderColor = '#dc3545';
-                        }
-                      }}
-                      onMouseLeave={(e) => {
-                        e.target.style.color = '#000';
-                        const dot = e.target.querySelector('.event-type-dot');
-                        if (dot) {
-                          dot.style.borderColor = '#000';
-                        }
                       }}
                       onClick={() => {
                         setSelectedType(isActive ? null : type.name);
                       }}
                     >
                       <span style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                        <span
-                          className="event-type-dot"
-                          style={{
-                            width: '6px',
-                            height: '6px',
-                            borderRadius: '50%',
-                            border: '2px solid #000',
-                            backgroundColor: 'transparent',
-                            transition: 'border-color 0.3s ease',
-                            flexShrink: 0
-                          }}
-                        />
+                        <span className="news-category-dot" />
                         {type.name}
                       </span>
                       <span>({count})</span>
