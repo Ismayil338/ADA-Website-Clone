@@ -43,15 +43,11 @@ const AboutItalyAzerbaijanUniversity = () => {
         breadcrumb={generateBreadcrumbs(location.pathname)}
       />
 
-      <div className="container py-5">
+      <div className="container py-5" style={{ paddingTop: 0, paddingBottom: 0 }}>
         <div className="row">
-          <div className="col-lg-8">
-            <h1 className="page-title mb-4" style={{ color: '#336178' }}>
-              Italy-Azerbaijan University
-            </h1>
-
-            <section className="mb-5">
-              <h2 className="mb-3" style={{ color: '#336178', fontSize: '32px' }}>
+          <div className="col-lg-12">
+            <section className="mb-5" style={{ paddingTop: 0, paddingBottom: 0 }}>
+              <h2 className="mb-3" style={{ color: '#336178', fontSize: '38px' }}>
                 About Us
               </h2>
               <p style={{ fontSize: '18px', lineHeight: '30px', color: '#292929', marginBottom: '20px' }}>
@@ -65,7 +61,7 @@ const AboutItalyAzerbaijanUniversity = () => {
               </p>
             </section>
 
-            <section className="mb-5">
+            <section className="mb-5" style={{ paddingTop: 0, paddingBottom: 0 }}>
               <div className="row">
                 <div className="col-md-6 mb-4">
                   <div style={{
