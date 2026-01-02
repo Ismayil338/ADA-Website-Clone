@@ -130,7 +130,7 @@ const Events = () => {
     <main className="page page-events">
       <PageHeading
         title="Events"
-        imageSrc="https://www.ada.edu.az/assets/img/header/header_events.jpg"
+        imageSrc="https://www.ada.edu.az/assets/img/header/events-detail.jpg"
         breadcrumb={generateBreadcrumbs(location.pathname)}
       />
 
