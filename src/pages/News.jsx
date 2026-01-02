@@ -364,7 +364,7 @@ const News = () => {
                       type="button"
                       className="btn text-start"
                       style={{
-                        backgroundColor: isActive ? '#dc3545' : 'transparent',
+                        backgroundColor: isActive ? '#ae485e' : 'transparent',
                         color: isActive ? '#fff' : '#000',
                         border: 'none',
                         transition: 'all 0.3s ease',
@@ -375,10 +375,10 @@ const News = () => {
                       }}
                       onMouseEnter={(e) => {
                         if (!isActive) {
-                          e.target.style.color = '#dc3545';
+                          e.target.style.color = '#ae485e';
                           const dot = e.target.querySelector('.news-category-dot');
                           if (dot) {
-                            dot.style.borderColor = '#dc3545';
+                            dot.style.borderColor = '#ae485e';
                           }
                         }
                       }}
