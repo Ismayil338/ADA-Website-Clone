@@ -14,6 +14,7 @@ import AboutItalyAzerbaijanUniversity from './pages/AboutItalyAzerbaijanUniversi
 import Programs from './pages/Programs';
 import EventDetail from './pages/EventDetail';
 import NewsDetail from './pages/NewsDetail';
+import NotFound from './pages/NotFound';
 
 const App = () => (
   <BrowserRouter>
@@ -32,7 +33,7 @@ const App = () => (
       <Route path="/en/academics/research" element={<Research />} />
       <Route path="/en/about/ada-university" element={<AboutADA />} />
       <Route path="/en/about/Italy-Azerbaijan-university" element={<AboutItalyAzerbaijanUniversity />} />
-      <Route path="*" element={<Navigate to="/en" replace />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer />
   </BrowserRouter>

@@ -1,8 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 import EventsCard from '../components/EventsCard';
-import Hero from '../components/Hero';
+import { Link, useLocation } from 'react-router-dom';
+import PageHeading from '../components/PageHeading';
+import { generateBreadcrumbs } from '../utils/breadcrumbs';
 
 const Events = () => {
+  const location = useLocation();
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -61,8 +64,8 @@ const Events = () => {
   const endIndex = startIndex + eventsPerPage;
   const currentEvents = filteredEvents.slice(startIndex, endIndex);
 
-  const leftColumnEvents = currentEvents.slice(0, 6);
-  const rightColumnEvents = currentEvents.slice(6, 12);
+  const leftColumnEvents = currentEvents.filter((_, index) => index % 2 === 0);
+  const rightColumnEvents = currentEvents.filter((_, index) => index % 2 === 1);
 
   const getPaginationButtons = () => {
     const buttons = [];
@@ -125,24 +128,15 @@ const Events = () => {
 
   return (
     <main className="page page-events">
-      <Hero
-        title="Events at ADA University"
-        description="Stay updated with our latest events, seminars, and activities"
-        buttonText="View All Events"
-        imageSrc="https://www.ada.edu.az/static/images/hero-campus.jpg"
-        breadcrumb={[
-          { label: 'Home', link: '/en' },
-          { label: 'Events', link: null }
-        ]}
+      <PageHeading
+        title="Events"
+        imageSrc="https://www.ada.edu.az/assets/img/header/header_events.jpg"
+        breadcrumb={generateBreadcrumbs(location.pathname)}
       />
 
       <div className="container py-5">
         <div className="row">
           <div className="col-lg-8">
-            <h1 className="page-title mb-4" style={{ color: '#003366' }}>
-              Events
-            </h1>
-
             {filteredEvents.length === 0 ? (
               <div className="alert alert-info text-center">
                 <i className="fa fa-info-circle me-2"></i>
@@ -362,53 +356,52 @@ const Events = () => {
                       type="button"
                       className="btn text-start"
                       style={{
-                        backgroundColor: isActive ? '#dc3545' : 'transparent',
-                        color: isActive ? '#fff' : '#000',
+                        backgroundColor: 'transparent',
+                        color: '#000',
                         border: 'none',
                         transition: 'all 0.3s ease',
                         width: '100%',
                         padding: '10px 15px 10px 25px',
                         position: 'relative',
-                        boxShadow: 'none'
+                        boxShadow: 'none',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center'
                       }}
                       onMouseEnter={(e) => {
-                        if (!isActive) {
-                          e.target.style.color = '#dc3545';
-                          const dot = e.target.querySelector('.event-type-dot');
-                          if (dot) {
-                            dot.style.borderColor = '#dc3545';
-                          }
+                        e.target.style.color = '#dc3545';
+                        const dot = e.target.querySelector('.event-type-dot');
+                        if (dot) {
+                          dot.style.borderColor = '#dc3545';
                         }
                       }}
                       onMouseLeave={(e) => {
-                        if (!isActive) {
-                          e.target.style.color = '#000';
-                          const dot = e.target.querySelector('.event-type-dot');
-                          if (dot) {
-                            dot.style.borderColor = '#000';
-                          }
+                        e.target.style.color = '#000';
+                        const dot = e.target.querySelector('.event-type-dot');
+                        if (dot) {
+                          dot.style.borderColor = '#000';
                         }
                       }}
                       onClick={() => {
                         setSelectedType(isActive ? null : type.name);
                       }}
                     >
-                      <span
-                        className="event-type-dot"
-                        style={{
-                          position: 'absolute',
-                          left: '10px',
-                          top: '50%',
-                          transform: 'translateY(-50%)',
-                          width: '6px',
-                          height: '6px',
-                          borderRadius: '50%',
-                          border: `2px solid ${isActive ? '#fff' : '#000'}`,
-                          backgroundColor: 'transparent',
-                          transition: 'border-color 0.3s ease'
-                        }}
-                      />
-                      {type.name} ({count})
+                      <span style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                        <span
+                          className="event-type-dot"
+                          style={{
+                            width: '6px',
+                            height: '6px',
+                            borderRadius: '50%',
+                            border: '2px solid #000',
+                            backgroundColor: 'transparent',
+                            transition: 'border-color 0.3s ease',
+                            flexShrink: 0
+                          }}
+                        />
+                        {type.name}
+                      </span>
+                      <span>({count})</span>
                     </button>
                   );
                 })}

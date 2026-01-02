@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import NewsCard from '../components/NewsCard';
-import Hero from '../components/Hero';
+import PageHeading from '../components/PageHeading';
+import { generateBreadcrumbs } from '../utils/breadcrumbs';
 
 const News = () => {
+  const location = useLocation();
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -131,15 +134,10 @@ const News = () => {
 
   return (
     <main className="page page-news">
-      <Hero
+      <PageHeading
         title="News at ADA University"
-        description="Stay updated with our latest news, announcements, and updates"
-        buttonText="View All News"
-        imageSrc="https://www.ada.edu.az/static/images/hero-campus.jpg"
-        breadcrumb={[
-          { label: 'Home', link: '/en' },
-          { label: 'News', link: null }
-        ]}
+        imageSrc="https://www.ada.edu.az/assets/img/header/header_news.jpg"
+        breadcrumb={generateBreadcrumbs(location.pathname)}
       />
 
       <div className="container py-5">

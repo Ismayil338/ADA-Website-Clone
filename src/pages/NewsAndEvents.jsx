@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import NewsCard from '../components/NewsCard';
 import EventsCard from '../components/EventsCard';
+import PageHeading from '../components/PageHeading';
+import { generateBreadcrumbs } from '../utils/breadcrumbs';
 
 const NewsAndEvents = () => {
   const [news, setNews] = useState([]);
@@ -45,12 +47,17 @@ const NewsAndEvents = () => {
   const eventsPreview = events.slice(0, 6);
 
   return (
-    <main className="container-fluid p-0">
+    <main className="page">
+      <PageHeading
+        title="News and Events"
+        imageSrc="https://www.ada.edu.az/assets/img/header/news-and-blog.jpg"
+        breadcrumb={generateBreadcrumbs(location.pathname)}
+      />
       <div className="container py-5">
         
         <section className="mb-5">
           <div className="d-flex justify-content-between align-items-center mb-0 border-bottom pb-3">
-            <h2 className="fw-bold" style={{ color: '#003366', textTransform: 'uppercase' }}>Latest News</h2>
+            <h2 className="fw-bold section-title" style={{ textTransform: 'uppercase' }}>Latest News</h2>
             <Link to="/en/news" className="btn btn-outline-danger rounded-0 px-4">SEE ALL NEWS</Link>
           </div>
           <div className="row" style={{ marginLeft: '-7.5px', marginRight: '-7.5px' }}>
@@ -84,7 +91,7 @@ const NewsAndEvents = () => {
 
         <section className="mb-5">
           <div className="d-flex justify-content-between align-items-center mb-0 border-bottom pb-3">
-            <h2 className="fw-bold" style={{ color: '#003366', textTransform: 'uppercase' }}>Upcoming Events</h2>
+            <h2 className="fw-bold section-title" style={{ textTransform: 'uppercase' }}>Upcoming Events</h2>
             <Link to="/en/events" className="btn btn-outline-danger rounded-0 px-4">SEE ALL EVENTS</Link>
           </div>
           <div className="row" style={{ marginLeft: '-7.5px', marginRight: '-7.5px' }}>

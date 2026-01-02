@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link, useNavigate, useLocation } from 'react-router-dom';
+import PageHeading from '../components/PageHeading';
+import { generateBreadcrumbs } from '../utils/breadcrumbs';
 
 const NewsDetail = () => {
   const { id } = useParams();
+  const location = useLocation();
   const navigate = useNavigate();
   const [news, setNews] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -52,6 +55,11 @@ const NewsDetail = () => {
 
   return (
     <main className="page page-news-detail">
+      <PageHeading
+        title={news.title || "News Detail"}
+        imageSrc={news.image_url || "https://www.ada.edu.az/assets/img/header/header_news.jpg"}
+        breadcrumb={generateBreadcrumbs(location.pathname, news.title || 'News Detail')}
+      />
       <div className="container py-5">
         <Link
           to="/en/news"

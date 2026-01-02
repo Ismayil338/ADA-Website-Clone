@@ -1,10 +1,39 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [mobileDropdowns, setMobileDropdowns] = useState({});
+  const [theme, setTheme] = useState('light');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState({ news: [], programs: [] });
+  const [isSearching, setIsSearching] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-theme');
+    } else {
+      document.body.classList.remove('dark-theme');
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+    document.documentElement.setAttribute('data-theme', newTheme);
+    if (newTheme === 'dark') {
+      document.body.classList.add('dark-theme');
+    } else {
+      document.body.classList.remove('dark-theme');
+    }
+  };
 
   const toggleDropdown = (menuName) => {
     setActiveDropdown(activeDropdown === menuName ? null : menuName);
@@ -23,6 +52,68 @@ const Navbar = () => {
 
   const toggleSearch = () => {
     setIsSearchOpen(!isSearchOpen);
+    if (!isSearchOpen) {
+      setSearchQuery('');
+      setSearchResults({ news: [], programs: [] });
+    }
+  };
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    // Search is handled by useEffect with debounce
+  };
+
+  useEffect(() => {
+    if (!isSearchOpen) {
+      setSearchResults({ news: [], programs: [] });
+      return;
+    }
+
+    if (!searchQuery.trim()) {
+      setSearchResults({ news: [], programs: [] });
+      return;
+    }
+
+    const timeoutId = setTimeout(() => {
+      const performSearch = async () => {
+        setIsSearching(true);
+        try {
+          const [newsRes, programsRes] = await Promise.all([
+            fetch('http://localhost:5000/news'),
+            fetch('http://localhost:5000/programs')
+          ]);
+
+          const news = await newsRes.json();
+          const programs = await programsRes.json();
+
+          const query = searchQuery.toLowerCase();
+          const filteredNews = news.filter(item => 
+            item.title?.toLowerCase().includes(query) ||
+            item.category?.toLowerCase().includes(query)
+          ).slice(0, 5);
+
+          const filteredPrograms = programs.filter(item =>
+            item.title?.toLowerCase().includes(query) ||
+            item.school_label?.toLowerCase().includes(query)
+          ).slice(0, 5);
+
+          setSearchResults({ news: filteredNews, programs: filteredPrograms });
+        } catch (error) {
+          console.error('Search error:', error);
+          setSearchResults({ news: [], programs: [] });
+        } finally {
+          setIsSearching(false);
+        }
+      };
+
+      performSearch();
+    }, 300);
+
+    return () => clearTimeout(timeoutId);
+  }, [searchQuery, isSearchOpen]);
+
+  const handleSearchInputChange = (e) => {
+    setSearchQuery(e.target.value);
   };
 
   const menuItems = [
@@ -175,21 +266,133 @@ const Navbar = () => {
 
           <div className="col-md-1 col-lang">
             <div className="in-col-flex-end">
+              <a 
+                className="theme-toggle-btn" 
+                onClick={toggleTheme}
+                style={{ 
+                  cursor: 'pointer', 
+                  color: '#292929', 
+                  fontSize: '16px',
+                  textDecoration: 'none',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  width: '24px',
+                  height: '24px',
+                  marginRight: '10px'
+                }}
+                title={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
+              >
+                <i className={theme === 'light' ? 'fa-solid fa-moon' : 'fa-solid fa-sun'}></i>
+              </a>
               <div className="header-search-icon">
                 <a className="search-btn" onClick={toggleSearch}>
-                  <i className="fa fa-search"></i>
+                  <i className={isSearchOpen ? 'fa-solid fa-xmark' : 'fa fa-search'}></i>
                 </a>
                 {isSearchOpen && (
                   <div className="search-container">
-                    <form action="https://www.ada.edu.az/en/search">
-                      <input type="text" placeholder="Search..." name="query" />
+                    <form onSubmit={handleSearch}>
+                      <input 
+                        type="text" 
+                        placeholder="Search..." 
+                        name="query" 
+                        value={searchQuery}
+                        onChange={handleSearchInputChange}
+                        autoFocus
+                      />
                       <button type="submit">
                         <i className="fa fa-search"></i>
                       </button>
-                      <button type="button" onClick={toggleSearch} style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '16px', color: '#333', marginLeft: '5px' }}>
-                        <i className="fa-solid fa-xmark"></i>
-                      </button>
                     </form>
+                    {(searchResults.news.length > 0 || searchResults.programs.length > 0) && (
+                      <div style={{
+                        position: 'absolute',
+                        top: '100%',
+                        left: 0,
+                        right: 0,
+                        backgroundColor: '#fff',
+                        border: '1px solid #e5e6e7',
+                        borderTop: 'none',
+                        maxHeight: '400px',
+                        overflowY: 'auto',
+                        zIndex: 1000,
+                        boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
+                      }}>
+                        {searchResults.news.length > 0 && (
+                          <div style={{ padding: '10px' }}>
+                            <div style={{ fontWeight: 'bold', marginBottom: '8px', color: '#003366' }}>News</div>
+                            {searchResults.news.map((item) => (
+                              <a
+                                key={item.id}
+                                href={`/en/news/${item.id}`}
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  navigate(`/en/news/${item.id}`);
+                                  toggleSearch();
+                                }}
+                                style={{
+                                  display: 'block',
+                                  padding: '8px',
+                                  textDecoration: 'none',
+                                  color: '#292929',
+                                  borderBottom: '1px solid #f0f0f0'
+                                }}
+                                onMouseEnter={(e) => e.target.style.backgroundColor = '#f5f5f5'}
+                                onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}
+                              >
+                                <div style={{ fontWeight: '600', fontSize: '14px' }}>{item.title}</div>
+                                {item.category && (
+                                  <div style={{ fontSize: '12px', color: '#666', marginTop: '4px' }}>{item.category}</div>
+                                )}
+                              </a>
+                            ))}
+                          </div>
+                        )}
+                        {searchResults.programs.length > 0 && (
+                          <div style={{ padding: '10px', borderTop: searchResults.news.length > 0 ? '1px solid #e5e6e7' : 'none' }}>
+                            <div style={{ fontWeight: 'bold', marginBottom: '8px', color: '#003366' }}>Programs</div>
+                            {searchResults.programs.map((item) => (
+                              <a
+                                key={item.id}
+                                href={item.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{
+                                  display: 'block',
+                                  padding: '8px',
+                                  textDecoration: 'none',
+                                  color: '#292929',
+                                  borderBottom: '1px solid #f0f0f0'
+                                }}
+                                onMouseEnter={(e) => e.target.style.backgroundColor = '#f5f5f5'}
+                                onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}
+                              >
+                                <div style={{ fontWeight: '600', fontSize: '14px' }}>{item.title}</div>
+                                {item.school_label && (
+                                  <div style={{ fontSize: '12px', color: '#666', marginTop: '4px' }}>{item.school_label}</div>
+                                )}
+                              </a>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    )}
+                    {isSearching && (
+                      <div style={{
+                        position: 'absolute',
+                        top: '100%',
+                        left: 0,
+                        right: 0,
+                        backgroundColor: '#fff',
+                        border: '1px solid #e5e6e7',
+                        borderTop: 'none',
+                        padding: '10px',
+                        textAlign: 'center',
+                        color: '#666'
+                      }}>
+                        Searching...
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
@@ -225,12 +428,82 @@ const Navbar = () => {
                         </button>
                       </div>
                       <div className="search-container">
-                        <form action="">
-                          <input type="text" placeholder="Search..." name="search" />
+                        <form onSubmit={handleSearch}>
+                          <input 
+                            type="text" 
+                            placeholder="Search..." 
+                            name="search" 
+                            value={searchQuery}
+                            onChange={handleSearchInputChange}
+                          />
                           <button type="submit">
                             <i className="fa fa-search"></i>
                           </button>
                         </form>
+                        {(searchResults.news.length > 0 || searchResults.programs.length > 0) && (
+                          <div style={{
+                            marginTop: '10px',
+                            maxHeight: '300px',
+                            overflowY: 'auto',
+                            border: '1px solid #e5e6e7',
+                            borderRadius: '4px'
+                          }}>
+                            {searchResults.news.length > 0 && (
+                              <div style={{ padding: '10px' }}>
+                                <div style={{ fontWeight: 'bold', marginBottom: '8px', color: '#003366' }}>News</div>
+                                {searchResults.news.map((item) => (
+                                  <a
+                                    key={item.id}
+                                    href={`/en/news/${item.id}`}
+                                    onClick={(e) => {
+                                      e.preventDefault();
+                                      navigate(`/en/news/${item.id}`);
+                                      toggleMobileMenu();
+                                      toggleSearch();
+                                    }}
+                                    style={{
+                                      display: 'block',
+                                      padding: '8px',
+                                      textDecoration: 'none',
+                                      color: '#292929',
+                                      borderBottom: '1px solid #f0f0f0'
+                                    }}
+                                  >
+                                    <div style={{ fontWeight: '600', fontSize: '14px' }}>{item.title}</div>
+                                    {item.category && (
+                                      <div style={{ fontSize: '12px', color: '#666', marginTop: '4px' }}>{item.category}</div>
+                                    )}
+                                  </a>
+                                ))}
+                              </div>
+                            )}
+                            {searchResults.programs.length > 0 && (
+                              <div style={{ padding: '10px', borderTop: searchResults.news.length > 0 ? '1px solid #e5e6e7' : 'none' }}>
+                                <div style={{ fontWeight: 'bold', marginBottom: '8px', color: '#003366' }}>Programs</div>
+                                {searchResults.programs.map((item) => (
+                                  <a
+                                    key={item.id}
+                                    href={item.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{
+                                      display: 'block',
+                                      padding: '8px',
+                                      textDecoration: 'none',
+                                      color: '#292929',
+                                      borderBottom: '1px solid #f0f0f0'
+                                    }}
+                                  >
+                                    <div style={{ fontWeight: '600', fontSize: '14px' }}>{item.title}</div>
+                                    {item.school_label && (
+                                      <div style={{ fontSize: '12px', color: '#666', marginTop: '4px' }}>{item.school_label}</div>
+                                    )}
+                                  </a>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        )}
                       </div>
 
                       <nav className="navbar">

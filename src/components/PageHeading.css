@@ -1,0 +1,327 @@
+/* PageHeading Component Styles */
+
+/* Main Container */
+.page-heading-content {
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 630px;
+}
+
+/* Variant Styles */
+.page-heading-content.blog-page {
+    height: 450px;
+}
+
+.page-heading-content.search-page {
+    height: 300px;
+}
+
+.page-heading-content.--video-header-content {
+    height: calc(100vh - 97px);
+}
+
+.page-heading-content.--video-header-content .heading-yt-block {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 50%;
+    object-position: bottom;
+    height: 100%;
+    bottom: -10px;
+    left: 0;
+}
+
+.page-heading-content.--video-header-content .heading-yt-block video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    top: 0;
+    position: absolute;
+}
+
+/* Background Image */
+.page-heading-content img.bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Heading Content Container */
+.page-heading-content .heading-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+}
+
+/* Title Container */
+.page-heading-content .heading-content .container.title {
+    position: relative;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 100%;
+}
+
+/* Background Overlay for Title */
+.page-heading-content .breadcrumb::before,
+.page-heading-content .heading-content .container.title::before {
+    content: "";
+    background: #336178;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Title (H1) Styling */
+.page-heading-content .heading-content h1 {
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 0;
+}
+
+/* Breadcrumb Container */
+.page-heading-content .breadcrumb {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.page-heading-content .breadcrumb .container {
+    position: relative;
+}
+
+/* Breadcrumb List */
+.page-heading-content .breadcrumb ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-heading-content .breadcrumb ul li {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.page-heading-content .breadcrumb ul li:first-child {
+    margin-left: 0;
+}
+
+/* Breadcrumb Links and Spans */
+.page-heading-content .breadcrumb ul li a,
+.page-heading-content .breadcrumb ul li span {
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5;
+    text-decoration: none;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+}
+
+/* Breadcrumb Icons */
+.page-heading-content .breadcrumb ul li a i,
+.page-heading-content .breadcrumb ul li span i {
+    font-size: 9px;
+}
+
+/* Breadcrumb Hover Effects - Top Border */
+.page-heading-content .breadcrumb ul li a::before,
+.page-heading-content .breadcrumb ul li span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+
+/* Breadcrumb Hover Effects - Bottom Border */
+.page-heading-content .breadcrumb ul li a::after,
+.page-heading-content .breadcrumb ul li span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+
+/* Active and Hover States */
+.page-heading-content .breadcrumb ul li a.active::after,
+.page-heading-content .breadcrumb ul li a.active::before,
+.page-heading-content .breadcrumb ul li a:hover::after,
+.page-heading-content .breadcrumb ul li a:hover::before,
+.page-heading-content .breadcrumb ul li span.active::after,
+.page-heading-content .breadcrumb ul li span.active::before,
+.page-heading-content .breadcrumb ul li span:hover::after,
+.page-heading-content .breadcrumb ul li span:hover::before {
+    opacity: 0.2;
+}
+
+/* Special States */
+.page-heading-content .breadcrumb ul li span:not(.dropdown-name).active::after,
+.page-heading-content .breadcrumb ul li span:not(.dropdown-name).active::before,
+.page-heading-content .breadcrumb ul li span:not(.dropdown-name):hover::after,
+.page-heading-content .breadcrumb ul li span:not(.dropdown-name):hover::before {
+    opacity: 0;
+}
+
+/* Last Child Styling */
+.page-heading-content .breadcrumb ul li:last-child a {
+    font-weight: 500;
+}
+
+.page-heading-content .breadcrumb ul li:last-child a span {
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+
+/* Dropdown Navigation */
+.page-heading-content .breadcrumb ul li ul.dropdown-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(51, 97, 120, 0.97);
+    border-bottom: 2px solid #214253;
+    padding: 0 16px;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 290px;
+    height: auto;
+    z-index: 10;
+}
+
+.page-heading-content .breadcrumb ul li ul.dropdown-nav li {
+    position: relative;
+    width: 100%;
+}
+
+.page-heading-content .breadcrumb ul li ul.dropdown-nav li a {
+    padding: 10px 0;
+}
+
+.page-heading-content .breadcrumb ul li ul.dropdown-nav li a::after,
+.page-heading-content .breadcrumb ul li ul.dropdown-nav li a::before {
+    display: none;
+}
+
+.page-heading-content .breadcrumb ul li:hover ul.dropdown-nav {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Active State for Links and Spans */
+.page-heading-content .breadcrumb ul li a.active,
+.page-heading-content .breadcrumb ul li span.active {
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+
+/* Max Width 1600px */
+@media only screen and (max-width: 1600px) {
+    .page-heading-content {
+        height: 450px;
+    }
+}
+
+/* Max Width 992px */
+@media only screen and (max-width: 992px) {
+    .page-heading-content {
+        height: 350px;
+    }
+}
+
+/* Max Width 768px */
+@media only screen and (max-width: 768px) {
+    .page-heading-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-heading-content.blog-page {
+        height: 100%;
+    }
+
+    .page-heading-content img.bg-image {
+        position: relative;
+    }
+
+    .page-heading-content .heading-content {
+        display: block;
+        background: #336178;
+    }
+
+    .page-heading-content .heading-content .container.title {
+        padding-top: 15px;
+        padding-bottom: 0;
+    }
+
+    .page-heading-content .breadcrumb {
+        margin-top: 0;
+    }
+
+    .page-heading-content .breadcrumb .container {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .page-heading-content .breadcrumb ul li {
+        margin-left: 0;
+    }
+
+    .page-heading-content .breadcrumb ul li a,
+    .page-heading-content .breadcrumb ul li span {
+        padding: 0;
+    }
+
+    .page-heading-content .breadcrumb ul li a::after,
+    .page-heading-content .breadcrumb ul li a::before,
+    .page-heading-content .breadcrumb ul li span::after,
+    .page-heading-content .breadcrumb ul li span::before {
+        display: none;
+    }
+}
+
+/* Min Width 1200px */
+@media only screen and (min-width: 1200px) {
+    .page-heading-content .heading-content h1 {
+        font-size: 40px;
+        line-height: normal;
+    }
+}
+

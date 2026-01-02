@@ -34,7 +34,7 @@ const Hero = ({ title, description, buttonText, imageSrc, breadcrumb }) => {
           </div>
         </div>
       </div>
-      <div style={{
+      <div className="breadcrumb-container" style={{
         position: 'absolute',
         bottom: 0,
         left: 0,

@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import ProgramCard from '../components/ProgramCard';
-import Hero from '../components/Hero';
+import PageHeading from '../components/PageHeading';
+import { generateBreadcrumbs } from '../utils/breadcrumbs';
 
 const Programs = () => {
+  const location = useLocation();
   const [programs, setPrograms] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -141,16 +144,10 @@ const Programs = () => {
 
   return (
     <main className="page page-programs">
-      <Hero
-        title="Programs at ADA University"
-        description="Explore our diverse range of undergraduate and graduate programs"
-        buttonText="Apply Now"
-        imageSrc="https://www.ada.edu.az/static/images/hero-campus.jpg"
-        breadcrumb={[
-          { label: 'Home', link: '/en' },
-          { label: 'Admissions', link: null },
-          { label: 'Find your Program', link: null }
-        ]}
+      <PageHeading
+        title="Find Your Program"
+        imageSrc="https://www.ada.edu.az/media/2024/07/29/find_your_program_2.jpg"
+        breadcrumb={generateBreadcrumbs(location.pathname)}
       />
 
       <div className="container py-5">

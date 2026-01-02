@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import SchoolsCard from '../components/SchoolsCard';
+import PageHeading from '../components/PageHeading';
+import { generateBreadcrumbs } from '../utils/breadcrumbs';
 
 const SchoolSB = () => {
+  const location = useLocation();
   const [faculty, setFaculty] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -26,8 +30,13 @@ const SchoolSB = () => {
   if (error) return <div className="container py-5 text-center text-danger"><h2>Error: {error}</h2></div>;
 
   return (
-    <main className="container py-5">
-      <h1 className="fw-bold mb-5" style={{ color: '#003366' }}>School of Business Faculty</h1>
+    <main className="page">
+      <PageHeading
+        title="School of Business"
+        imageSrc="https://www.ada.edu.az/assets/img/header/header_business.jpg"
+        breadcrumb={generateBreadcrumbs(location.pathname)}
+      />
+      <div className="container py-5">
       <div className="row g-4">
         {faculty.map((member, index) => (
           <div key={index} className="col-lg-6 col-xl-3">
@@ -40,6 +49,7 @@ const SchoolSB = () => {
             />
           </div>
         ))}
+      </div>
       </div>
     </main>
   );

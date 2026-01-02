@@ -1,9 +1,19 @@
+import { useLocation } from 'react-router-dom';
 import ResearchCard from '../components/ResearchCard';
+import PageHeading from '../components/PageHeading';
+import { generateBreadcrumbs } from '../utils/breadcrumbs';
 import researchItems from '../../data/research_items.json';
 
-const Research = () => (
-  <main className="page page-research container py-4">
-    <h1 className="page-title">Research</h1>
+const Research = () => {
+  const location = useLocation();
+  return (
+  <main className="page page-research">
+    <PageHeading
+      title="Research"
+      imageSrc="https://www.ada.edu.az/assets/img/header/admission.jpg"
+      breadcrumb={generateBreadcrumbs(location.pathname)}
+    />
+    <div className="container py-4">
     <div className="row">
       {researchItems.map((item, index) => (
         <ResearchCard
@@ -17,8 +27,10 @@ const Research = () => (
         />
       ))}
     </div>
+    </div>
   </main>
-);
+  );
+};
 
 export default Research;
 

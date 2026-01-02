@@ -1,3 +1,5 @@
+import logoWhite from '../pics/logo-white.svg';
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -5,8 +7,15 @@ const Footer = () => {
         <div className="row footer-block-main">
           <div className="col-md-6 w-xl-auto">
             <div className="footer-company-box">
-              <a href="/en" className="site-logo">
-                <img src="/assets/img/logo-white.svg" alt="ADA University" />
+              <a 
+                href="/en" 
+                className="site-logo"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+              >
+                <img src={logoWhite} alt="ADA University" />
               </a>
               <div className="title footer-social-title w-auto">Connect With Us</div>
               <div className="social-set">

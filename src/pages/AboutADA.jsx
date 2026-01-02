@@ -1,7 +1,10 @@
 import React from 'react';
-import Hero from '../components/Hero';
+import { useLocation } from 'react-router-dom';
+import PageHeading from '../components/PageHeading';
+import { generateBreadcrumbs } from '../utils/breadcrumbs';
 
 const AboutADA = () => {
+  const location = useLocation();
   const schools = [
     'School of Public and International Affairs',
     'School of Business',
@@ -22,16 +25,10 @@ const AboutADA = () => {
 
   return (
     <main className="page page-about">
-      <Hero
+      <PageHeading
         title="ADA University"
-        description="A vision of the future brought to life"
-        buttonText="Apply Now"
-        imageSrc="https://www.ada.edu.az/static/images/hero-campus.jpg"
-        breadcrumb={[
-          { label: 'Home', link: '/en' },
-          { label: 'About', link: null },
-          { label: 'ADA University', link: null }
-        ]}
+        imageSrc="https://www.ada.edu.az/assets/img/header/header_about.jpg"
+        breadcrumb={generateBreadcrumbs(location.pathname)}
       />
 
       <div className="container py-5">

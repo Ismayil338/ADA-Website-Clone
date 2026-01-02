@@ -527,10 +527,14 @@ a:hover {
   right: 0;
   top: 64px;
   width: 250px;
-  height: 0;
-  visibility: hidden;
-  opacity: 0;
+  height: auto;
+  visibility: visible;
+  opacity: 1;
   transition: visibility 0s linear 0.2s, opacity 0.2s linear;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 0;
 }
 @media (max-width: 992px) {
   .header .header-search-icon .search-container {

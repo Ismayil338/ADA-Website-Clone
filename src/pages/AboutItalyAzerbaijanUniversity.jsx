@@ -1,5 +1,7 @@
 import React from 'react';
-import Hero from '../components/Hero';
+import { useLocation } from 'react-router-dom';
+import PageHeading from '../components/PageHeading';
+import { generateBreadcrumbs } from '../utils/breadcrumbs';
 
 const AboutItalyAzerbaijanUniversity = () => {
   const partnerUniversities = [
@@ -35,16 +37,10 @@ const AboutItalyAzerbaijanUniversity = () => {
 
   return (
     <main className="page page-about">
-      <Hero
+      <PageHeading
         title="Italy-Azerbaijan University"
-        description="Strengthening knowledge exchange between Azerbaijan and Italy"
-        buttonText="Apply Now"
-        imageSrc="https://www.ada.edu.az/static/images/hero-campus.jpg"
-        breadcrumb={[
-          { label: 'Home', link: '/en' },
-          { label: 'About', link: null },
-          { label: 'Italy-Azerbaijan University', link: null }
-        ]}
+        imageSrc="https://www.ada.edu.az/media/2024/10/25/website_slider_italy_azerbaijan.jpg"
+        breadcrumb={generateBreadcrumbs(location.pathname)}
       />
 
       <div className="container py-5">

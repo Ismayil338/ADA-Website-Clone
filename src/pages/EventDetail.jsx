@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link, useNavigate, useLocation } from 'react-router-dom';
+import PageHeading from '../components/PageHeading';
+import { generateBreadcrumbs } from '../utils/breadcrumbs';
 
 const EventDetail = () => {
   const { id } = useParams();
+  const location = useLocation();
   const navigate = useNavigate();
   const [event, setEvent] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -52,6 +55,11 @@ const EventDetail = () => {
 
   return (
     <main className="page page-event-detail">
+      <PageHeading
+        title={event.title || "Event Detail"}
+        imageSrc={event.image_url || "https://www.ada.edu.az/assets/img/header/events-detail.png"}
+        breadcrumb={generateBreadcrumbs(location.pathname, event.title || 'Event Detail')}
+      />
       <div className="container py-5">
         <Link
           to="/en/events"
