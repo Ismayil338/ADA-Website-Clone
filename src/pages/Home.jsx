@@ -215,7 +215,7 @@ const Home = () => {
               transitionDuration: '0ms',
               transitionDelay: '0ms',
               transform: 'translate3d(0px, 0px, 0px)',
-              height: '465px',
+              height: '500px',
             }}
             id="swiper-wrapper-a559a6367f7f4a04"
             aria-live="polite"

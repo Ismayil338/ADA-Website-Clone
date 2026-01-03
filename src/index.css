@@ -12,6 +12,16 @@ body.dark-theme section {
     background: #1a1a1a;
 }
 
+/* Exclude video section from dark theme */
+body.dark-theme .cs-slide-paralax-bg {
+    background: transparent !important;
+}
+
+body.dark-theme .cs-slide-paralax-bg .bg-video {
+    opacity: 1 !important;
+    filter: none !important;
+}
+
 body.dark-theme .header {
     background: #2d2d2d;
     border-bottom-color: rgba(190, 190, 190, 0.3);
@@ -623,6 +633,18 @@ body.high-contrast-theme .section,
 body.high-contrast-theme section {
     background: #000000;
     border: 2px solid #ffffff;
+}
+
+/* Exclude video section from high contrast theme */
+body.high-contrast-theme .cs-slide-paralax-bg {
+    background: transparent !important;
+    border: none !important;
+}
+
+body.high-contrast-theme .cs-slide-paralax-bg .bg-video {
+    opacity: 1 !important;
+    filter: none !important;
+    border: none !important;
 }
 
 body.high-contrast-theme .header {
@@ -1339,7 +1361,7 @@ body.high-contrast-theme .header.landing-header .header-nav-desctop .desctop-nav
     background-color: #ffff00;
 }
 
-/* Search results dropdown high contrast mode */
+
 body.high-contrast-theme .header .header-search-icon .search-container > div {
     background-color: #000000 !important;
     border: 3px solid #ffffff !important;
@@ -1461,6 +1483,13 @@ body.high-contrast-theme .photoOverlay-carousel .swiper-navigation-box .swiper-b
     background: #ffff00;
     border-color: #ffff00;
     color: #000000;
+}
+
+body.high-contrast-theme .photoOverlay-carousel .swiper-navigation-box .swiper-button-next::after,
+body.high-contrast-theme .photoOverlay-carousel .swiper-navigation-box .swiper-button-prev::after {
+    display: block !important;
+    font-size: 9px !important;
+    font-weight: 600;
 }
 
 body.high-contrast-theme .swiper-pagination.--horizontal .swiper-pagination-bullet::after {
@@ -1606,7 +1635,7 @@ body.dark-theme .category-filter-btn.active .news-category-dot {
     border-color: #fff;
 }
 
-/* High Contrast Mode Styles for Category Filter Buttons */
+
 body.high-contrast-theme .category-filter-btn {
     background-color: transparent;
     color: #ffffff;
@@ -1648,4 +1677,221 @@ body.high-contrast-theme .category-filter-btn:hover:not(.active) .news-category-
 body.high-contrast-theme .category-filter-btn.active .news-category-dot {
     border-color: #000000;
     background-color: #000000;
+}
+
+body.dark-theme .btn.text-start:has(.event-type-dot),
+body.dark-theme .btn.text-start:has(.news-category-dot) {
+    color: #e0e0e0 !important;
+}
+
+body.dark-theme .btn.text-start:has(.event-type-dot):hover,
+body.dark-theme .btn.text-start:has(.news-category-dot):hover {
+    color: #ae485e !important;
+    background-color: rgba(174, 72, 94, 0.1) !important;
+}
+
+body.dark-theme .event-type-dot,
+body.dark-theme .news-category-dot {
+    border-color: #e0e0e0 !important;
+}
+
+body.dark-theme .btn.text-start:has(.event-type-dot):hover .event-type-dot,
+body.dark-theme .btn.text-start:has(.news-category-dot):hover .news-category-dot {
+    border-color: #ae485e !important;
+}
+
+body.dark-theme .btn.text-start:has(.news-category-dot)[style*="background-color: rgb(174, 72, 94)"],
+body.dark-theme .btn.text-start:has(.news-category-dot)[style*="background-color:#ae485e"] {
+    background-color: #ae485e !important;
+    color: #fff !important;
+}
+
+body.dark-theme .btn.text-start:has(.news-category-dot)[style*="background-color: rgb(174, 72, 94)"] .news-category-dot,
+body.dark-theme .btn.text-start:has(.news-category-dot)[style*="background-color:#ae485e"] .news-category-dot {
+    border-color: #fff !important;
+    background-color: #fff !important;
+}
+
+/* Event and News Filter Buttons - High Contrast Theme */
+body.high-contrast-theme .btn.text-start:has(.event-type-dot),
+body.high-contrast-theme .btn.text-start:has(.news-category-dot) {
+    color: #ffffff !important;
+    border: 2px solid transparent !important;
+    font-weight: 600 !important;
+}
+
+body.high-contrast-theme .btn.text-start:has(.event-type-dot):hover,
+body.high-contrast-theme .btn.text-start:has(.news-category-dot):hover {
+    color: #000000 !important;
+    background-color: #ffff00 !important;
+    border-color: #ffff00 !important;
+    outline: 2px solid #ffffff !important;
+    outline-offset: -2px !important;
+}
+
+body.high-contrast-theme .event-type-dot,
+body.high-contrast-theme .news-category-dot {
+    border: 3px solid #ffffff !important;
+    width: 8px !important;
+    height: 8px !important;
+}
+
+body.high-contrast-theme .btn.text-start:has(.event-type-dot):hover .event-type-dot,
+body.high-contrast-theme .btn.text-start:has(.news-category-dot):hover .news-category-dot {
+    border-color: #000000 !important;
+    background-color: #000000 !important;
+}
+
+body.high-contrast-theme .btn.text-start:has(.news-category-dot)[style*="background-color: rgb(174, 72, 94)"],
+body.high-contrast-theme .btn.text-start:has(.news-category-dot)[style*="background-color:#ae485e"] {
+    background-color: #ffff00 !important;
+    color: #000000 !important;
+    border: 3px solid #ffffff !important;
+    font-weight: 700 !important;
+}
+
+body.high-contrast-theme .btn.text-start:has(.news-category-dot)[style*="background-color: rgb(174, 72, 94)"] .news-category-dot,
+body.high-contrast-theme .btn.text-start:has(.news-category-dot)[style*="background-color:#ae485e"] .news-category-dot {
+    border-color: #000000 !important;
+    background-color: #000000 !important;
+}
+
+/* Alternative styles for browsers without :has() support */
+body.dark-theme .col-lg-4 .btn.text-start {
+    color: #e0e0e0 !important;
+}
+
+body.dark-theme .col-lg-4 .btn.text-start:hover {
+    color: #ae485e !important;
+    background-color: rgba(174, 72, 94, 0.1) !important;
+}
+
+body.dark-theme .col-lg-4 .btn.text-start:hover .event-type-dot,
+body.dark-theme .col-lg-4 .btn.text-start:hover .news-category-dot {
+    border-color: #ae485e !important;
+}
+
+body.high-contrast-theme .col-lg-4 .btn.text-start {
+    color: #ffffff !important;
+    border: 2px solid transparent !important;
+    font-weight: 600 !important;
+}
+
+body.high-contrast-theme .col-lg-4 .btn.text-start:hover {
+    color: #000000 !important;
+    background-color: #ffff00 !important;
+    border-color: #ffff00 !important;
+    outline: 2px solid #ffffff !important;
+    outline-offset: -2px !important;
+}
+
+body.high-contrast-theme .col-lg-4 .btn.text-start:hover .event-type-dot,
+body.high-contrast-theme .col-lg-4 .btn.text-start:hover .news-category-dot {
+    border-color: #000000 !important;
+    background-color: #000000 !important;
+}
+
+/* Dean Banner Styles - Dark Theme - Target all divs with light gray background */
+body.dark-theme .container.py-5 > div[style*="f5f5f5"],
+body.dark-theme .container.py-5 > div[style*="245, 245, 245"],
+body.dark-theme .container.py-5 > div[style*="backgroundColor: '#f5f5f5'"],
+body.dark-theme .container.py-5 > div[style*="backgroundColor: rgb(245, 245, 245)"] {
+    background-color: #2d2d2d !important;
+}
+
+body.dark-theme .container.py-5 > div[style*="f5f5f5"] p,
+body.dark-theme .container.py-5 > div[style*="245, 245, 245"] p,
+body.dark-theme .container.py-5 > div[style*="backgroundColor: '#f5f5f5'"] p,
+body.dark-theme .container.py-5 > div[style*="backgroundColor: rgb(245, 245, 245)"] p {
+    color: #d0d0d0 !important;
+}
+
+body.dark-theme .container.py-5 > div[style*="f5f5f5"] h3,
+body.dark-theme .container.py-5 > div[style*="245, 245, 245"] h3,
+body.dark-theme .container.py-5 > div[style*="backgroundColor: '#f5f5f5'"] h3,
+body.dark-theme .container.py-5 > div[style*="backgroundColor: rgb(245, 245, 245)"] h3 {
+    color: #ffffff !important;
+}
+
+/* Meet Our Faculty Text - Dark Theme */
+body.dark-theme .container[style*="paddingTop"] > div > div p,
+body.dark-theme .container[style*="paddingTop"] > div p,
+body.dark-theme .container[style*="paddingTop"] p {
+    color: #ffffff !important;
+}
+
+/* Target paragraphs after "Meet Our Faculty" heading */
+body.dark-theme .headline + div p,
+body.dark-theme .headline ~ div p {
+    color: #ffffff !important;
+}
+
+/* Target paragraphs with specific inline styles (fontSize: '18px', color: '#000') */
+body.dark-theme p[style*="fontSize: '18px'"],
+body.dark-theme p[style*="font-size: 18px"],
+body.dark-theme p[style*="color: '#000'"],
+body.dark-theme p[style*="color:#000"],
+body.dark-theme p[style*="color: rgb(0, 0, 0)"] {
+    color: #ffffff !important;
+}
+
+/* Target paragraphs in container after "Meet Our Faculty" */
+body.dark-theme .container[style*="paddingTop"] p[style*="fontSize: '18px'"],
+body.dark-theme .container[style*="paddingTop"] p[style*="color: '#000'"],
+body.dark-theme .container[style*="paddingTop"] p[style*="color:#000"] {
+    color: #ffffff !important;
+}
+
+/* Dean Banner Styles - High Contrast Theme */
+body.high-contrast-theme .container.py-5 > div[style*="f5f5f5"],
+body.high-contrast-theme .container.py-5 > div[style*="245, 245, 245"],
+body.high-contrast-theme .container.py-5 > div[style*="backgroundColor: '#f5f5f5'"],
+body.high-contrast-theme .container.py-5 > div[style*="backgroundColor: rgb(245, 245, 245)"] {
+    background-color: #000000 !important;
+    border: 3px solid #ffffff !important;
+}
+
+body.high-contrast-theme .container.py-5 > div[style*="f5f5f5"] p,
+body.high-contrast-theme .container.py-5 > div[style*="245, 245, 245"] p,
+body.high-contrast-theme .container.py-5 > div[style*="backgroundColor: '#f5f5f5'"] p,
+body.high-contrast-theme .container.py-5 > div[style*="backgroundColor: rgb(245, 245, 245)"] p {
+    color: #ffffff !important;
+}
+
+body.high-contrast-theme .container.py-5 > div[style*="f5f5f5"] h3,
+body.high-contrast-theme .container.py-5 > div[style*="245, 245, 245"] h3,
+body.high-contrast-theme .container.py-5 > div[style*="backgroundColor: '#f5f5f5'"] h3,
+body.high-contrast-theme .container.py-5 > div[style*="backgroundColor: rgb(245, 245, 245)"] h3 {
+    color: #ffff00 !important;
+    border-bottom: 3px solid #ffffff !important;
+    padding-bottom: 10px !important;
+}
+
+/* Meet Our Faculty Text - High Contrast Theme */
+body.high-contrast-theme .container[style*="paddingTop"] > div > div p,
+body.high-contrast-theme .container[style*="paddingTop"] > div p,
+body.high-contrast-theme .container[style*="paddingTop"] p {
+    color: #ffffff !important;
+}
+
+/* Target paragraphs after "Meet Our Faculty" heading */
+body.high-contrast-theme .headline + div p,
+body.high-contrast-theme .headline ~ div p {
+    color: #ffffff !important;
+}
+
+/* Target paragraphs with specific inline styles (fontSize: '18px', color: '#000') */
+body.high-contrast-theme p[style*="fontSize: '18px'"],
+body.high-contrast-theme p[style*="font-size: 18px"],
+body.high-contrast-theme p[style*="color: '#000'"],
+body.high-contrast-theme p[style*="color:#000"],
+body.high-contrast-theme p[style*="color: rgb(0, 0, 0)"] {
+    color: #ffffff !important;
+}
+
+/* Target paragraphs in container after "Meet Our Faculty" */
+body.high-contrast-theme .container[style*="paddingTop"] p[style*="fontSize: '18px'"],
+body.high-contrast-theme .container[style*="paddingTop"] p[style*="color: '#000'"],
+body.high-contrast-theme .container[style*="paddingTop"] p[style*="color:#000"] {
+    color: #ffffff !important;
 }

@@ -72,7 +72,7 @@ This project is a functional replica of the ADA University website (https://www.
 1. **Clone the repository** (if applicable):
 ```bash
 git clone <repository-url>
-cd final-project-10211_team4-main
+cd final-project-10211_team4-main3
 ```
 
 2. **Install dependencies**:
@@ -88,7 +88,7 @@ The project requires two servers to run simultaneously:
 
 #### Option 1: Run Both Servers Separately (Recommended)
 
-**Terminal 1 - Start Backend Server**:
+**Terminal 1 - Start Backend Server (Express.js)**:
 ```bash
 npm run server
 ```
@@ -107,6 +107,30 @@ The frontend will be available at `http://localhost:5173`
 ```bash
 npm start
 ```
+
+This command runs both servers concurrently.
+
+#### Option 3: Using JSON Server (Alternative)
+
+If you prefer to use `json-server` instead of the Express.js server:
+
+**Terminal 1 - Start JSON Server**:
+```bash
+npx json-server --watch db.json --port 5000
+```
+
+**Terminal 2 - Start Frontend Dev Server**:
+```bash
+npm run dev
+```
+
+**Note**: When using json-server, the API endpoints will be slightly different:
+- `GET http://localhost:5000/news` (instead of `/news`)
+- `GET http://localhost:5000/events` (instead of `/events`)
+- `GET http://localhost:5000/programs` (instead of `/programs`)
+- `GET http://localhost:5000/research` (instead of `/research`)
+
+For faculty data, you'll need to use the Express.js server or manually serve the JSON files.
 
 ## API Endpoints
 
@@ -246,14 +270,14 @@ Content-Type: application/json
 
 ## API Examples
 
-### Example: Fetching News
+### Example 1: Fetching News
 
 ```javascript
-// Using fetch
+// Using fetch with Promise
 fetch('http://localhost:5000/news')
   .then(res => res.json())
   .then(data => {
-    console.log(data);
+    console.log('News:', data);
   })
   .catch(error => {
     console.error('Error:', error);
@@ -270,9 +294,63 @@ async function getNews() {
     return [];
   }
 }
+
+// Using in React component
+import { useEffect, useState } from 'react';
+
+function NewsPage() {
+  const [news, setNews] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchNews() {
+      try {
+        const response = await fetch('http://localhost:5000/news');
+        const data = await response.json();
+        setNews(data);
+      } catch (error) {
+        console.error('Error:', error);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchNews();
+  }, []);
+
+  if (loading) return <div>Loading...</div>;
+  return <div>{/* Render news */}</div>;
+}
 ```
 
-### Example: Updating Faculty Data
+### Example 2: Fetching Faculty Data
+
+```javascript
+// Get School of Business Faculty
+async function getSBFaculty() {
+  try {
+    const response = await fetch('http://localhost:5000/sb_faculty');
+    const faculty = await response.json();
+    return faculty;
+  } catch (error) {
+    console.error('Error fetching SB faculty:', error);
+    return [];
+  }
+}
+
+// Get School of IT and Engineering Faculty
+async function getSiteFaculty() {
+  try {
+    const response = await fetch('http://localhost:5000/site_faculty');
+    const faculty = await response.json();
+    return faculty;
+  } catch (error) {
+    console.error('Error fetching SITE faculty:', error);
+    return [];
+  }
+}
+```
+
+### Example 3: Updating Faculty Data
 
 ```javascript
 const updatedFaculty = [
@@ -286,6 +364,7 @@ const updatedFaculty = [
   }
 ];
 
+// Update SB Faculty
 fetch('http://localhost:5000/sb_faculty', {
   method: 'PUT',
   headers: {
@@ -300,27 +379,192 @@ fetch('http://localhost:5000/sb_faculty', {
   .catch(error => {
     console.error('Error:', error);
   });
+
+// Using async/await
+async function updateFaculty(facultyData, school = 'sb') {
+  try {
+    const endpoint = school === 'sb' ? 'sb_faculty' : 'site_faculty';
+    const response = await fetch(`http://localhost:5000/${endpoint}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(facultyData)
+    });
+    const result = await response.json();
+    return result;
+  } catch (error) {
+    console.error('Error updating faculty:', error);
+    throw error;
+  }
+}
 ```
 
-### Example: Filtering Programs
+### Example 4: Fetching and Filtering Events
+
+```javascript
+// Get all events
+async function getEvents() {
+  try {
+    const response = await fetch('http://localhost:5000/events');
+    const events = await response.json();
+    return events;
+  } catch (error) {
+    console.error('Error fetching events:', error);
+    return [];
+  }
+}
+
+// Filter events by type
+async function getEventsByType(type) {
+  const events = await getEvents();
+  return events.filter(event => event.type === type);
+}
+
+// Get upcoming events (future dates)
+async function getUpcomingEvents() {
+  const events = await getEvents();
+  const today = new Date();
+  return events.filter(event => {
+    const eventDate = new Date(event.date);
+    return eventDate >= today;
+  }).sort((a, b) => new Date(a.date) - new Date(b.date));
+}
+```
+
+### Example 5: Filtering Programs
 
 ```javascript
 // Get all programs
-fetch('http://localhost:5000/programs')
-  .then(res => res.json())
-  .then(programs => {
-    // Filter by school
-    const sbPrograms = programs.filter(p => p.school_label === 'SB');
-    
-    // Filter by level
-    const undergraduatePrograms = programs.filter(p => p.level === 'Undergraduate');
-    
-    // Search by title
-    const searchTerm = 'Business';
-    const filtered = programs.filter(p => 
-      p.title.toLowerCase().includes(searchTerm.toLowerCase())
+async function getAllPrograms() {
+  try {
+    const response = await fetch('http://localhost:5000/programs');
+    const programs = await response.json();
+    return programs;
+  } catch (error) {
+    console.error('Error fetching programs:', error);
+    return [];
+  }
+}
+
+// Filter by school
+async function getProgramsBySchool(schoolLabel) {
+  const programs = await getAllPrograms();
+  return programs.filter(p => p.school_label === schoolLabel);
+}
+
+// Filter by level
+async function getProgramsByLevel(level) {
+  const programs = await getAllPrograms();
+  return programs.filter(p => p.level === level);
+}
+
+// Search programs by title
+async function searchPrograms(searchTerm) {
+  const programs = await getAllPrograms();
+  return programs.filter(p => 
+    p.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+}
+
+// Combined filtering
+async function getFilteredPrograms(filters) {
+  const { school, level, search } = filters;
+  let programs = await getAllPrograms();
+  
+  if (school) {
+    programs = programs.filter(p => p.school_label === school);
+  }
+  
+  if (level) {
+    programs = programs.filter(p => p.level === level);
+  }
+  
+  if (search) {
+    programs = programs.filter(p => 
+      p.title.toLowerCase().includes(search.toLowerCase())
     );
-  });
+  }
+  
+  return programs;
+}
+```
+
+### Example 6: Updating News, Events, Programs, or Research
+
+```javascript
+// Generic update function
+async function updateData(endpoint, data) {
+  try {
+    const response = await fetch(`http://localhost:5000/${endpoint}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data)
+    });
+    const result = await response.json();
+    return result;
+  } catch (error) {
+    console.error(`Error updating ${endpoint}:`, error);
+    throw error;
+  }
+}
+
+// Update news
+const updatedNews = [
+  {
+    "id": 1,
+    "title": "Updated News Title",
+    "category": "Academic",
+    "date": "2024-01-15",
+    "image_url": "https://example.com/image.jpg",
+    "link": "/en/news/1",
+    "excerpt": "Updated excerpt..."
+  }
+];
+await updateData('news', updatedNews);
+
+// Update events
+const updatedEvents = [/* event objects */];
+await updateData('events', updatedEvents);
+
+// Update programs
+const updatedPrograms = [/* program objects */];
+await updateData('programs', updatedPrograms);
+
+// Update research
+const updatedResearch = [/* research objects */];
+await updateData('research', updatedResearch);
+```
+
+### Example 7: Error Handling
+
+```javascript
+// Comprehensive error handling
+async function fetchWithErrorHandling(url, options = {}) {
+  try {
+    const response = await fetch(url, options);
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
+    const data = await response.json();
+    return { success: true, data };
+  } catch (error) {
+    console.error('Fetch error:', error);
+    return { success: false, error: error.message };
+  }
+}
+
+// Usage
+const result = await fetchWithErrorHandling('http://localhost:5000/news');
+if (result.success) {
+  console.log('News:', result.data);
+} else {
+  console.error('Failed to fetch news:', result.error);
+}
 ```
 
 ## Project Structure
