@@ -184,16 +184,16 @@ Navbar & cards.jsx done without CSS for now.
 - [+] Routing configured with React Router  
 - [+] Data fetched from json-server  
 - [+] Loading & error states implemented  
-- [ ] Basic responsive layout  
-- [ ] Minimum 2 commits  
+- [+] Basic responsive layout  
+- [+] Minimum 2 commits  
 
 ---
 
 ## **Week 3 — Dynamic Content**
-- [ ] News, Programs, Events pages populated  
-- [ ] Detail pages (`/news/:id`, `/programs/:id`)  
-- [ ] Search functionality added  
-- [ ] Theme changing via localStorage  
+- [+] News, Programs, Events pages populated  
+- [1/2] Detail pages (`/news/:id`, `/programs/:id`)  
+- [+] Search functionality added  
+- [+] Theme changing via localStorage  
 - [ ] Pagination (optional)  
 - [ ] UI enhancements applied  
 - [ ] PROJECT-INSTRUCTIONS updated with API endpoints  
@@ -202,9 +202,9 @@ Navbar & cards.jsx done without CSS for now.
 ---
 
 ## **Week 4 — Final Polish**
-- [ ] Fully responsive UI  
-- [ ] All pages functional  
-- [ ] 404 page added  
+- [+] Fully responsive UI  
+- [+] All pages functional  
+- [+] 404 page added  
 - [ ] Final `db.json` prepared  
 - [ ] Final PROJECT-INSTRUCTIONS written  
 - [ ] Project builds cleanly  
@@ -214,9 +214,10 @@ Navbar & cards.jsx done without CSS for now.
 ---
 
 # **Extra Objectives**
-- [ ] Automated scraping script  
-- [ ] Enhanced UI/UX  
-- [ ] Dark/Light theme with persistence  
+- [+] Automated scraping script  
+- [+] Enhanced UI/UX  
+- [+] Dark/Light theme with persistence  
 - [ ] Admin panel for JSON-server data  
+
 
 
