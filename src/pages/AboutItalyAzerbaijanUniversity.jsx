@@ -1,39 +1,10 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import PageHeading from '../components/PageHeading';
 import { generateBreadcrumbs } from '../utils/breadcrumbs';
 
 const AboutItalyAzerbaijanUniversity = () => {
-  const partnerUniversities = [
-    'Luiss University',
-    'Bologna University',
-    'Politecnico di Milano',
-    'Politecnico di Torino',
-    'Sapienza University of Rome'
-  ];
-
-  const schools = [
-    'School of Agricultural and Food Sciences',
-    'School of Design and Architecture'
-  ];
-
-  const degreePrograms = [
-    'Agricultural and Food Systems Management',
-    'Agricultural Technologies',
-    'Animal Science',
-    'Architecture',
-    'Communication Design',
-    'Electrical and Electronic Engineering',
-    'Food Technologies',
-    'Global Management and Politics',
-    'Interior Design',
-    'Urban Planning'
-  ];
-
-  const certificatePrograms = [
-    'Agricultural and Food Sciences',
-    'Design and Architecture'
-  ];
+  const location = useLocation();
 
   return (
     <main className="page page-about">
@@ -43,232 +14,297 @@ const AboutItalyAzerbaijanUniversity = () => {
         breadcrumb={generateBreadcrumbs(location.pathname)}
       />
 
-      <div className="container py-5" style={{ paddingTop: 0, paddingBottom: 0 }}>
-        <div className="row">
-          <div className="col-lg-12">
-            <section className="mb-5" style={{ paddingTop: 0, paddingBottom: 0 }}>
-              <h2 className="mb-3" style={{ color: '#336178', fontSize: '38px' }}>
-                About Us
-              </h2>
-              <p style={{ fontSize: '18px', lineHeight: '30px', color: '#292929', marginBottom: '20px' }}>
-                In 2022, ADA University further expanded its operations through Italy-Azerbaijan University project. Established by a decree signed by President Ilham Aliyev, this new institution aims to strengthen knowledge exchange between Azerbaijan and Italy, promote innovation, and contribute to the economic development of our country.
-              </p>
-              <p style={{ fontSize: '18px', lineHeight: '30px', color: '#292929', marginBottom: '20px' }}>
-                The University was established in partnership with five leading Italian Universities, namely Luiss University, Bologna University, Politecnico di Milano, Politecnico di Torino and Sapienza University of Rome.
-              </p>
-              <p style={{ fontSize: '18px', lineHeight: '30px', color: '#292929', marginBottom: '20px' }}>
-                The Italy-Azerbaijan University focuses on disciplines such as design and architecture, agriculture and food sciences, business and engineering, providing a platform for collaborative research, student exchanges, and joint degree programs.
-              </p>
-            </section>
-
-            <section className="mb-5" style={{ paddingTop: 0, paddingBottom: 0 }}>
-              <div className="row">
-                <div className="col-md-6 mb-4">
-                  <div style={{
-                    backgroundColor: '#336178',
-                    color: '#fff',
-                    padding: '40px',
-                    borderRadius: '8px',
-                    height: '100%'
-                  }}>
-                    <h3 style={{
-                      fontSize: '32px',
-                      fontWeight: 'bold',
-                      marginBottom: '20px',
-                      color: '#fff'
-                    }}>
-                      Campus
-                    </h3>
-                    <p style={{
-                      fontSize: '18px',
-                      lineHeight: '28px',
-                      color: '#fff',
-                      margin: 0
-                    }}>
-                      Italy-Azerbaijan University is currently located on ADA University's modern Baku campus. Two new buildings are being built and will be ready by September 2025.
-                    </p>
-                  </div>
-                </div>
-                <div className="col-md-6 mb-4">
-                  <div style={{
-                    backgroundColor: '#ae485e',
-                    color: '#fff',
-                    padding: '40px',
-                    borderRadius: '8px',
-                    height: '100%'
-                  }}>
-                    <h3 style={{
-                      fontSize: '32px',
-                      fontWeight: 'bold',
-                      marginBottom: '20px',
-                      color: '#fff'
-                    }}>
-                      Schools
-                    </h3>
-                    <p style={{
-                      fontSize: '18px',
-                      lineHeight: '28px',
-                      color: '#fff',
-                      margin: 0
-                    }}>
-                      We offer two Schools within Italy-Azerbaijan University: Agricultural and Food Sciences, Design and Architecture. In addition to the Schools, separate programs are offered within the School of Business and School of IT and Engineering of ADA University.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
+      <div id="page" className="wrapper">
+        <section className="text-content pt-0 pb-0 mb-5">
+          <div className="container">
+            <div className="headline">
+              <h2 className="title color-primary">About Us</h2>
+            </div>
+            <p>
+              In 2022, ADA University further expanded its operations through
+              Italy-Azerbaijan University project. Established by a decree signed by
+              President Ilham Aliyev, this new institution aims to strengthen
+              knowledge exchange between Azerbaijan and Italy, promote innovation, and
+              contribute to the economic development of our country.
+            </p>
+            <p>
+              The University was established in partnership with five leading Italian
+              Universities, namely Luiss University, Bologna University, Politecnico
+              di Milano, Politecnico di Torino and Sapienza University of Rome.
+            </p>
+            <p>
+              The Italy-Azerbaijan University focuses on disciplines such as design
+              and architecture, agriculture and food sciences, business and
+              engineering, providing a platform for collaborative research, student
+              exchanges, and joint degree programs.
+            </p>
           </div>
-        </div>
+        </section>
 
-        <section className="mt-5 pt-5" style={{ borderTop: '2px solid #e0e0e0' }}>
-          <div className="row">
-            <div className="col-lg-3 col-md-6 mb-4">
-                <h3 className="mb-4" style={{ color: '#336178', fontSize: '24px', fontWeight: 'bold' }}>
-                  Partners
-                </h3>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  {partnerUniversities.map((university, index) => (
-                    <li key={index} style={{ marginBottom: '12px' }}>
-                      <a 
-                        href="#" 
-                        style={{
-                          color: '#0066cc',
-                          textDecoration: 'none',
-                          fontSize: '16px',
-                          lineHeight: '24px'
-                        }}
-                        onMouseEnter={(e) => e.target.style.textDecoration = 'underline'}
-                        onMouseLeave={(e) => e.target.style.textDecoration = 'none'}
-                      >
-                        {university}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+        <section className="pt-0">
+          <div className="container">
+            <div className="row row-content-panel">
+              <div className="col-lg-6">
+                <div className="content-panel rgbPrimary">
+                  <h3 className="title">Campus</h3>
+                  <div className="description">
+                    <p>
+                      Italy-Azerbaijan University is currently located on ADA
+                      University's modern Baku campus. Two new buildings are being
+                      built and will be ready by September 2025.
+                    </p>
+                  </div>
+                </div>
               </div>
-
-              <div className="col-lg-3 col-md-6 mb-4">
-                <h3 className="mb-4" style={{ color: '#336178', fontSize: '24px', fontWeight: 'bold' }}>
-                  Degrees
-                </h3>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  {degreePrograms.map((program, index) => (
-                    <li key={index} style={{ marginBottom: '12px', display: 'flex', alignItems: 'flex-start' }}>
-                      <span style={{ 
-                        color: '#28a745', 
-                        marginRight: '8px',
-                        fontSize: '18px',
-                        lineHeight: '24px'
-                      }}>
-                        ✓
-                      </span>
-                      <a 
-                        href="#" 
-                        style={{
-                          color: '#0066cc',
-                          textDecoration: 'none',
-                          fontSize: '16px',
-                          lineHeight: '24px',
-                          flex: 1
-                        }}
-                        onMouseEnter={(e) => e.target.style.textDecoration = 'underline'}
-                        onMouseLeave={(e) => e.target.style.textDecoration = 'none'}
-                      >
-                        {program}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="col-lg-3 col-md-6 mb-4">
-                <h3 className="mb-4" style={{ color: '#336178', fontSize: '24px', fontWeight: 'bold' }}>
-                  Certificate Programs
-                </h3>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  {certificatePrograms.map((program, index) => (
-                    <li key={index} style={{ marginBottom: '12px' }}>
-                      <a 
-                        href="#" 
-                        style={{
-                          color: '#0066cc',
-                          textDecoration: 'none',
-                          fontSize: '16px',
-                          lineHeight: '24px'
-                        }}
-                        onMouseEnter={(e) => e.target.style.textDecoration = 'underline'}
-                        onMouseLeave={(e) => e.target.style.textDecoration = 'none'}
-                      >
-                        {program}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="col-lg-3 col-md-6 mb-4">
-                <h3 className="mb-4" style={{ color: '#336178', fontSize: '24px', fontWeight: 'bold' }}>
-                  Students
-                </h3>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  <li style={{ marginBottom: '12px', display: 'flex', alignItems: 'center' }}>
-                    <span style={{ 
-                      marginRight: '10px',
-                      fontSize: '20px'
-                    }}>
-                      👤
-                    </span>
-                    <span style={{ fontSize: '16px', lineHeight: '24px', color: '#292929' }}>
-                      286 students
-                    </span>
-                  </li>
-                  <li style={{ marginBottom: '12px', display: 'flex', alignItems: 'center' }}>
-                    <span style={{ 
-                      marginRight: '10px',
-                      fontSize: '20px'
-                    }}>
-                      🎓
-                    </span>
-                    <span style={{ fontSize: '16px', lineHeight: '24px', color: '#292929' }}>
-                      70% undergraduate
-                    </span>
-                  </li>
-                  <li style={{ marginBottom: '12px', display: 'flex', alignItems: 'center' }}>
-                    <span style={{ 
-                      marginRight: '10px',
-                      fontSize: '20px'
-                    }}>
-                      🎓
-                    </span>
-                    <span style={{ fontSize: '16px', lineHeight: '24px', color: '#292929' }}>
-                      30% graduate
-                    </span>
-                  </li>
-                  <li style={{ marginBottom: '12px', display: 'flex', alignItems: 'center' }}>
-                    <span style={{ 
-                      marginRight: '10px',
-                      fontSize: '20px'
-                    }}>
-                      ♀
-                    </span>
-                    <span style={{ fontSize: '16px', lineHeight: '24px', color: '#292929' }}>
-                      60% female
-                    </span>
-                  </li>
-                  <li style={{ marginBottom: '12px', display: 'flex', alignItems: 'center' }}>
-                    <span style={{ 
-                      marginRight: '10px',
-                      fontSize: '20px'
-                    }}>
-                      ♂
-                    </span>
-                    <span style={{ fontSize: '16px', lineHeight: '24px', color: '#292929' }}>
-                      40% male
-                    </span>
-                  </li>
-                </ul>
+              <div className="col-lg-6">
+                <div className="content-panel rgbRed">
+                  <h3 className="title">Schools</h3>
+                  <div className="description">
+                    <p>
+                      We offer two Schools within Italy-Azerbaijan University:
+                      Agricultural and Food Sciences, Design and Architecture. In
+                      addition to the Schools, separate programs are offered within
+                      the School of Business and School of IT and Engineering of ADA
+                      University.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="list-style-2 pt-0">
+          <div className="container">
+            <div className="panel-checking-list">
+              <div className="row row-checking-list-elments">
+                <div className="col-lg-6 col-xl-3">
+                  <div className="checking-list-elments">
+                    <h3 className="title">Partners</h3>
+                    <ul>
+                      <li>
+                        <a href="https://www.luiss.edu" target="_blank" rel="noopener noreferrer">
+                          Luiss University
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.unibo.it/en" target="_blank" rel="noopener noreferrer">
+                          Bologna University
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.polimi.it" target="_blank" rel="noopener noreferrer">
+                          Politecnico di Milano
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.polito.it" target="_blank" rel="noopener noreferrer">
+                          Politecnico di Torino
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.uniroma1.it/en/pagina-strutturale/home" target="_blank" rel="noopener noreferrer">
+                          Sapienza University of Rome
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="col-lg-6 col-xl-3">
+                  <div className="checking-list-elments">
+                    <h3 className="title">Degrees</h3>
+                    <ul>
+                      <li>
+                        <i className="fa-solid fa-check">
+                          <span className="icon">&nbsp;</span>
+                        </i>
+                        <a
+                          href="https://www.ada.edu.az/en/schools/safs/programs/agricultural-and-food-system-management"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Agricultural and Food Systems Management
+                        </a>
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check">
+                          <span className="icon">&nbsp;</span>
+                        </i>
+                        <a
+                          href="https://www.ada.edu.az/en/schools/safs/programs/agricultural-technologies"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Agricultural Technologies&nbsp;
+                        </a>
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check">
+                          <span className="icon">&nbsp;</span>
+                        </i>
+                        <a
+                          href="https://www.ada.edu.az/en/schools/safs/programs/animal-science"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Animal Science&nbsp;
+                        </a>
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check">
+                          <span className="icon">&nbsp;</span>
+                        </i>
+                        <a
+                          href="https://www.ada.edu.az/en/schools/sda/programs/architecture"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Architecture
+                        </a>&nbsp;
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check">
+                          <span className="icon">&nbsp;</span>
+                        </i>
+                        <a
+                          href="https://www.ada.edu.az/en/schools/sda/programs/bcd"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Communication Design
+                        </a>
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check">
+                          <span className="icon">&nbsp;</span>
+                        </i>
+                        <a
+                          href="https://www.ada.edu.az/en/schools/site/programs/electrical-and-electronics-engineering"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Electrical and Electronic Engineering
+                        </a>
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check">
+                          <span className="icon">&nbsp;</span>
+                        </i>
+                        <a
+                          href="https://www.ada.edu.az/en/schools/safs/programs/food-technologies"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Food Technologies&nbsp;
+                        </a>
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check">
+                          <span className="icon">&nbsp;</span>
+                        </i>
+                        <a
+                          href="https://www.ada.edu.az/en/schools/sb/programs/global-management-and-politics-gmap"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Global Management and Politics
+                        </a>
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check">
+                          <span className="icon">&nbsp;</span>
+                        </i>
+                        <a
+                          href="https://www.ada.edu.az/en/schools/sda/programs/interior-design"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Interior Design
+                        </a>
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check">
+                          <span className="icon">&nbsp;</span>
+                        </i>
+                        <a
+                          href="https://www.ada.edu.az/en/schools/sda/programs/bup"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Urban Planning
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="col-lg-6 col-xl-3">
+                  <div className="checking-list-elments">
+                    <h3 className="title">Certificate Programs</h3>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.ada.edu.az/en/schools/safs/programs/certificate-csaps"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Agricultural and Food Sciences
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.ada.edu.az/en/schools/sda/programs/executive-program"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Design and Architecture
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="col-lg-6 col-xl-3">
+                  <div className="checking-list-elments">
+                    <h3 className="title">Students</h3>
+                    <ul>
+                      <li>
+                        <i className="fa-solid fa-user">
+                          <span className="icon">&nbsp;</span>
+                        </i>
+                        286 students
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-graduation-cap">
+                          <span className="icon">&nbsp;</span>
+                        </i>
+                        70% undergraduate&nbsp;
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-graduation-cap">
+                          <span className="icon">&nbsp;</span>
+                        </i>
+                        30% graduate
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-person-dress">
+                          <span className="icon">&nbsp;</span>
+                        </i>
+                        60% female&nbsp;<span className="text">&nbsp;</span>
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-person">
+                          <span className="icon">&nbsp;</span>
+                        </i>
+                        40% male
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>
