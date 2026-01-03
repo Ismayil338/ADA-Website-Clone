@@ -402,6 +402,7 @@ const Programs = () => {
                     {leftColumnPrograms.map((program) => (
                       <div key={program.id} className="mb-4">
                         <ProgramCard
+                          id={program.id}
                           title={program.title}
                           schoolLabel={program.school_label}
                           level={program.level}
@@ -419,6 +420,7 @@ const Programs = () => {
                     {rightColumnPrograms.map((program) => (
                       <div key={program.id} className="mb-4">
                         <ProgramCard
+                          id={program.id}
                           title={program.title}
                           schoolLabel={program.school_label}
                           level={program.level}

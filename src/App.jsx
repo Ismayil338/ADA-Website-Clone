@@ -14,6 +14,7 @@ import AboutItalyAzerbaijanUniversity from './pages/AboutItalyAzerbaijanUniversi
 import Programs from './pages/Programs';
 import EventDetail from './pages/EventDetail';
 import NewsDetail from './pages/NewsDetail';
+import ProgramDetail from './pages/ProgramDetail';
 import NotFound from './pages/NotFound';
 import Admin from './pages/Admin';
 
@@ -29,6 +30,7 @@ const App = () => (
       <Route path="/en/events/:id" element={<EventDetail />} />
       <Route path="/en/news-and-events" element={<NewsAndEvents />} />
       <Route path="/en/admission/find-your-program" element={<Programs />} />
+      <Route path="/en/programs/:id" element={<ProgramDetail />} />
       <Route path="/en/schools/site" element={<SchoolSite />} />
       <Route path="/en/schools/sb" element={<SchoolSB />} />
       <Route path="/en/academics/research" element={<Research />} />

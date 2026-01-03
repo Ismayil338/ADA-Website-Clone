@@ -1,12 +1,8 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 import json
 import os
 
-# Получаем абсолютный путь к директории скрипта
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Читаем файлы
 events_path = os.path.join(script_dir, 'data', 'events_items.json')
 db_path = os.path.join(script_dir, 'db.json')
 
@@ -18,7 +14,6 @@ print(f'Читаю db.json из: {db_path}')
 with open(db_path, 'r', encoding='utf-8') as f:
     db_data = json.load(f)
 
-# Функция для определения типа события
 def get_event_type(event):
     title_lower = event.get('title', '').lower()
     link_lower = event.get('link', '').lower()
@@ -41,7 +36,6 @@ def get_event_type(event):
     else:
         return 'University'
 
-# Преобразуем события: добавляем id и type
 print('Обрабатываю события...')
 events_with_ids = []
 for index, event in enumerate(events_data, start=1):
@@ -55,10 +49,8 @@ for index, event in enumerate(events_data, start=1):
         'type': get_event_type(event)
     })
 
-# Добавляем события в db.json
 db_data['events'] = events_with_ids
 
-# Сохраняем обновленный db.json
 print(f'Сохраняю {len(events_with_ids)} событий в db.json...')
 with open(db_path, 'w', encoding='utf-8') as f:
     json.dump(db_data, f, ensure_ascii=False, indent=2)

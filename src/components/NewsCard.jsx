@@ -11,18 +11,19 @@ const NewsCard = ({
   id = null,
 }) => {
   const CardContent = ({ children }) => {
-    if (href && href !== '#') {
-      return (
-        <a className="grid-url" href={href} target="_blank" rel="noopener noreferrer">
-          {children}
-        </a>
-      );
-    }
+    // Prioritize local route (id) over external link (href)
     if (id) {
       return (
         <Link to={`/en/news/${id}`} className="grid-url">
           {children}
         </Link>
+      );
+    }
+    if (href && href !== '#') {
+      return (
+        <a className="grid-url" href={href} target="_blank" rel="noopener noreferrer">
+          {children}
+        </a>
       );
     }
     return (

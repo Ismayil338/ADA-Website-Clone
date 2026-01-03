@@ -66,6 +66,40 @@ app.get('/research', (req, res) => {
   res.json(db?.research || []);
 });
 
+// Individual item routes
+app.get('/news/:id', (req, res) => {
+  const db = readJSON(dbPath);
+  const news = db?.news || [];
+  const item = news.find(n => n.id === parseInt(req.params.id) || n.id === req.params.id);
+  if (item) {
+    res.json(item);
+  } else {
+    res.status(404).json({ error: 'News not found' });
+  }
+});
+
+app.get('/events/:id', (req, res) => {
+  const db = readJSON(dbPath);
+  const events = db?.events || [];
+  const item = events.find(e => e.id === parseInt(req.params.id) || e.id === req.params.id);
+  if (item) {
+    res.json(item);
+  } else {
+    res.status(404).json({ error: 'Event not found' });
+  }
+});
+
+app.get('/programs/:id', (req, res) => {
+  const db = readJSON(dbPath);
+  const programs = db?.programs || [];
+  const item = programs.find(p => p.id === parseInt(req.params.id) || p.id === req.params.id);
+  if (item) {
+    res.json(item);
+  } else {
+    res.status(404).json({ error: 'Program not found' });
+  }
+});
+
 app.put('/sb_faculty', (req, res) => {
   const data = req.body;
   if (writeJSON(path.join(dataDir, 'sb_faculty.json'), data)) {
@@ -136,7 +170,54 @@ app.put('/research', (req, res) => {
   }
 });
 
+// Root route - show available endpoints
+app.get('/', (req, res) => {
+  const endpoints = {
+    message: 'JSON Server API',
+    endpoints: {
+      GET: [
+        '/news',
+        '/news/:id',
+        '/events',
+        '/events/:id',
+        '/programs',
+        '/programs/:id',
+        '/research',
+        '/sb_faculty',
+        '/site_faculty'
+      ],
+      PUT: [
+        '/news',
+        '/events',
+        '/programs',
+        '/research',
+        '/sb_faculty',
+        '/site_faculty'
+      ]
+    },
+    baseUrl: `http://localhost:${PORT}`
+  };
+  res.json(endpoints);
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
+  console.log('\nAvailable endpoints:');
+  console.log('  GET  /news');
+  console.log('  GET  /news/:id');
+  console.log('  GET  /events');
+  console.log('  GET  /events/:id');
+  console.log('  GET  /programs');
+  console.log('  GET  /programs/:id');
+  console.log('  GET  /research');
+  console.log('  GET  /sb_faculty');
+  console.log('  GET  /site_faculty');
+  console.log('  PUT  /news');
+  console.log('  PUT  /events');
+  console.log('  PUT  /programs');
+  console.log('  PUT  /research');
+  console.log('  PUT  /sb_faculty');
+  console.log('  PUT  /site_faculty');
+  console.log('\nVisit http://localhost:5000/ to see all endpoints\n');
 });
 

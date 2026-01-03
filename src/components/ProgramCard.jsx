@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const ProgramCard = ({
   title,
   schoolLabel,
@@ -10,6 +12,7 @@ const ProgramCard = ({
   dataDegree = '',
   dataFormat = '',
   className = '',
+  id = null,
 }) => {
   const bgStyle = imageSrc
     ? {
@@ -20,6 +23,29 @@ const ProgramCard = ({
   const defaultColClass = className && className.includes('w-100') ? '' : 'col-md-6 col-xl-4';
   const finalClassName = `${defaultColClass} filtered-item ${className || ''}`.trim();
 
+  const CardContent = ({ children }) => {
+    // Prioritize local route (id) over external link (link)
+    if (id) {
+      return (
+        <Link to={`/en/programs/${id}`} className="program-result-item">
+          {children}
+        </Link>
+      );
+    }
+    if (link && link !== '#') {
+      return (
+        <a className="program-result-item" href={link} target={target}>
+          {children}
+        </a>
+      );
+    }
+    return (
+      <a className="program-result-item" href={link} target={target}>
+        {children}
+      </a>
+    );
+  };
+
   return (
     <div
       className={finalClassName}
@@ -28,7 +54,7 @@ const ProgramCard = ({
       data-degree={dataDegree || undefined}
       data-format={dataFormat || undefined}
     >
-      <a className="program-result-item" href={link} target={target}>
+      <CardContent>
         <div
           className="title position-relative"
           style={{
@@ -45,7 +71,7 @@ const ProgramCard = ({
           ) : null}
         </div>
         {level ? <div className={`level ${level.toLowerCase()}`}>{level}</div> : null}
-      </a>
+      </CardContent>
     </div>
   );
 };
