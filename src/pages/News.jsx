@@ -70,8 +70,8 @@ const News = () => {
   const endIndex = startIndex + newsPerPage;
   const currentNews = filteredNews.slice(startIndex, endIndex);
 
-  const leftColumnNews = currentNews.slice(0, 6);
-  const rightColumnNews = currentNews.slice(6, 12);
+  const leftColumnNews = currentNews.filter((_, index) => index % 2 === 0);
+  const rightColumnNews = currentNews.filter((_, index) => index % 2 === 1);
 
   const getPaginationButtons = () => {
     const buttons = [];
@@ -136,14 +136,18 @@ const News = () => {
     <main className="page page-news">
       <PageHeading
         title="News"
-        imageSrc="https://www.ada.edu.az/assets/img/header/header_news.jpg"
+        imageSrc={null}
         breadcrumb={generateBreadcrumbs(location.pathname, null, selectedCategory)}
+        onBreadcrumbClick={() => {
+          setSelectedCategory(null);
+          setCurrentPage(1);
+        }}
       />
 
       <div className="container py-5">
         <div className="row">
           <div className="col-lg-8">
-            <h1 className="page-title mb-4" style={{ color: '#003366' }}>
+            <h1 className="page-title mb-4" style={{ color: '#fff' }}>
               News
             </h1>
 
@@ -362,12 +366,58 @@ const News = () => {
                     <button
                       key={category.name}
                       type="button"
-                      className={`btn text-start category-filter-btn ${isActive ? 'active' : ''}`}
+                      className="btn text-start"
+                      style={{
+                        backgroundColor: isActive ? '#ae485e' : 'transparent',
+                        color: isActive ? '#fff' : '#000',
+                        border: 'none',
+                        transition: 'all 0.3s ease',
+                        width: '100%',
+                        padding: '10px 15px 10px 25px',
+                        position: 'relative',
+                        boxShadow: 'none'
+                      }}
+                      onMouseEnter={(e) => {
+                        if (!isActive) {
+                          const button = e.currentTarget;
+                          button.style.color = '#ae485e';
+                          button.style.backgroundColor = 'transparent';
+                          const dot = button.querySelector('.news-category-dot');
+                          if (dot) {
+                            dot.style.borderColor = '#ae485e';
+                          }
+                        }
+                      }}
+                      onMouseLeave={(e) => {
+                        if (!isActive) {
+                          const button = e.currentTarget;
+                          button.style.color = '#000';
+                          button.style.backgroundColor = 'transparent';
+                          const dot = button.querySelector('.news-category-dot');
+                          if (dot) {
+                            dot.style.borderColor = '#000';
+                          }
+                        }
+                      }}
                       onClick={() => {
                         setSelectedCategory(isActive ? null : category.name);
                       }}
                     >
-                      <span className="news-category-dot" />
+                      <span
+                        className="news-category-dot"
+                        style={{
+                          position: 'absolute',
+                          left: '10px',
+                          top: '50%',
+                          transform: 'translateY(-50%)',
+                          width: '6px',
+                          height: '6px',
+                          borderRadius: '50%',
+                          border: `2px solid ${isActive ? '#fff' : '#000'}`,
+                          backgroundColor: isActive ? '#fff' : 'transparent',
+                          transition: 'border-color 0.3s ease, background-color 0.3s ease'
+                        }}
+                      />
                       {category.name} ({count})
                     </button>
                   );

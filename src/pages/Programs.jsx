@@ -9,25 +9,35 @@ const Programs = () => {
   const [programs, setPrograms] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [selectedSchool, setSelectedSchool] = useState(null);
-  const [selectedLevel, setSelectedLevel] = useState(null);
+  const [selectedSchools, setSelectedSchools] = useState([]);
+  const [selectedLevels, setSelectedLevels] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   
   const programsPerPage = 12;
 
   const schools = [
-    { name: 'SPIA', label: 'School of Public and International Affairs' },
-    { name: 'SB', label: 'School of Business' },
-    { name: 'SITE', label: 'School of IT and Engineering' },
-    { name: 'SE', label: 'School of Education' },
-    { name: 'LAW', label: 'School of Law' },
-    { name: 'SAFS', label: 'School of Agricultural and Food Sciences' },
-    { name: 'SDA', label: 'School of Design and Architecture' }
+    { name: 'CHS', label: 'School of College of Humanities and Sciences (CHS)' },
+    { name: 'SPIA', label: 'School of Public and International Affairs (SPIA)' },
+    { name: 'SB', label: 'School of Business (SB)' },
+    { name: 'SITE', label: 'School of IT and Engineering (SITE)' },
+    { name: 'SE', label: 'School of Education (SE)' },
+    { name: 'LAW', label: 'School of Law (LAW)' },
+    { name: 'SAFS', label: 'School of Agricultural and Food Sciences (SAFS)' },
+    { name: 'SDA', label: 'School of Design and Architecture (SDA)' }
   ];
 
   const levels = [
-    { name: 'Undergraduate', count: 0 },
-    { name: 'Graduate', count: 0 }
+    { name: 'Undergraduate' },
+    { name: 'Graduate' },
+    { name: 'PhD' },
+    { name: 'Non-degree' },
+    { name: 'Advanced Foreign Services Program' },
+    { name: 'Certificate Programs for Internationals' },
+    { name: 'Custom Programs' },
+    { name: 'Open Enrollment Programs' },
+    { name: 'Academic Foundation' },
+    { name: 'English for Academic and Professional Purposes (EAPP)' }
   ];
 
   useEffect(() => {
@@ -66,22 +76,49 @@ const Programs = () => {
   const schoolCounts = getSchoolCounts();
 
   const filteredPrograms = programs.filter(program => {
-    const matchesSchool = !selectedSchool || program.school_label === selectedSchool;
-    const matchesLevel = !selectedLevel || program.level === selectedLevel;
-    return matchesSchool && matchesLevel;
+    const matchesSchool = selectedSchools.length === 0 || selectedSchools.includes(program.school_label);
+    const matchesLevel = selectedLevels.length === 0 || selectedLevels.includes(program.level);
+    const matchesSearch = !searchQuery || 
+      program.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (program.school_label && program.school_label.toLowerCase().includes(searchQuery.toLowerCase())) ||
+      (program.level && program.level.toLowerCase().includes(searchQuery.toLowerCase()));
+    return matchesSchool && matchesLevel && matchesSearch;
   });
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [selectedSchool, selectedLevel]);
+  }, [selectedSchools, selectedLevels, searchQuery]);
+
+  const handleSchoolToggle = (schoolName) => {
+    setSelectedSchools(prev => 
+      prev.includes(schoolName) 
+        ? prev.filter(s => s !== schoolName)
+        : [...prev, schoolName]
+    );
+  };
+
+  const handleLevelToggle = (levelName) => {
+    setSelectedLevels(prev => 
+      prev.includes(levelName) 
+        ? prev.filter(l => l !== levelName)
+        : [...prev, levelName]
+    );
+  };
+
+  const handleReset = () => {
+    setSelectedSchools([]);
+    setSelectedLevels([]);
+    setSearchQuery('');
+    setCurrentPage(1);
+  };
 
   const totalPages = Math.ceil(filteredPrograms.length / programsPerPage);
   const startIndex = (currentPage - 1) * programsPerPage;
   const endIndex = startIndex + programsPerPage;
   const currentPrograms = filteredPrograms.slice(startIndex, endIndex);
 
-  const leftColumnPrograms = currentPrograms.slice(0, 6);
-  const rightColumnPrograms = currentPrograms.slice(6, 12);
+  const leftColumnPrograms = currentPrograms.filter((_, index) => index % 2 === 0);
+  const rightColumnPrograms = currentPrograms.filter((_, index) => index % 2 === 1);
 
   const getPaginationButtons = () => {
     const buttons = [];
@@ -152,6 +189,202 @@ const Programs = () => {
 
       <div className="container py-5">
         <div className="row">
+          <div className="col-lg-4">
+            <div style={{ 
+              position: 'sticky',
+              top: '20px',
+              alignSelf: 'flex-start'
+            }}>
+              <div style={{ marginBottom: '30px' }}>
+                <h3 style={{ 
+                  color: '#003366', 
+                  marginBottom: '15px',
+                  fontWeight: 'bold',
+                  fontSize: '18px'
+                }}>
+                  Narrow Your Results
+                </h3>
+                <button
+                  type="button"
+                  onClick={handleReset}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    color: '#003366',
+                    textDecoration: 'underline',
+                    cursor: 'pointer',
+                    padding: 0,
+                    fontSize: '14px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '5px'
+                  }}
+                >
+                  <i className="fa fa-refresh" style={{ fontSize: '12px' }}></i>
+                  RESET
+                </button>
+              </div>
+
+              <div style={{ marginBottom: '30px' }}>
+                <h4 style={{ 
+                  color: '#003366', 
+                  marginBottom: '15px',
+                  fontWeight: 'bold',
+                  fontSize: '16px'
+                }}>
+                  Search
+                </h4>
+                <input
+                  type="text"
+                  placeholder="Enter keywords..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  style={{
+                    width: '100%',
+                    padding: '10px',
+                    border: '1px solid #ddd',
+                    borderRadius: '4px',
+                    fontSize: '14px'
+                  }}
+                />
+              </div>
+
+              <div style={{ marginBottom: '30px' }}>
+                <h4 style={{ 
+                  color: '#003366', 
+                  marginBottom: '15px',
+                  fontWeight: 'bold',
+                  fontSize: '16px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px'
+                }}>
+                  Degree
+                  <i className="fa fa-chevron-down" style={{ fontSize: '12px' }}></i>
+                </h4>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  {levels.map((level) => {
+                    const count = levelCounts[level.name] || 0;
+                    const isChecked = selectedLevels.includes(level.name);
+                    
+                    return (
+                      <label
+                        key={level.name}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '10px',
+                          cursor: 'pointer',
+                          fontSize: '14px',
+                          padding: '5px',
+                          borderRadius: '4px',
+                          transition: 'all 0.3s ease'
+                        }}
+                        onMouseEnter={(e) => {
+                          const checkbox = e.currentTarget.querySelector('input[type="checkbox"]');
+                          if (checkbox) {
+                            checkbox.style.accentColor = '#ae485e';
+                            checkbox.style.transform = 'scale(1.2)';
+                            checkbox.style.boxShadow = '0 0 8px rgba(51, 97, 120, 0.6)';
+                            checkbox.style.transition = 'all 0.3s ease';
+                          }
+                        }}
+                        onMouseLeave={(e) => {
+                          const checkbox = e.currentTarget.querySelector('input[type="checkbox"]');
+                          if (checkbox) {
+                            checkbox.style.accentColor = '';
+                            checkbox.style.transform = 'scale(1)';
+                            checkbox.style.boxShadow = 'none';
+                          }
+                        }}
+                      >
+                        <input
+                          type="checkbox"
+                          checked={isChecked}
+                          onChange={() => handleLevelToggle(level.name)}
+                          style={{
+                            width: '16px',
+                            height: '16px',
+                            cursor: 'pointer',
+                            transition: 'all 0.3s ease'
+                          }}
+                        />
+                        <span>{level.name}</span>
+                      </label>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div>
+                <h4 style={{ 
+                  color: '#003366', 
+                  marginBottom: '15px',
+                  fontWeight: 'bold',
+                  fontSize: '16px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px'
+                }}>
+                  Schools
+                  <i className="fa fa-chevron-down" style={{ fontSize: '12px' }}></i>
+                </h4>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  {schools.map((school) => {
+                    const count = schoolCounts[school.name] || 0;
+                    const isChecked = selectedSchools.includes(school.name);
+                    
+                    return (
+                      <label
+                        key={school.name}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '10px',
+                          cursor: 'pointer',
+                          fontSize: '14px',
+                          padding: '5px',
+                          borderRadius: '4px',
+                          transition: 'all 0.3s ease'
+                        }}
+                        onMouseEnter={(e) => {
+                          const checkbox = e.currentTarget.querySelector('input[type="checkbox"]');
+                          if (checkbox) {
+                            checkbox.style.accentColor = '#ae485e';
+                            checkbox.style.transform = 'scale(1.2)';
+                            checkbox.style.boxShadow = '0 0 8px rgba(51, 97, 120, 0.6)';
+                            checkbox.style.transition = 'all 0.3s ease';
+                          }
+                        }}
+                        onMouseLeave={(e) => {
+                          const checkbox = e.currentTarget.querySelector('input[type="checkbox"]');
+                          if (checkbox) {
+                            checkbox.style.accentColor = '';
+                            checkbox.style.transform = 'scale(1)';
+                            checkbox.style.boxShadow = 'none';
+                          }
+                        }}
+                      >
+                        <input
+                          type="checkbox"
+                          checked={isChecked}
+                          onChange={() => handleSchoolToggle(school.name)}
+                          style={{
+                            width: '16px',
+                            height: '16px',
+                            cursor: 'pointer',
+                            transition: 'all 0.3s ease'
+                          }}
+                        />
+                        <span>{school.label}</span>
+                      </label>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="col-lg-8">
             <h1 className="page-title mb-4" style={{ color: '#003366' }}>
               Programs
@@ -338,178 +571,6 @@ const Programs = () => {
                 )}
               </>
             )}
-          </div>
-
-          <div className="col-lg-4">
-            <div style={{ 
-              position: 'sticky',
-              top: '20px',
-              alignSelf: 'flex-start'
-            }}>
-              <h3 className="mb-3" style={{ color: '#003366', paddingBottom: '10px', position: 'relative' }}>
-                Filter by Level:
-                <div style={{
-                  position: 'absolute',
-                  bottom: 0,
-                  left: 0,
-                  width: '50%',
-                  height: '2px',
-                  backgroundColor: '#003366'
-                }}></div>
-                <div style={{
-                  position: 'absolute',
-                  bottom: 0,
-                  right: 0,
-                  width: '50%',
-                  height: '2px',
-                  backgroundColor: '#e0e0e0'
-                }}></div>
-              </h3>
-              <div className="d-flex flex-column gap-2 mb-4">
-                {levels.map((level) => {
-                  const count = levelCounts[level.name] || 0;
-                  const isActive = selectedLevel === level.name;
-                  
-                  return (
-                    <button
-                      key={level.name}
-                      type="button"
-                      className="btn text-start"
-                      style={{
-                        backgroundColor: isActive ? '#ae485e' : 'transparent',
-                        color: isActive ? '#fff' : '#000',
-                        border: 'none',
-                        transition: 'all 0.3s ease',
-                        width: '100%',
-                        padding: '10px 15px 10px 25px',
-                        position: 'relative',
-                        boxShadow: 'none'
-                      }}
-                      onMouseEnter={(e) => {
-                        if (!isActive) {
-                          e.target.style.color = '#ae485e';
-                          const dot = e.target.querySelector('.level-dot');
-                          if (dot) {
-                            dot.style.borderColor = '#ae485e';
-                          }
-                        }
-                      }}
-                      onMouseLeave={(e) => {
-                        if (!isActive) {
-                          e.target.style.color = '#000';
-                          const dot = e.target.querySelector('.level-dot');
-                          if (dot) {
-                            dot.style.borderColor = '#000';
-                          }
-                        }
-                      }}
-                      onClick={() => {
-                        setSelectedLevel(isActive ? null : level.name);
-                      }}
-                    >
-                      <span
-                        className="level-dot"
-                        style={{
-                          position: 'absolute',
-                          left: '10px',
-                          top: '50%',
-                          transform: 'translateY(-50%)',
-                          width: '6px',
-                          height: '6px',
-                          borderRadius: '50%',
-                          border: `2px solid ${isActive ? '#fff' : '#000'}`,
-                          backgroundColor: 'transparent',
-                          transition: 'border-color 0.3s ease'
-                        }}
-                      />
-                      {level.name} ({count})
-                    </button>
-                  );
-                })}
-              </div>
-
-              <h3 className="mb-3" style={{ color: '#003366', paddingBottom: '10px', position: 'relative' }}>
-                Filter by School:
-                <div style={{
-                  position: 'absolute',
-                  bottom: 0,
-                  left: 0,
-                  width: '50%',
-                  height: '2px',
-                  backgroundColor: '#003366'
-                }}></div>
-                <div style={{
-                  position: 'absolute',
-                  bottom: 0,
-                  right: 0,
-                  width: '50%',
-                  height: '2px',
-                  backgroundColor: '#e0e0e0'
-                }}></div>
-              </h3>
-              <div className="d-flex flex-column gap-2">
-                {schools.map((school) => {
-                  const count = schoolCounts[school.name] || 0;
-                  const isActive = selectedSchool === school.name;
-                  
-                  return (
-                    <button
-                      key={school.name}
-                      type="button"
-                      className="btn text-start"
-                      style={{
-                        backgroundColor: isActive ? '#ae485e' : 'transparent',
-                        color: isActive ? '#fff' : '#000',
-                        border: 'none',
-                        transition: 'all 0.3s ease',
-                        width: '100%',
-                        padding: '10px 15px 10px 25px',
-                        position: 'relative',
-                        boxShadow: 'none'
-                      }}
-                      onMouseEnter={(e) => {
-                        if (!isActive) {
-                          e.target.style.color = '#ae485e';
-                          const dot = e.target.querySelector('.school-dot');
-                          if (dot) {
-                            dot.style.borderColor = '#ae485e';
-                          }
-                        }
-                      }}
-                      onMouseLeave={(e) => {
-                        if (!isActive) {
-                          e.target.style.color = '#000';
-                          const dot = e.target.querySelector('.school-dot');
-                          if (dot) {
-                            dot.style.borderColor = '#000';
-                          }
-                        }
-                      }}
-                      onClick={() => {
-                        setSelectedSchool(isActive ? null : school.name);
-                      }}
-                    >
-                      <span
-                        className="school-dot"
-                        style={{
-                          position: 'absolute',
-                          left: '10px',
-                          top: '50%',
-                          transform: 'translateY(-50%)',
-                          width: '6px',
-                          height: '6px',
-                          borderRadius: '50%',
-                          border: `2px solid ${isActive ? '#fff' : '#000'}`,
-                          backgroundColor: 'transparent',
-                          transition: 'border-color 0.3s ease'
-                        }}
-                      />
-                      {school.label} ({count})
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
           </div>
         </div>
       </div>

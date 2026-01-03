@@ -10,6 +10,7 @@ const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState({ news: [], programs: [] });
   const [isSearching, setIsSearching] = useState(false);
+  const [snowflakes, setSnowflakes] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -126,6 +127,31 @@ const Navbar = () => {
     setSearchQuery(e.target.value);
   };
 
+  const createSnowflake = () => {
+    return {
+      id: Date.now() + Math.random(),
+      left: Math.random() * 100,
+      size: Math.random() * 30 + 40,
+      duration: Math.random() * 3 + 5,
+      delay: Math.random() * 2
+    };
+  };
+
+  const handleTreeClick = () => {
+    const newSnowflakes = [];
+    for (let i = 0; i < 50; i++) {
+      setTimeout(() => {
+        const snowflake = createSnowflake();
+        newSnowflakes.push(snowflake);
+        setSnowflakes(prev => [...prev, snowflake]);
+        
+        setTimeout(() => {
+          setSnowflakes(prev => prev.filter(s => s.id !== snowflake.id));
+        }, (snowflake.duration + snowflake.delay) * 1000);
+      }, i * 100);
+    }
+  };
+
   const menuItems = [
     {
       name: 'About',
@@ -203,7 +229,49 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="header landing-header navbar-sticky uny-header">
+    <>
+      <div style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        pointerEvents: 'none',
+        zIndex: 9999,
+        overflow: 'hidden'
+      }}>
+        {snowflakes.map(snowflake => (
+          <div
+            key={snowflake.id}
+            style={{
+              position: 'absolute',
+              top: '-50px',
+              left: `${snowflake.left}%`,
+              fontSize: `${snowflake.size}px`,
+              color: '#ffffff',
+              pointerEvents: 'none',
+              userSelect: 'none',
+              animation: `snowfall ${snowflake.duration}s linear ${snowflake.delay}s forwards`,
+              textShadow: '0 0 5px rgba(255,255,255,0.8)'
+            }}
+          >
+            ❄
+          </div>
+        ))}
+      </div>
+      <style>{`
+        @keyframes snowfall {
+          0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(100vh) rotate(360deg);
+            opacity: 0;
+          }
+        }
+      `}</style>
+      <header className="header landing-header navbar-sticky uny-header">
       <div className="container-fluid" style={{ background: '#336178' }}>
         <div className="container">
           <div className="row position-relative">
@@ -232,9 +300,34 @@ const Navbar = () => {
       <div className="container nav-container">
         <div className="row position-relative">
           <div className="col-md-2 col-logo">
-            <div className="header-logo">
+            <div className="header-logo" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
               <a href="/en/">
                 <img src="https://www.ada.edu.az/assets/img/logo.svg" alt="ADA University Logo" />
+              </a>
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleTreeClick();
+                }}
+                className="navbar-tree-icon"
+                style={{
+                  cursor: 'pointer',
+                  fontSize: '24px',
+                  textDecoration: 'none',
+                  transition: 'transform 0.2s ease',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                }}
+                title="Click for snow!"
+              >
+                <i className="fa-solid fa-tree"></i>
               </a>
             </div>
           </div>
@@ -579,8 +672,10 @@ const Navbar = () => {
         </div>
       </div>
     </header>
+    </>
   );
 };
 
 export default Navbar;
+
 

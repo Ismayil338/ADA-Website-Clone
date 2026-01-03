@@ -5,20 +5,22 @@ const Home = () => {
   const [activeTab, setActiveTab] = useState('815');
   const photoOverlaySwiperRef = useRef(null);
   const ada4AllSwiperRef = useRef(null);
+  const adaIsVerticalSwiperRef = useRef(null);
+  const [countersAnimated, setCountersAnimated] = useState(false);
+  const counterSectionRef = useRef(null);
+  const [videoPlaying, setVideoPlaying] = useState(false);
 
   const handleTabClick = (tabId) => {
     setActiveTab(tabId);
   };
 
   useEffect(() => {
-    // Initialize photoOverlay-carousel slider
     const initPhotoOverlaySwiper = async () => {
       const { default: Swiper } = await import('swiper');
       const { Navigation } = await import('swiper/modules');
       
       const swiperEl = document.querySelector('.photoOverlay-carousel');
       if (swiperEl) {
-        // Destroy existing instance if any
         if (swiperEl.swiper) {
           swiperEl.swiper.destroy(true, true);
         }
@@ -26,7 +28,10 @@ const Home = () => {
         photoOverlaySwiperRef.current = new Swiper(swiperEl, {
           modules: [Navigation],
           slidesPerView: 'auto',
-          spaceBetween: 30,
+          spaceBetween: 100,
+          centeredSlides: true,
+          initialSlide: 0,
+          speed: 800,
           navigation: {
             nextEl: '.photoOverlay-carousel .swiper-navigation-box .swiper-button-next',
             prevEl: '.photoOverlay-carousel .swiper-navigation-box .swiper-button-prev',
@@ -35,14 +40,12 @@ const Home = () => {
       }
     };
 
-    // Initialize ada-4all-slider
     const initAda4AllSwiper = async () => {
       const { default: Swiper } = await import('swiper');
       const { Navigation, Pagination } = await import('swiper/modules');
       
       const swiperEl = document.querySelector('.ada-4all-slider');
       if (swiperEl) {
-        // Destroy existing instance if any
         if (swiperEl.swiper) {
           swiperEl.swiper.destroy(true, true);
         }
@@ -63,10 +66,36 @@ const Home = () => {
       }
     };
 
-    // Small delay to ensure DOM is ready
+    const initAdaIsVerticalSwiper = async () => {
+      const { default: Swiper } = await import('swiper');
+      const { Autoplay } = await import('swiper/modules');
+      
+      const swiperEl = document.querySelector('.ada-is-vertical-auto-carousel');
+      if (swiperEl) {
+        if (swiperEl.swiper) {
+          swiperEl.swiper.destroy(true, true);
+        }
+        
+        adaIsVerticalSwiperRef.current = new Swiper(swiperEl, {
+          modules: [Autoplay],
+          direction: 'vertical',
+          slidesPerView: 3,
+          spaceBetween: -30,
+          centeredSlides: true,
+          loop: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          speed: 500,
+        });
+      }
+    };
+
     const timer = setTimeout(() => {
       initPhotoOverlaySwiper();
       initAda4AllSwiper();
+      initAdaIsVerticalSwiper();
     }, 100);
 
     return () => {
@@ -79,8 +108,81 @@ const Home = () => {
         ada4AllSwiperRef.current.destroy(true, true);
         ada4AllSwiperRef.current = null;
       }
+      if (adaIsVerticalSwiperRef.current) {
+        adaIsVerticalSwiperRef.current.destroy(true, true);
+        adaIsVerticalSwiperRef.current = null;
+      }
     };
   }, []);
+
+  useEffect(() => {
+    if (countersAnimated) return;
+
+    const animateCounter = (element, targetValue, duration) => {
+      const isDecimal = targetValue.toString().includes('.');
+      const target = parseFloat(targetValue);
+      const startTime = performance.now();
+      
+      const updateCounter = (currentTime) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        const currentValue = progress * target;
+        
+        if (isDecimal) {
+          element.textContent = currentValue.toFixed(1);
+        } else {
+          element.textContent = Math.floor(currentValue);
+        }
+        
+        if (progress < 1) {
+          requestAnimationFrame(updateCounter);
+        } else {
+          if (isDecimal) {
+            element.textContent = target.toFixed(1);
+          } else {
+            element.textContent = Math.floor(target);
+          }
+        }
+      };
+      
+      requestAnimationFrame(updateCounter);
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !countersAnimated) {
+            setCountersAnimated(true);
+            
+            const counters = entry.target.querySelectorAll('.count[data-countto]');
+            counters.forEach((counter) => {
+              const targetValue = counter.getAttribute('data-countto');
+              const duration = parseInt(counter.getAttribute('data-animateduration')) || 1500;
+              
+              if (targetValue.includes('.')) {
+                counter.textContent = '0.0';
+              } else {
+                counter.textContent = '0';
+              }
+              animateCounter(counter, targetValue, duration);
+            });
+            
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (counterSectionRef.current) {
+      observer.observe(counterSectionRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [countersAnimated]);
 
   return (
   <main className="page page-home">
@@ -488,7 +590,6 @@ const Home = () => {
               aria-controls="swiper-wrapper-a559a6367f7f4a04"
               aria-disabled="true"
             >
-              <i className="fa-solid fa-chevron-left"></i>
             </div>
             <div
               className="swiper-button-next"
@@ -498,7 +599,6 @@ const Home = () => {
               aria-controls="swiper-wrapper-a559a6367f7f4a04"
               aria-disabled="false"
             >
-              <i className="fa-solid fa-chevron-right"></i>
             </div>
           </div>
           <span
@@ -777,7 +877,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="countr-section">
+      <section className="countr-section" ref={counterSectionRef}>
         <div className="image-bg-box">
           <img
             alt=""
@@ -798,7 +898,7 @@ const Home = () => {
                   <img src="https://www.ada.edu.az/assets/img/icons/students.svg" alt="" />
                 </div>
                 <div className="count" data-animateduration="1500" data-countto="4946">
-                  4946
+                  {countersAnimated ? '4946' : '0'}
                 </div>
               </div>
               <div className="count-bottom">
@@ -811,7 +911,7 @@ const Home = () => {
                   <img src="https://www.ada.edu.az/assets/img/icons/faculty.svg" alt="" />
                 </div>
                 <div className="count" data-animateduration="1500" data-countto="306">
-                  306
+                  {countersAnimated ? '306' : '0'}
                 </div>
               </div>
               <div className="count-bottom">
@@ -824,7 +924,7 @@ const Home = () => {
                   <img src="https://www.ada.edu.az/assets/img/icons/countries.svg" alt="" />
                 </div>
                 <div className="count" data-animateduration="1500" data-countto="189">
-                  189
+                  {countersAnimated ? '189' : '0'}
                 </div>
               </div>
               <div className="count-bottom">
@@ -837,7 +937,7 @@ const Home = () => {
                   <img src="https://www.ada.edu.az/assets/img/icons/alumni-employment.svg" alt="" />
                 </div>
                 <div className="count" data-animateduration="1500" data-countto="90.1">
-                  90.1
+                  {countersAnimated ? '90.1' : '0.0'}
                 </div>
                 <div className="count">%</div>
               </div>
@@ -857,34 +957,47 @@ const Home = () => {
             </a>
           </div>
           <div className="large-single-item">
-            <a href="javascript:;" className="item-url">
-              <div className="image">
-                <div className="play-button">
-                  <i className="fa-solid fa-play"></i>
-                  <img
-                    src="https://www.ada.edu.az/media/2024/07/15/thumbnail_alumni_forum_2024_poster-1.jpg"
-                    alt=""
-                    id="youtube-cover-player"
-                  />
-                </div>
+            <a 
+              href="javascript:;" 
+              className="item-url"
+              onClick={(e) => {
+                e.preventDefault();
+                setVideoPlaying(true);
+              }}
+            >
+              <div className="image" style={{ position: 'relative' }}>
+                {!videoPlaying && (
+                  <div className="play-button" style={{ position: 'relative', zIndex: 2 }}>
+                    <i className="fa-solid fa-play"></i>
+                    <img
+                      src="https://www.ada.edu.az/media/2024/07/15/thumbnail_alumni_forum_2024_poster-1.jpg"
+                      alt=""
+                      id="youtube-cover-player"
+                      style={{ width: '100%', display: 'block' }}
+                    />
+                  </div>
+                )}
 
-                <iframe
-                  width="100%"
-                  src="https://www.youtube.com/embed/_cgWiPKSGy0?controls=0&rel=0"
-                  title=""
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen=""
-                  style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    opacity: 0,
-                    width: '100%',
-                    aspectRatio: '16/9',
-                  }}
-                  id="youtube-player"
-                ></iframe>
+                {videoPlaying && (
+                  <iframe
+                    width="100%"
+                    src="https://www.youtube.com/embed/_cgWiPKSGy0?autoplay=1&mute=0&controls=1&rel=0"
+                    title="Alumni Forum Video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      aspectRatio: '16/9',
+                      zIndex: 10,
+                    }}
+                    id="youtube-player"
+                  ></iframe>
+                )}
               </div>
             </a>
           </div>
@@ -1199,71 +1312,24 @@ const Home = () => {
           <span className="--shadow">ADA IS</span>
         </div>
         <div className="ada-is-vertical-container">
-          <div
-            className="swiper ada-is-vertical-auto-carousel swiper-initialized swiper-vertical swiper-backface-hidden"
-          >
-            <div
-              className="swiper-wrapper"
-              id="swiper-wrapper-84d3bd39e51cbf2f"
-              aria-live="off"
-              style={{
-                transitionDuration: '0ms',
-                transform: 'translate3d(0px, 0px, 0px)',
-                transitionDelay: '0ms',
-              }}
-            >
-              <div
-                className="swiper-slide"
-                role="group"
-                aria-label="4 / 5"
-                style={{ height: '84px' }}
-                data-swiper-slide-index="3"
-              >
+          <div className="swiper ada-is-vertical-auto-carousel">
+            <div className="swiper-wrapper">
+              <div className="swiper-slide" style={{ height: '80px' }}>
                 <a>innovative campus</a>
               </div>
-              <div
-                className="swiper-slide swiper-slide-prev"
-                role="group"
-                aria-label="5 / 5"
-                style={{ height: '84px' }}
-                data-swiper-slide-index="4"
-              >
+              <div className="swiper-slide" style={{ height: '80px' }}>
                 <a>venue of academic excellence</a>
               </div>
-
-              <div
-                className="swiper-slide swiper-slide-active"
-                role="group"
-                aria-label="1 / 5"
-                style={{ height: '84px' }}
-                data-swiper-slide-index="0"
-              >
+              <div className="swiper-slide" style={{ height: '80px' }}>
                 <a>melting pot of cultures</a>
               </div>
-              <div
-                className="swiper-slide swiper-slide-next"
-                role="group"
-                aria-label="2 / 5"
-                style={{ height: '84px' }}
-                data-swiper-slide-index="1"
-              >
+              <div className="swiper-slide" style={{ height: '80px' }}>
                 <a>ever-growing community</a>
               </div>
-              <div
-                className="swiper-slide"
-                role="group"
-                aria-label="3 / 5"
-                style={{ height: '84px' }}
-                data-swiper-slide-index="2"
-              >
+              <div className="swiper-slide" style={{ height: '80px' }}>
                 <a>home</a>
               </div>
             </div>
-            <span
-              className="swiper-notification"
-              aria-live="assertive"
-              aria-atomic="true"
-            ></span>
           </div>
         </div>
       </section>

@@ -15,6 +15,7 @@ import Programs from './pages/Programs';
 import EventDetail from './pages/EventDetail';
 import NewsDetail from './pages/NewsDetail';
 import NotFound from './pages/NotFound';
+import Admin from './pages/Admin';
 
 const App = () => (
   <BrowserRouter>
@@ -33,6 +34,7 @@ const App = () => (
       <Route path="/en/academics/research" element={<Research />} />
       <Route path="/en/about/ada-university" element={<AboutADA />} />
       <Route path="/en/about/Italy-Azerbaijan-university" element={<AboutItalyAzerbaijanUniversity />} />
+      <Route path="/admin" element={<Admin />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer />

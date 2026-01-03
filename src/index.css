@@ -786,6 +786,28 @@ body.high-contrast-theme .theme-toggle-btn:hover {
     border-color: #ffff00 !important;
 }
 
+/* Tree Icon (Snowflakes Button) Theme Styles */
+.navbar-tree-icon {
+    color: #336178;
+}
+
+body.dark-theme .navbar-tree-icon {
+    color: #60a5fa;
+}
+
+body.dark-theme .navbar-tree-icon:hover {
+    color: #93c5fd;
+}
+
+body.high-contrast-theme .navbar-tree-icon {
+    color: #ffff00;
+}
+
+body.high-contrast-theme .navbar-tree-icon:hover {
+    color: #ffff00;
+    filter: brightness(1.2);
+}
+
 body.high-contrast-theme p {
     color: #ffffff;
 }

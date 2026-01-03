@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const PageHeading = ({ title, imageSrc, breadcrumb }) => {
+const PageHeading = ({ title, imageSrc, breadcrumb, onBreadcrumbClick }) => {
   return (
-    <section className="page-heading-content mb-5" data-cid="603">
+    <section className={`page-heading-content ${!imageSrc ? 'no-image' : 'mb-5'}`} data-cid="603">
       {imageSrc && (
         <img 
           className="bg-image" 
@@ -24,7 +24,15 @@ const PageHeading = ({ title, imageSrc, breadcrumb }) => {
                   return (
                     <li key={index}>
                       {item.link ? (
-                        <Link to={item.link} className={isLast ? 'active' : ''}>
+                        <Link 
+                          to={item.link} 
+                          className={isLast ? 'active' : ''}
+                          onClick={() => {
+                            if (onBreadcrumbClick && (item.label === 'News' || item.label === 'Events')) {
+                              onBreadcrumbClick();
+                            }
+                          }}
+                        >
                           {item.label}
                           {!isLast && (
                             <i className="fa fa-chevron-right"></i>

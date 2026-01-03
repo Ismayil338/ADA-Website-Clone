@@ -132,6 +132,10 @@ const Events = () => {
         title="Events"
         imageSrc="https://www.ada.edu.az/assets/img/header/events-detail.jpg"
         breadcrumb={generateBreadcrumbs(location.pathname, null, selectedType)}
+        onBreadcrumbClick={() => {
+          setSelectedType(null);
+          setCurrentPage(1);
+        }}
       />
 
       <div className="container py-5">
@@ -354,18 +358,55 @@ const Events = () => {
                     <button
                       key={type.name}
                       type="button"
-                      className={`btn text-start category-filter-btn ${isActive ? 'active' : ''}`}
+                      className="btn text-start"
                       style={{
+                        backgroundColor: 'transparent',
+                        color: '#000',
+                        border: 'none',
+                        transition: 'all 0.3s ease',
+                        width: '100%',
+                        padding: '10px 15px 10px 25px',
+                        position: 'relative',
+                        boxShadow: 'none',
                         display: 'flex',
                         justifyContent: 'space-between',
                         alignItems: 'center'
+                      }}
+                      onMouseEnter={(e) => {
+                        const button = e.currentTarget;
+                        button.style.color = '#dc3545';
+                        button.style.backgroundColor = 'transparent';
+                        const dot = button.querySelector('.event-type-dot');
+                        if (dot) {
+                          dot.style.borderColor = '#dc3545';
+                        }
+                      }}
+                      onMouseLeave={(e) => {
+                        const button = e.currentTarget;
+                        button.style.color = '#000';
+                        button.style.backgroundColor = 'transparent';
+                        const dot = button.querySelector('.event-type-dot');
+                        if (dot) {
+                          dot.style.borderColor = '#000';
+                        }
                       }}
                       onClick={() => {
                         setSelectedType(isActive ? null : type.name);
                       }}
                     >
                       <span style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                        <span className="news-category-dot" />
+                        <span
+                          className="event-type-dot"
+                          style={{
+                            width: '6px',
+                            height: '6px',
+                            borderRadius: '50%',
+                            border: '2px solid #000',
+                            backgroundColor: 'transparent',
+                            transition: 'border-color 0.3s ease',
+                            flexShrink: 0
+                          }}
+                        />
                         {type.name}
                       </span>
                       <span>({count})</span>
