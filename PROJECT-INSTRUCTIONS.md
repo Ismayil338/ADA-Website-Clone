@@ -686,6 +686,8 @@ If port 5000 or 5173 is already in use:
 
 ## Demo Video
 
+https://youtu.be/Jq-YyhH5fuc
+
 ## Screenshots
 
 <img width="2559" height="1522" alt="Screenshot 2026-01-03 130708" src="https://github.com/user-attachments/assets/203f1056-7956-4fd9-812a-5c3bfcca5fce" />
@@ -703,5 +705,6 @@ If port 5000 or 5173 is already in use:
 <img width="2559" height="1523" alt="Screenshot 2026-01-03 130631" src="https://github.com/user-attachments/assets/1f61d735-be2d-4a1a-91dd-626be4bb02d1" />
 <img width="2559" height="1526" alt="Screenshot 2026-01-03 130644" src="https://github.com/user-attachments/assets/e7e8e929-209c-46f4-ae2d-7daa9ecd8d6f" />
 <img width="2559" height="1526" alt="Screenshot 2026-01-03 130656" src="https://github.com/user-attachments/assets/b6622735-6bf0-4b82-8f81-0990db5d48b9" />
+
 
 
