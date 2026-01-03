@@ -12,6 +12,13 @@ const EventsCard = ({
   colorClass = '',
 }) => {
   const CardContent = ({ children }) => {
+    if (href && href !== '#') {
+      return (
+        <a className="grid-url" href={href} target="_blank" rel="noopener noreferrer">
+          {children}
+        </a>
+      );
+    }
     if (id) {
       return (
         <Link to={`/en/events/${id}`} className="grid-url">

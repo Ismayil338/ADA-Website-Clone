@@ -11,6 +11,13 @@ const NewsCard = ({
   id = null,
 }) => {
   const CardContent = ({ children }) => {
+    if (href && href !== '#') {
+      return (
+        <a className="grid-url" href={href} target="_blank" rel="noopener noreferrer">
+          {children}
+        </a>
+      );
+    }
     if (id) {
       return (
         <Link to={`/en/news/${id}`} className="grid-url">
