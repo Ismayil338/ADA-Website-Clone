@@ -686,4 +686,22 @@ If port 5000 or 5173 is already in use:
 
 ## Demo Video
 
+## Screenshots
+
+<img width="2559" height="1522" alt="Screenshot 2026-01-03 130708" src="https://github.com/user-attachments/assets/203f1056-7956-4fd9-812a-5c3bfcca5fce" />
+<img width="2559" height="1527" alt="Screenshot 2026-01-03 130725" src="https://github.com/user-attachments/assets/62045d84-ed4d-4529-a141-4e38ec727f1b" />
+<img width="2559" height="1522" alt="Screenshot 2026-01-03 130740" src="https://github.com/user-attachments/assets/baa3e4f8-3016-47ba-a8bb-7715ad1b2d48" />
+<img width="2559" height="1524" alt="Screenshot 2026-01-03 130419" src="https://github.com/user-attachments/assets/c1c0e53f-fb90-4691-aa54-723a626ab5d8" />
+<img width="2559" height="1389" alt="Screenshot 2026-01-03 130429" src="https://github.com/user-attachments/assets/bda4805d-053e-4fbd-8757-ac77b698d823" />
+<img width="2559" height="1528" alt="Screenshot 2026-01-03 130450" src="https://github.com/user-attachments/assets/205119dc-95df-4760-af37-c36bfdae64e4" />
+<img width="2559" height="1528" alt="Screenshot 2026-01-03 130507" src="https://github.com/user-attachments/assets/8a1fefd2-93c3-45ab-add1-b3f027ea3173" />
+<img width="2559" height="1524" alt="Screenshot 2026-01-03 130517" src="https://github.com/user-attachments/assets/1998d973-c011-44c4-b05d-7312ce6ed037" />
+<img width="2559" height="1525" alt="Screenshot 2026-01-03 130537" src="https://github.com/user-attachments/assets/038cbb87-6372-48af-962a-073535226db7" />
+<img width="2559" height="1525" alt="Screenshot 2026-01-03 130552" src="https://github.com/user-attachments/assets/75224952-5e8d-439a-9dfc-6d67c990930a" />
+<img width="2559" height="1524" alt="Screenshot 2026-01-03 130607" src="https://github.com/user-attachments/assets/da68473f-5f70-43bc-812c-fc78f1273339" />
+<img width="2559" height="1521" alt="Screenshot 2026-01-03 130615" src="https://github.com/user-attachments/assets/d5629a38-6536-469b-9b82-061e1f076ef4" />
+<img width="2559" height="1523" alt="Screenshot 2026-01-03 130631" src="https://github.com/user-attachments/assets/1f61d735-be2d-4a1a-91dd-626be4bb02d1" />
+<img width="2559" height="1526" alt="Screenshot 2026-01-03 130644" src="https://github.com/user-attachments/assets/e7e8e929-209c-46f4-ae2d-7daa9ecd8d6f" />
+<img width="2559" height="1526" alt="Screenshot 2026-01-03 130656" src="https://github.com/user-attachments/assets/b6622735-6bf0-4b82-8f81-0990db5d48b9" />
+
 
