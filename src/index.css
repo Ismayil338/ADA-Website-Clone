@@ -310,6 +310,54 @@ body.dark-theme .grid-item-style-1 a.grid-url .date-and-time span i {
     color: #7c889b;
 }
 
+/* NewsCard dark mode styles */
+body.dark-theme .grid-item-style-1 a.grid-url .grid-item-foot {
+    background: #2d4a5a;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .grid-item-style-1 a.grid-url .grid-item-foot.rgbRed {
+    background: #8b3a4a !important;
+}
+
+body.dark-theme .grid-item-style-1 a.grid-url .grid-item-foot .date-and-time .date,
+body.dark-theme .grid-item-style-1 a.grid-url .grid-item-foot .date-and-time span {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.dark-theme .grid-item-style-1 a.grid-url .grid-item-foot .date-and-time .date i,
+body.dark-theme .grid-item-style-1 a.grid-url .grid-item-foot .date-and-time span i {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+body.dark-theme .grid-item-style-1 a.grid-url .grid-item-foot .grid-title {
+    color: #ffffff;
+}
+
+body.dark-theme .grid-item-style-1 a.grid-url:hover .grid-item-foot {
+    background: #ae485e;
+}
+
+body.dark-theme .grid-item-style-1 a.grid-url:hover .grid-item-foot.rgbRed {
+    background: #336178 !important;
+}
+
+body.dark-theme .grid-item-style-1 a.grid-url:hover .grid-item-foot .grid-title {
+    color: #ffffff;
+}
+
+body.dark-theme .grid-item-style-1 a.grid-url .image {
+    background-color: #2d2d2d;
+}
+
+body.dark-theme .grid-item-style-1 a.grid-url .image img {
+    opacity: 0.9;
+}
+
+body.dark-theme .grid-item-style-1 a.grid-url:hover .image img {
+    opacity: 1;
+}
+
 body.dark-theme .large-single-item .title {
     color: #fff;
 }
