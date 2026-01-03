@@ -1895,3 +1895,111 @@ body.high-contrast-theme .container[style*="paddingTop"] p[style*="color: '#000'
 body.high-contrast-theme .container[style*="paddingTop"] p[style*="color:#000"] {
     color: #ffffff !important;
 }
+
+/* Card Styles - Dark Mode */
+body.dark-theme .card {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .card-header {
+    background-color: #7c889b !important;
+    border-bottom: 1px solid #444;
+    color: #ffffff !important;
+}
+
+body.dark-theme .card-header.bg-primary {
+    background-color: #7c889b !important;
+    border-bottom: 1px solid #5a6a7d;
+}
+
+body.dark-theme .card-body {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+
+body.dark-theme .card-body strong {
+    color: #ffffff;
+}
+
+body.dark-theme .card-body hr {
+    border-top-color: #444;
+    opacity: 1;
+}
+
+body.dark-theme .card .btn-outline-primary {
+    color: #7c889b;
+    border-color: #7c889b;
+}
+
+body.dark-theme .card .btn-outline-primary:hover {
+    background-color: #7c889b;
+    border-color: #7c889b;
+    color: #ffffff;
+}
+
+/* Card Styles - High Contrast Mode */
+body.high-contrast-theme .card {
+    background-color: #000000;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+body.high-contrast-theme .card-header {
+    background-color: #ffffff !important;
+    border-bottom: 3px solid #ffff00;
+    color: #000000 !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+body.high-contrast-theme .card-header.bg-primary {
+    background-color: #ffffff !important;
+    border-bottom: 3px solid #ffff00;
+    color: #000000 !important;
+}
+
+body.high-contrast-theme .card-body {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+}
+
+body.high-contrast-theme .card-body strong {
+    color: #ffff00;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+body.high-contrast-theme .card-body hr {
+    border-top: 3px solid #ffffff;
+    opacity: 1;
+    margin: 1rem 0;
+}
+
+body.high-contrast-theme .card .btn-outline-primary {
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    background-color: transparent;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+body.high-contrast-theme .card .btn-outline-primary:hover {
+    background-color: #ffff00;
+    border-color: #ffff00;
+    color: #000000;
+    outline: 3px solid #ffffff;
+    outline-offset: 2px;
+}
+
+body.high-contrast-theme .card .btn-outline-primary:focus {
+    outline: 3px solid #ffff00 !important;
+    outline-offset: 2px !important;
+}
