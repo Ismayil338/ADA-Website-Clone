@@ -158,7 +158,8 @@ body.dark-theme h5 {
 }
 
 body.dark-theme h1,
-body.dark-theme h3 {
+body.dark-theme h3,
+body.dark-theme h4 {
     color: #ffffff !important;
 }
 
@@ -844,7 +845,8 @@ body.high-contrast-theme h5 {
 }
 
 body.high-contrast-theme h1,
-body.high-contrast-theme h3 {
+body.high-contrast-theme h3,
+body.high-contrast-theme h4 {
     color: #ffffff !important;
     text-shadow: 2px 2px 0px #000000;
 }
