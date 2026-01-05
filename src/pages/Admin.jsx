@@ -175,7 +175,10 @@ const Admin = () => {
 
     if (tab.id === 'sb_faculty' || tab.id === 'site_faculty') {
       return (
-        <div style={{ marginBottom: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px', backgroundColor: '#f9f9f9' }}>
+        <div
+          className="admin-form-card"
+          style={{ marginBottom: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px', backgroundColor: '#f9f9f9' }}
+        >
           <h4>{editingIndex === data.length ? 'Add New' : 'Edit'} Faculty Member</h4>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px' }}>
             <div>
@@ -234,10 +237,18 @@ const Admin = () => {
             </div>
           </div>
           <div style={{ marginTop: '15px' }}>
-            <button onClick={handleSaveEdit} style={{ padding: '10px 20px', marginRight: '10px', backgroundColor: '#336178', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+            <button
+              className="admin-btn admin-btn-primary"
+              onClick={handleSaveEdit}
+              style={{ padding: '10px 20px', marginRight: '10px', backgroundColor: '#336178', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+            >
               Save
             </button>
-            <button onClick={handleCancelEdit} style={{ padding: '10px 20px', backgroundColor: '#666', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+            <button
+              className="admin-btn admin-btn-secondary"
+              onClick={handleCancelEdit}
+              style={{ padding: '10px 20px', backgroundColor: '#666', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+            >
               Cancel
             </button>
           </div>
@@ -247,7 +258,10 @@ const Admin = () => {
 
     if (tab.id === 'news') {
       return (
-        <div style={{ marginBottom: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px', backgroundColor: '#f9f9f9' }}>
+        <div
+          className="admin-form-card"
+          style={{ marginBottom: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px', backgroundColor: '#f9f9f9' }}
+        >
           <h4>{editingIndex === data.length ? 'Add New' : 'Edit'} News</h4>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px' }}>
             <div>
@@ -305,10 +319,18 @@ const Admin = () => {
             </div>
           </div>
           <div style={{ marginTop: '15px' }}>
-            <button onClick={handleSaveEdit} style={{ padding: '10px 20px', marginRight: '10px', backgroundColor: '#336178', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+            <button
+              className="admin-btn admin-btn-primary"
+              onClick={handleSaveEdit}
+              style={{ padding: '10px 20px', marginRight: '10px', backgroundColor: '#336178', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+            >
               Save
             </button>
-            <button onClick={handleCancelEdit} style={{ padding: '10px 20px', backgroundColor: '#666', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+            <button
+              className="admin-btn admin-btn-secondary"
+              onClick={handleCancelEdit}
+              style={{ padding: '10px 20px', backgroundColor: '#666', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+            >
               Cancel
             </button>
           </div>
@@ -318,7 +340,10 @@ const Admin = () => {
 
     if (tab.id === 'events') {
       return (
-        <div style={{ marginBottom: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px', backgroundColor: '#f9f9f9' }}>
+        <div
+          className="admin-form-card"
+          style={{ marginBottom: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px', backgroundColor: '#f9f9f9' }}
+        >
           <h4>{editingIndex === data.length ? 'Add New' : 'Edit'} Event</h4>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px' }}>
             <div>
@@ -377,10 +402,18 @@ const Admin = () => {
             </div>
           </div>
           <div style={{ marginTop: '15px' }}>
-            <button onClick={handleSaveEdit} style={{ padding: '10px 20px', marginRight: '10px', backgroundColor: '#336178', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+            <button
+              className="admin-btn admin-btn-primary"
+              onClick={handleSaveEdit}
+              style={{ padding: '10px 20px', marginRight: '10px', backgroundColor: '#336178', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+            >
               Save
             </button>
-            <button onClick={handleCancelEdit} style={{ padding: '10px 20px', backgroundColor: '#666', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+            <button
+              className="admin-btn admin-btn-secondary"
+              onClick={handleCancelEdit}
+              style={{ padding: '10px 20px', backgroundColor: '#666', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+            >
               Cancel
             </button>
           </div>
@@ -390,7 +423,10 @@ const Admin = () => {
 
     if (tab.id === 'programs') {
       return (
-        <div style={{ marginBottom: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px', backgroundColor: '#f9f9f9' }}>
+        <div
+          className="admin-form-card"
+          style={{ marginBottom: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px', backgroundColor: '#f9f9f9' }}
+        >
           <h4>{editingIndex === data.length ? 'Add New' : 'Edit'} Program</h4>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px' }}>
             <div>
@@ -431,10 +467,18 @@ const Admin = () => {
             </div>
           </div>
           <div style={{ marginTop: '15px' }}>
-            <button onClick={handleSaveEdit} style={{ padding: '10px 20px', marginRight: '10px', backgroundColor: '#336178', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+            <button
+              className="admin-btn admin-btn-primary"
+              onClick={handleSaveEdit}
+              style={{ padding: '10px 20px', marginRight: '10px', backgroundColor: '#336178', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+            >
               Save
             </button>
-            <button onClick={handleCancelEdit} style={{ padding: '10px 20px', backgroundColor: '#666', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+            <button
+              className="admin-btn admin-btn-secondary"
+              onClick={handleCancelEdit}
+              style={{ padding: '10px 20px', backgroundColor: '#666', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+            >
               Cancel
             </button>
           </div>
@@ -444,7 +488,10 @@ const Admin = () => {
 
     if (tab.id === 'research') {
       return (
-        <div style={{ marginBottom: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px', backgroundColor: '#f9f9f9' }}>
+        <div
+          className="admin-form-card"
+          style={{ marginBottom: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px', backgroundColor: '#f9f9f9' }}
+        >
           <h4>{editingIndex === data.length ? 'Add New' : 'Edit'} Research</h4>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px' }}>
             <div>
@@ -502,10 +549,18 @@ const Admin = () => {
             </div>
           </div>
           <div style={{ marginTop: '15px' }}>
-            <button onClick={handleSaveEdit} style={{ padding: '10px 20px', marginRight: '10px', backgroundColor: '#336178', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+            <button
+              className="admin-btn admin-btn-primary"
+              onClick={handleSaveEdit}
+              style={{ padding: '10px 20px', marginRight: '10px', backgroundColor: '#336178', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+            >
               Save
             </button>
-            <button onClick={handleCancelEdit} style={{ padding: '10px 20px', backgroundColor: '#666', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+            <button
+              className="admin-btn admin-btn-secondary"
+              onClick={handleCancelEdit}
+              style={{ padding: '10px 20px', backgroundColor: '#666', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+            >
               Cancel
             </button>
           </div>
@@ -518,19 +573,19 @@ const Admin = () => {
 
   const renderTable = () => {
     if (loading) {
-      return <div style={{ padding: '20px', textAlign: 'center' }}>Loading...</div>;
+      return <div className="admin-loading" style={{ padding: '20px', textAlign: 'center' }}>Loading...</div>;
     }
 
     if (data.length === 0) {
-      return <div style={{ padding: '20px', textAlign: 'center' }}>No data available</div>;
+      return <div className="admin-empty" style={{ padding: '20px', textAlign: 'center' }}>No data available</div>;
     }
 
     const tab = tabs.find(t => t.id === activeTab);
     const keys = Object.keys(data[0] || {});
 
     return (
-      <div style={{ overflowX: 'auto' }}>
-        <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '20px' }}>
+      <div className="admin-table-wrapper" style={{ overflowX: 'auto' }}>
+        <table className="admin-table" style={{ width: '100%', borderCollapse: 'collapse', marginTop: '20px' }}>
           <thead>
             <tr style={{ backgroundColor: '#336178', color: 'white' }}>
               {keys.map(key => (
@@ -543,7 +598,11 @@ const Admin = () => {
           </thead>
           <tbody>
             {data.map((item, index) => (
-              <tr key={index} style={{ backgroundColor: index % 2 === 0 ? '#f9f9f9' : 'white' }}>
+              <tr
+                key={index}
+                className="admin-table-row"
+                style={{ backgroundColor: index % 2 === 0 ? '#f9f9f9' : 'white' }}
+              >
                 {keys.map(key => (
                   <td key={key} style={{ padding: '10px', border: '1px solid #ddd', maxWidth: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                     {typeof item[key] === 'object' ? JSON.stringify(item[key]) : String(item[key] || '')}
@@ -551,12 +610,14 @@ const Admin = () => {
                 ))}
                 <td style={{ padding: '10px', border: '1px solid #ddd' }}>
                   <button
+                    className="admin-btn admin-btn-sm admin-btn-primary"
                     onClick={() => handleEdit(index)}
                     style={{ padding: '5px 10px', marginRight: '5px', backgroundColor: '#336178', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
                   >
                     Edit
                   </button>
                   <button
+                    className="admin-btn admin-btn-sm admin-btn-danger"
                     onClick={() => handleDelete(index)}
                     style={{ padding: '5px 10px', backgroundColor: '#ae485e', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
                   >
@@ -573,9 +634,16 @@ const Admin = () => {
 
   if (!isAuthenticated) {
     return (
-      <div style={{ minHeight: '100vh', backgroundColor: '#f5f5f5', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <div style={{ backgroundColor: 'white', borderRadius: '8px', padding: '40px', boxShadow: '0 2px 10px rgba(0,0,0,0.1)', maxWidth: '400px', width: '100%' }}>
-          <h1 style={{ marginBottom: '30px', color: '#336178', textAlign: 'center' }}>Admin Login</h1>
+      <main className="page page-admin">
+        <div
+          className="admin-page admin-login-wrapper"
+          style={{ minHeight: '100vh', backgroundColor: '#f5f5f5', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+        >
+          <div
+            className="admin-card admin-login-card"
+            style={{ backgroundColor: 'white', borderRadius: '8px', padding: '40px', boxShadow: '0 2px 10px rgba(0,0,0,0.1)', maxWidth: '400px', width: '100%' }}
+          >
+            <h1 style={{ marginBottom: '30px', color: '#336178', textAlign: 'center' }}>Admin Login</h1>
           <form onSubmit={handleLogin}>
             <div style={{ marginBottom: '20px' }}>
               <label style={{ display: 'block', marginBottom: '8px', fontWeight: 'bold' }}>Password:</label>
@@ -588,7 +656,9 @@ const Admin = () => {
               />
             </div>
             {message.text && (
-              <div style={{
+              <div
+                className={`admin-alert ${message.type === 'error' ? 'admin-alert-error' : 'admin-alert-success'}`}
+                style={{
                 padding: '12px',
                 marginBottom: '20px',
                 borderRadius: '4px',
@@ -601,22 +671,32 @@ const Admin = () => {
             )}
             <button
               type="submit"
+              className="admin-btn admin-btn-primary admin-btn-block"
               style={{ width: '100%', padding: '12px', backgroundColor: '#336178', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '16px', fontWeight: 'bold' }}
             >
               Login
             </button>
           </form>
         </div>
-      </div>
+        </div>
+      </main>
     );
   }
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#f5f5f5', padding: '20px' }}>
-      <div style={{ maxWidth: '1400px', margin: '0 auto', backgroundColor: 'white', borderRadius: '8px', padding: '30px', boxShadow: '0 2px 10px rgba(0,0,0,0.1)' }}>
+    <main className="page page-admin">
+      <div
+        className="admin-page admin-dashboard-wrapper"
+        style={{ minHeight: '100vh', backgroundColor: '#f5f5f5', padding: '20px' }}
+      >
+        <div
+          className="admin-shell"
+          style={{ maxWidth: '1400px', margin: '0 auto', backgroundColor: 'white', borderRadius: '8px', padding: '30px', boxShadow: '0 2px 10px rgba(0,0,0,0.1)' }}
+        >
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' }}>
           <h1 style={{ margin: 0, color: '#336178' }}>Admin Panel</h1>
           <button
+            className="admin-btn admin-btn-secondary"
             onClick={() => {
               setIsAuthenticated(false);
               setPassword('');
@@ -628,7 +708,10 @@ const Admin = () => {
           </button>
         </div>
         
-        <div style={{ display: 'flex', gap: '10px', marginBottom: '20px', borderBottom: '2px solid #eee', paddingBottom: '10px' }}>
+        <div
+          className="admin-tabs"
+          style={{ display: 'flex', gap: '10px', marginBottom: '20px', borderBottom: '2px solid #eee', paddingBottom: '10px' }}
+        >
           {tabs.map(tab => (
             <button
               key={tab.id}
@@ -637,6 +720,7 @@ const Admin = () => {
                 setEditingIndex(null);
                 setFormData({});
               }}
+              className={`admin-tab-btn ${activeTab === tab.id ? 'is-active' : ''}`}
               style={{
                 padding: '10px 20px',
                 backgroundColor: activeTab === tab.id ? '#336178' : '#f0f0f0',
@@ -653,7 +737,9 @@ const Admin = () => {
         </div>
 
         {message.text && (
-          <div style={{
+          <div
+            className={`admin-alert ${message.type === 'success' ? 'admin-alert-success' : 'admin-alert-error'}`}
+            style={{
             padding: '15px',
             marginBottom: '20px',
             borderRadius: '4px',
@@ -665,8 +751,9 @@ const Admin = () => {
           </div>
         )}
 
-        <div style={{ marginBottom: '20px', display: 'flex', gap: '10px' }}>
+        <div className="admin-actions" style={{ marginBottom: '20px', display: 'flex', gap: '10px' }}>
           <button
+            className="admin-btn admin-btn-success"
             onClick={handleAdd}
             style={{ padding: '10px 20px', backgroundColor: '#28a745', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
           >
@@ -675,11 +762,13 @@ const Admin = () => {
           <button
             onClick={handleSave}
             disabled={saving}
+            className="admin-btn admin-btn-primary"
             style={{ padding: '10px 20px', backgroundColor: saving ? '#ccc' : '#336178', color: 'white', border: 'none', borderRadius: '4px', cursor: saving ? 'not-allowed' : 'pointer' }}
           >
             {saving ? 'Saving...' : 'Save All Changes'}
           </button>
           <button
+            className="admin-btn admin-btn-secondary"
             onClick={loadData}
             style={{ padding: '10px 20px', backgroundColor: '#6c757d', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
           >
@@ -690,7 +779,8 @@ const Admin = () => {
         {renderForm()}
         {renderTable()}
       </div>
-    </div>
+      </div>
+    </main>
   );
 };
 
