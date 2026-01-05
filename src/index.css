@@ -2037,6 +2037,267 @@ body.high-contrast-theme .card .btn-outline-primary:hover {
     outline-offset: 2px;
 }
 
+/* ======================
+   Admin Page – Base Styles
+   ====================== */
+.page-admin .admin-page {
+  font-size: 16px;
+}
+
+.page-admin .admin-login-wrapper {
+  background-color: #f5f5f5;
+}
+
+.page-admin .admin-login-card {
+  background-color: #ffffff;
+}
+
+.page-admin .admin-shell {
+  background-color: #ffffff;
+}
+
+.page-admin .admin-form-card {
+  background-color: #f9f9f9;
+}
+
+.page-admin .admin-table {
+  background-color: #ffffff;
+}
+
+.page-admin .admin-table-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.page-admin .admin-table-row:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.page-admin .admin-btn {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.page-admin .admin-btn-block {
+  width: 100%;
+}
+
+/* ======================
+   Admin Page – Dark Theme
+   ====================== */
+body.dark-theme .page-admin .admin-login-wrapper,
+body.dark-theme .page-admin .admin-dashboard-wrapper {
+  background-color: #121212 !important;
+}
+
+body.dark-theme .page-admin .admin-login-card,
+body.dark-theme .page-admin .admin-shell,
+body.dark-theme .page-admin .admin-form-card {
+  background-color: #1f1f1f !important;
+  color: #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+body.dark-theme .page-admin h1,
+body.dark-theme .page-admin h4,
+body.dark-theme .page-admin label {
+  color: #ffffff;
+}
+
+body.dark-theme .page-admin input,
+body.dark-theme .page-admin textarea {
+  background-color: #121212;
+  color: #e0e0e0;
+  border-color: #444444;
+}
+
+body.dark-theme .page-admin input::placeholder,
+body.dark-theme .page-admin textarea::placeholder {
+  color: #888888;
+}
+
+body.dark-theme .page-admin .admin-tabs {
+  border-bottom-color: #333333 !important;
+}
+
+body.dark-theme .page-admin .admin-tab-btn {
+  background-color: #2a2a2a !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark-theme .page-admin .admin-tab-btn.is-active {
+  background-color: #336178 !important;
+  color: #ffffff !important;
+}
+
+body.dark-theme .page-admin .admin-table {
+  background-color: #1f1f1f;
+}
+
+body.dark-theme .page-admin .admin-table thead tr {
+  background-color: #264256 !important;
+}
+
+body.dark-theme .page-admin .admin-table-row:nth-child(even) {
+  background-color: #181818 !important;
+}
+
+body.dark-theme .page-admin .admin-table-row:nth-child(odd) {
+  background-color: #202020 !important;
+}
+
+body.dark-theme .page-admin .admin-table td,
+body.dark-theme .page-admin .admin-table th {
+  border-color: #333333 !important;
+  color: #e0e0e0;
+}
+
+body.dark-theme .page-admin .admin-alert-success {
+  background-color: #1e3a2a !important;
+  color: #c8f7d0 !important;
+  border-color: #295f3a !important;
+}
+
+body.dark-theme .page-admin .admin-alert-error {
+  background-color: #3a1e1e !important;
+  color: #f5c6cb !important;
+  border-color: #7f1d1d !important;
+}
+
+body.dark-theme .page-admin .admin-btn-primary {
+  background-color: #336178 !important;
+  border-color: #336178 !important;
+  color: #ffffff !important;
+}
+
+body.dark-theme .page-admin .admin-btn-primary:disabled {
+  background-color: #555555 !important;
+  border-color: #555555 !important;
+  cursor: not-allowed;
+}
+
+body.dark-theme .page-admin .admin-btn-secondary {
+  background-color: #444444 !important;
+  border-color: #444444 !important;
+  color: #ffffff !important;
+}
+
+body.dark-theme .page-admin .admin-btn-success {
+  background-color: #1f7a3a !important;
+  border-color: #1f7a3a !important;
+  color: #ffffff !important;
+}
+
+body.dark-theme .page-admin .admin-btn-danger {
+  background-color: #ae485e !important;
+  border-color: #ae485e !important;
+  color: #ffffff !important;
+}
+
+/* ======================
+   Admin Page – High Contrast Theme
+   ====================== */
+body.high-contrast-theme .page-admin .admin-login-wrapper,
+body.high-contrast-theme .page-admin .admin-dashboard-wrapper {
+  background-color: #000000 !important;
+}
+
+body.high-contrast-theme .page-admin .admin-login-card,
+body.high-contrast-theme .page-admin .admin-shell,
+body.high-contrast-theme .page-admin .admin-form-card {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 3px solid #ffffff !important;
+  box-shadow: 0 0 10px 2px #ffff00;
+}
+
+body.high-contrast-theme .page-admin h1,
+body.high-contrast-theme .page-admin h4,
+body.high-contrast-theme .page-admin label {
+  color: #ffff00 !important;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+body.high-contrast-theme .page-admin input,
+body.high-contrast-theme .page-admin textarea {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 3px solid #ffffff !important;
+}
+
+body.high-contrast-theme .page-admin input::placeholder,
+body.high-contrast-theme .page-admin textarea::placeholder {
+  color: #cccccc !important;
+}
+
+body.high-contrast-theme .page-admin .admin-tabs {
+  border-bottom: 3px solid #ffffff !important;
+}
+
+body.high-contrast-theme .page-admin .admin-tab-btn {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+  font-weight: 600;
+}
+
+body.high-contrast-theme .page-admin .admin-tab-btn.is-active {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+  border: 3px solid #ffffff !important;
+}
+
+body.high-contrast-theme .page-admin .admin-table {
+  background-color: #000000 !important;
+  border: 3px solid #ffffff !important;
+}
+
+body.high-contrast-theme .page-admin .admin-table thead tr {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+body.high-contrast-theme .page-admin .admin-table-row:nth-child(even),
+body.high-contrast-theme .page-admin .admin-table-row:nth-child(odd) {
+  background-color: #000000 !important;
+}
+
+body.high-contrast-theme .page-admin .admin-table td,
+body.high-contrast-theme .page-admin .admin-table th {
+  border: 2px solid #ffffff !important;
+  color: #ffffff !important;
+}
+
+body.high-contrast-theme .page-admin .admin-alert-success {
+  background-color: #003300 !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+body.high-contrast-theme .page-admin .admin-alert-error {
+  background-color: #660000 !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+body.high-contrast-theme .page-admin .admin-btn-primary,
+body.high-contrast-theme .page-admin .admin-btn-success,
+body.high-contrast-theme .page-admin .admin-btn-secondary,
+body.high-contrast-theme .page-admin .admin-btn-danger {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 3px solid #ffffff !important;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+body.high-contrast-theme .page-admin .admin-btn-primary:hover,
+body.high-contrast-theme .page-admin .admin-btn-success:hover,
+body.high-contrast-theme .page-admin .admin-btn-secondary:hover,
+body.high-contrast-theme .page-admin .admin-btn-danger:hover {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+  border-color: #ffff00 !important;
+}
+
 body.high-contrast-theme .card .btn-outline-primary:focus {
     outline: 3px solid #ffff00 !important;
     outline-offset: 2px !important;
