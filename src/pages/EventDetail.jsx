@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate, useLocation } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import PageHeading from '../components/PageHeading';
 import { generateBreadcrumbs } from '../utils/breadcrumbs';
 
 const EventDetail = () => {
   const { id } = useParams();
   const location = useLocation();
-  const navigate = useNavigate();
   const [event, setEvent] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -64,10 +63,6 @@ const EventDetail = () => {
         <Link
           to="/en/events"
           className="btn btn-outline-secondary mb-4"
-          onClick={(e) => {
-            e.preventDefault();
-            navigate(-1);
-          }}
         >
           <i className="fa fa-arrow-left me-2"></i>Back to Events
         </Link>
