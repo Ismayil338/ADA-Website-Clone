@@ -33,17 +33,17 @@ This project is a functional replica of the ADA University website (https://www.
 ## Tech Stack
 
 ### Frontend
-- **React 19.2.0**: Modern React with hooks
-- **React Router 7.10.1**: Client-side routing
-- **Vite 7.2.4**: Build tool and dev server
-- **Bootstrap 5.3.8**: CSS framework for responsive design
-- **Swiper 12.0.3**: Touch slider for carousels
-- **Font Awesome 7.1.0**: Icon library
+- **[React 19.2.0](https://react.dev/)**: Modern React with hooks
+- **[React Router 7.10.1](https://reactrouter.com/)**: Client-side routing
+- **[Vite 7.2.4](https://vite.dev/)**: Build tool and dev server
+- **[Bootstrap 5.3.8](https://getbootstrap.com/)**: CSS framework for responsive design
+- **[Swiper 12.0.3](https://swiperjs.com/)**: Touch slider for carousels
+- **[Font Awesome 7.1.0](https://fontawesome.com/)**: Icon library
 
 ### Backend
-- **Express.js 4.18.2**: Web server framework
-- **CORS 2.8.5**: Cross-origin resource sharing
-- **Node.js**: Runtime environment
+- **[Express.js 4.18.2](https://expressjs.com/)**: Web server framework
+- **[CORS 2.8.5](https://www.npmjs.com/package/cors)**: Cross-origin resource sharing
+- **[Node.js](https://nodejs.org/en)**: Runtime environment
 
 ### Data Storage
 - **JSON Files**: 
@@ -705,6 +705,7 @@ https://www.youtube.com/watch?v=OyhR99MEUNs
 <img width="2559" height="1523" alt="Screenshot 2026-01-03 130631" src="https://github.com/user-attachments/assets/1f61d735-be2d-4a1a-91dd-626be4bb02d1" />
 <img width="2559" height="1526" alt="Screenshot 2026-01-03 130644" src="https://github.com/user-attachments/assets/e7e8e929-209c-46f4-ae2d-7daa9ecd8d6f" />
 <img width="2559" height="1526" alt="Screenshot 2026-01-03 130656" src="https://github.com/user-attachments/assets/b6622735-6bf0-4b82-8f81-0990db5d48b9" />
+
 
 
 
